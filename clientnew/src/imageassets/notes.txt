@@ -27,14 +27,13 @@ Video 3 Timestamp:
 HomePage:
 
 slide1
-https://i.postimg.cc/BQ0M9Thg/felipe-galvan-Ahfr-A5-VQNp-M-unsplash-removebg-preview.png
+https://i.postimg.cc/Z5sTdpg1/slider1alsukkariya.png
 
 slide2
-https://i.postimg.cc/zfdqNqZk/daniel-lincoln-KADEo-Ll95-Gk-unsplash-removebg-preview.png
+https://i.postimg.cc/VNSzB5P5/slider2alsukkariya.png
 
 slide3
-https://i.postimg.cc/hGGqpNzQ/amber2-removebg-preview.png
-
+https://i.postimg.cc/SKwkZqmd/slider3alsukkariya.png
 
 
 
@@ -42,49 +41,23 @@ https://i.postimg.cc/hGGqpNzQ/amber2-removebg-preview.png
 Categories:
 
 
-shirt
-https://i.postimg.cc/02WQxGYS/nimble-made-BKYe-LLB1-Ox-I-unsplash.jpg
+Sukari Large
+https://i.postimg.cc/Wb4CJCv1/category1alsukkariya.png
 
-jacket
-https://i.postimg.cc/P5JC8VXK/amanda-vick-oh-Wf6-Yuz-OQk-unsplash.jpg
+Sukari Galaxy
+https://i.postimg.cc/5NkG5g4q/category2alsukkariya.png
 
-hat
-https://i.postimg.cc/fTwGC607/hatnew.jpg
+
 
 Products Home Page:
 
 1
-https://i.postimg.cc/KYV9Jhbz/display1-removebg-preview.png
+https://i.postimg.cc/Vk0YXd8v/sukari-large-removebg-preview.png
 
 2
-https://i.postimg.cc/pTFsScVB/display2-removebg-preview.png
+https://i.postimg.cc/NfMGfdC1/sukari-galaxy-removebg-preview.png
 
-3
-https://i.postimg.cc/d3R4s7yk/display3-removebg-preview.png
 
-4
-https://i.postimg.cc/jdKM8hpz/display4-removebg-preview.png
-
-5
-https://i.postimg.cc/wTV0nmzn/display5-removebg-preview.png
-
-6
-https://i.postimg.cc/RZZXmZVh/display6-removebg-preview.png
-
-7
-https://i.postimg.cc/CxrJxpzN/display7-removebg-preview.png
-
-8
-https://i.postimg.cc/8CF4FXvV/display8-removebg-preview.png
-
-shirt
-https://i.postimg.cc/PxJHS97F/benjamin-rascoe-i-Nv-K2-Xmpx8o-unsplash.jpg
-
-jacket
-https://i.postimg.cc/SQX2svKr/tobias-tullius-Fg15-Ldqp-Wrs-unsplash.jpg
-
-hat
-https://i.postimg.cc/8crSSWNR/yang-deng-2lo-Kxdi6-Hmo-unsplash.jpg
 
 
 Payment:

@@ -1,25 +1,25 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://i.postimg.cc/BQ0M9Thg/felipe-galvan-Ahfr-A5-VQNp-M-unsplash-removebg-preview.png",
-    title: "SUMMER SALE",
-    desc: "DONT MISS OUT ON OUR SALE! 30% OFF!",
-    bg: "f5fafd",
+    img: "https://i.postimg.cc/Z5sTdpg1/slider1alsukkariya.png",
+    title: "Lorem 1",
+    desc: "amet consectetur morbi tristique... ",
+    bg: "f1fcfd",
   },
 
   {
     id: 2,
-    img: "https://i.postimg.cc/zfdqNqZk/daniel-lincoln-KADEo-Ll95-Gk-unsplash-removebg-preview.png",
-    title: "AUTUMN COLLECTION",
-    desc: "DONT MISS OUT ON OUR SALE! 30% OFF!",
+    img: "https://i.postimg.cc/VNSzB5P5/slider2alsukkariya.png",
+    title: "Lorem 2",
+    desc: "amet consectetur morbi tristique...",
     bg: "fcf1ed",
   },
 
   {
     id: 3,
-    img: "https://i.postimg.cc/hGGqpNzQ/amber2-removebg-preview.png",
-    title: "WINTER COLLECTION",
-    desc: "DONT MISS OUT ON OUR SALE! 30% OFF!",
+    img: "https://i.postimg.cc/SKwkZqmd/slider3alsukkariya.png",
+    title: "Lorem 3",
+    desc: "amet consectetur morbi tristique...",
     bg: "fbf0f4",
   },
 ];
@@ -27,23 +27,16 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://i.postimg.cc/02WQxGYS/nimble-made-BKYe-LLB1-Ox-I-unsplash.jpg",
-    title: "SHIRT STYLE",
-    cat: "woman",
+    img: "https://i.postimg.cc/Wb4CJCv1/category1alsukkariya.png",
+    title: "SUKARI LARGE",
+    cat: "sukari",
   },
 
   {
     id: 2,
-    img: "https://i.postimg.cc/P5JC8VXK/amanda-vick-oh-Wf6-Yuz-OQk-unsplash.jpg",
-    title: "JACKET STYLE",
-    cat: "jacket",
-  },
-
-  {
-    id: 3,
-    img: "https://i.postimg.cc/fTwGC607/hatnew.jpg",
-    title: "HAT STYLE",
-    cat: "hats",
+    img: "https://i.postimg.cc/5NkG5g4q/category2alsukkariya.png",
+    title: "SUKARI GALAXY",
+    cat: "sukari",
   },
 ];
 
