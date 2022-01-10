@@ -4,6 +4,8 @@ Fix Colors in product page to be under Color text
 Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 
+ADD NAVBAR TO SIGN IN AND REGISTER PAGE, FIX POSITIONING
+
 
 
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
