@@ -1,0 +1,107 @@
+TO DO:
+Fix Colors in product page to be under Color text
+1:22 Video 3 Creating Order
+Cart Page : amount: cart.total*100
+Make each product show available sizes/colors
+
+
+
+const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
+FIX STRIPE SECRET KEY IN ENV, REMOVE IT FROM STRIPE.JS
+
+mongoDB:
+username: user
+password: 1234
+
+admin
+123456
+
+
+
+
+Video 3 Timestamp:
+2:01:32
+
+
+
+HomePage:
+
+slide1
+https://i.postimg.cc/BQ0M9Thg/felipe-galvan-Ahfr-A5-VQNp-M-unsplash-removebg-preview.png
+
+slide2
+https://i.postimg.cc/zfdqNqZk/daniel-lincoln-KADEo-Ll95-Gk-unsplash-removebg-preview.png
+
+slide3
+https://i.postimg.cc/hGGqpNzQ/amber2-removebg-preview.png
+
+
+
+
+
+Categories:
+
+
+shirt
+https://i.postimg.cc/02WQxGYS/nimble-made-BKYe-LLB1-Ox-I-unsplash.jpg
+
+jacket
+https://i.postimg.cc/P5JC8VXK/amanda-vick-oh-Wf6-Yuz-OQk-unsplash.jpg
+
+hat
+https://i.postimg.cc/fTwGC607/hatnew.jpg
+
+Products Home Page:
+
+1
+https://i.postimg.cc/KYV9Jhbz/display1-removebg-preview.png
+
+2
+https://i.postimg.cc/pTFsScVB/display2-removebg-preview.png
+
+3
+https://i.postimg.cc/d3R4s7yk/display3-removebg-preview.png
+
+4
+https://i.postimg.cc/jdKM8hpz/display4-removebg-preview.png
+
+5
+https://i.postimg.cc/wTV0nmzn/display5-removebg-preview.png
+
+6
+https://i.postimg.cc/RZZXmZVh/display6-removebg-preview.png
+
+7
+https://i.postimg.cc/CxrJxpzN/display7-removebg-preview.png
+
+8
+https://i.postimg.cc/8CF4FXvV/display8-removebg-preview.png
+
+shirt
+https://i.postimg.cc/PxJHS97F/benjamin-rascoe-i-Nv-K2-Xmpx8o-unsplash.jpg
+
+jacket
+https://i.postimg.cc/SQX2svKr/tobias-tullius-Fg15-Ldqp-Wrs-unsplash.jpg
+
+hat
+https://i.postimg.cc/8crSSWNR/yang-deng-2lo-Kxdi6-Hmo-unsplash.jpg
+
+
+Payment:
+
+https://i.postimg.cc/K8HS0KJb/Payment-options-from-Carus-Jewellery.png
+
+
+
+Product Page Image:
+
+https://i.postimg.cc/kGSgm0Xj/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg
+
+
+Register Background Image:
+https://i.postimg.cc/nz68YMYz/registerbg.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+
+
+Login Background Image:
+https://i.postimg.cc/MZfJKk1D/pexels-deepanker-verma-1482061.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+
