@@ -80,7 +80,7 @@ const Footer = () => {
     return (
         <Container>
             <Left>
-                <Logo>SHOP.</Logo>
+                <Logo>Al-Sukkariya</Logo>
                 <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque nostrum culpa.</Desc>
                 <SocialContainer>
                     <SocialIcon color="3B5999">
@@ -104,29 +104,12 @@ const Footer = () => {
                         Cart
                     </ListItem>
                     <ListItem>
-                        Men Fashion
+                        Sign In
                     </ListItem>
                     <ListItem>
-                        Woman Fashion
+                        Register
                     </ListItem>
-                    <ListItem>
-                        Accessories
-                    </ListItem>
-                    <ListItem>
-                        My Account
-                    </ListItem>
-                    <ListItem>
-                        Order Tracking
-                    </ListItem>
-                    <ListItem>
-                        Wishlist
-                    </ListItem>
-                    <ListItem>
-                        Wishlist
-                    </ListItem>
-                    <ListItem>
-                        Terms
-                    </ListItem>
+   
                 </List>
             </Center>
             <Right>

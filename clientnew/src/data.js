@@ -29,14 +29,14 @@ export const categories = [
     id: 1,
     img: "https://i.postimg.cc/Wb4CJCv1/category1alsukkariya.png",
     title: "SUKARI LARGE",
-    cat: "sukari",
+    cat: "Products",
   },
 
   {
     id: 2,
     img: "https://i.postimg.cc/5NkG5g4q/category2alsukkariya.png",
     title: "SUKARI GALAXY",
-    cat: "sukari",
+    cat: "Products",
   },
 ];
 

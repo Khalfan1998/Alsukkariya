@@ -198,14 +198,14 @@ useEffect(()=>{
                     YOUR SHOPPING CART
                 </Title>
                 <Top>
-                <Link to="/products/jacket">
+                <Link to="/products/Products">
                     <TopButton>
                         CONTINUE SHOPPING
                     </TopButton>
                     </Link>
                     <TopTexts>
                         <TopText>
-                            Shopping Bag(2)
+                            Shopping Bag()
                         </TopText>
                         <ClearButton type="filled">
                         Clear Cart
@@ -237,7 +237,7 @@ useEffect(()=>{
                                         <b>Product:</b> {product.title}
                                     </ProductName>
                                     <ProductId>
-                                        <b>Desc</b> {product.desc}
+                                        <b>Description:</b> {product.desc}
                                     </ProductId>
 
                                 </Details>
@@ -251,7 +251,7 @@ useEffect(()=>{
                                     <Add/>
                                 </ProductAmountContainer>
                                 <ProductPrice>
-                                    {product.price*product.quantity}
+                                  BHD  {product.price*product.quantity}
                                 </ProductPrice>
                             </PriceDetail>
                         </Product>
@@ -269,7 +269,7 @@ useEffect(()=>{
                                 Subtotal:
                             </SummaryItemText>
                             <SummaryItemPrice>
-                               $ {cart.total}
+                               BHD {cart.total}
                             </SummaryItemPrice>
                         </SummaryItem>
                         <SummaryItem>
@@ -277,7 +277,7 @@ useEffect(()=>{
                                 Estimated Shipping:
                             </SummaryItemText>
                             <SummaryItemPrice>
-                                $ 5
+                                BHD 2
                             </SummaryItemPrice>
                         </SummaryItem>
                         <SummaryItem>
@@ -285,7 +285,7 @@ useEffect(()=>{
                                 Shipping Discount:
                             </SummaryItemText>
                             <SummaryItemPrice>
-                                $ -5
+                                BHD -5
                             </SummaryItemPrice>
                         </SummaryItem>
                         <SummaryItem type="total">
@@ -293,7 +293,7 @@ useEffect(()=>{
                                 Total:
                             </SummaryItemText>
                             <SummaryItemPrice>
-                           $ {cart.total}
+                            BHD {cart.total}
                             </SummaryItemPrice>
                         </SummaryItem>
                         <StripeCheckout
@@ -301,7 +301,7 @@ useEffect(()=>{
                         image="https://i.postimg.cc/pTFsScVB/display2-removebg-preview.png"
                         billingAddress
                         shippingAddress
-                        description={`Your total is $${cart.total}`}
+                        description={`Your total is BHD${cart.total}`}
                         amount={cart.total*100}
                         token={onToken}
                         stripeKey={KEY}
