@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { publicRequest } from "../requestMethods";
 import { addProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 
 
@@ -121,6 +122,17 @@ const Amount = styled.span`
   margin: 0px 5px;
 `;
 
+const TopButton = styled.button`
+padding: 10px;
+margin-left: 40px;
+margin-top: 20px;
+font-weight: 600;
+cursor: pointer;
+border: ${props=>props.type === "filled" && "none"};
+background-color: ${props=>props.type === "filled" ? "#F1C55B" : "transparent"};
+color: ${props=>props.type === "filled" && "black"};
+`
+
 const Button = styled.button`
   padding: 15px;
   border: 2px solid teal;
@@ -168,6 +180,11 @@ const Product = () => {
     <Container>
       <Navbar />
       <Announcement />
+      <Link to="/products/Products">
+       <TopButton>
+        CONTINUE SHOPPING
+       </TopButton>
+        </Link>
       <Wrapper>
         <ImgContainer>
           <Image src={product.img} />
