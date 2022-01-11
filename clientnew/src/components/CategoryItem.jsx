@@ -26,8 +26,8 @@ const Info = styled.div`
     justify-content: center;
 `
 const Title = styled.h1`
-    color: white;
-   
+    color: black;
+    background-color: #eee;
     margin-bottom: 20px;
 `
 const Button = styled.button`

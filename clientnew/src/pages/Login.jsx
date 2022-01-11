@@ -24,6 +24,7 @@ background-color: white;
 margin-left: 35%;
 margin-top: 10%;
 ${mobile({ width: "75%" })}
+${mobile({ marginLeft: "33px" })}
 `
 
 const FooterContainer = styled.div`
@@ -32,6 +33,7 @@ margin-top: 15%;
 `
 const NavbarContainer = styled.div`
 background-color: white;
+${mobile({ paddingBottom: "5%" })}
 `
 
 const Title = styled.h1`

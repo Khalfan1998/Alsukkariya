@@ -27,14 +27,14 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://i.postimg.cc/Wb4CJCv1/category1alsukkariya.png",
+    img: "https://i.postimg.cc/1tT8p01f/categoryleftnew.png",
     title: "SUKARI LARGE",
     cat: "Products",
   },
 
   {
     id: 2,
-    img: "https://i.postimg.cc/5NkG5g4q/category2alsukkariya.png",
+    img: "https://i.postimg.cc/HnyV3JT3/categoryrightnew.png",
     title: "SUKARI GALAXY",
     cat: "Products",
   },

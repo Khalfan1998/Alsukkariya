@@ -1,8 +1,9 @@
 import styled from "styled-components"
 import { mobile } from "../responsive"
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Container = styled.div`
-width: 100vw;
 height: 100vh;
 background: linear-gradient(
     rgba(255, 255, 255, 0.5),
@@ -11,19 +12,27 @@ background: linear-gradient(
   url("https://i.postimg.cc/nz68YMYz/registerbg.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
     center;
 background-size: cover;
-display: flex;
-align-items: center;
-justify-content: center;
 `
 const Wrapper = styled.div`
 width: 40%;
+margin-left: 30%;
+margin-top: 10%;
 padding: 20px;
 background-color: white;
 ${mobile({ width: "75%" })}
+${mobile({ marginLeft: "33px" })}
 `
 const Title = styled.h1`
 font-size: 24px;
 font-weight: 300;
+`
+const FooterContainer = styled.div`
+background-color: white;
+margin-top: 15%;
+`
+const NavbarContainer = styled.div`
+background-color: white;
+${mobile({ paddingBottom: "5%" })}
 `
 
 const Form = styled.form`
@@ -56,6 +65,9 @@ ${mobile({ marginLeft: "170px" })}
 const Register = () => {
     return (
         <Container>
+              <NavbarContainer>
+          <Navbar/>
+          </NavbarContainer>
             <Wrapper>
                 <Title>
                     CREATE AN ACCOUNT
@@ -73,6 +85,9 @@ const Register = () => {
                     <Button>CREATE</Button>
                 </Form>
             </Wrapper>
+            <FooterContainer>
+      <Footer/>
+      </FooterContainer>
         </Container>
     )
 }
