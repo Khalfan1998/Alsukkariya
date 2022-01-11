@@ -1,6 +1,7 @@
 import { Facebook, Instagram, MailOutline, Phone, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
 import { mobile } from "../responsive"
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
 display: flex;
@@ -32,6 +33,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-right: 20px;
+cursor:pointer;
 `
 
 const Center = styled.div`
@@ -55,6 +57,26 @@ flex-wrap: wrap;
 const ListItem = styled.li`
 width: 50%;
 margin-bottom: 10px;
+cursor: pointer;
+color: black;
+`
+const FacebookContainer = styled.a`
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:active { text-decoration: none; color:white; }
+`
+const InstagramContainer = styled.a`
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:active { text-decoration: none; color:white; }
+`
+const TwitterContainer = styled.a`
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:active { text-decoration: none; color:white; }
 `
 
 const Right = styled.div`
@@ -83,31 +105,51 @@ const Footer = () => {
                 <Logo>Al-Sukkariya</Logo>
                 <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque nostrum culpa.</Desc>
                 <SocialContainer>
+                    <FacebookContainer>
                     <SocialIcon color="3B5999">
-                        <Facebook/>
+                    <a href="https://facebook.com" style={{textDecoration:"none"}}>
+                        <Facebook />
+                        </a>
                     </SocialIcon>
+                    </FacebookContainer>
+                    <InstagramContainer>
                     <SocialIcon color="E4405F">
+                    <a href="https://www.instagram.com/alsukkariya/" style={{textDecoration:"none"}}>
                         <Instagram/>
+                        </a>
                     </SocialIcon>
+                    </InstagramContainer>
+                    <TwitterContainer>
                     <SocialIcon color="55ACEE">
+                        <a href ="https://twitter.com" style={{textDecoration:"none"}}>
                         <Twitter/>
+                        </a>
                     </SocialIcon>
+                    </TwitterContainer>
                 </SocialContainer>
             </Left>
             <Center>
                 <Title>Useful Links</Title>
                 <List>
                     <ListItem>
+                    <Link to="/" style={{textDecoration:"none"}}>
                         Home
+                        </Link>
                     </ListItem>
                     <ListItem>
+                    <Link to="/cart" style={{textDecoration:"none"}}>
                         Cart
+                        </Link>
                     </ListItem>
                     <ListItem>
+                    <Link to="/login" style={{textDecoration:"none"}}>
                         Sign In
+                        </Link>
                     </ListItem>
                     <ListItem>
+                    <Link to="/register" style={{textDecoration:"none"}}>
                         Register
+                        </Link>
                     </ListItem>
    
                 </List>
