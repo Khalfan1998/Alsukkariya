@@ -27,7 +27,6 @@ const Info = styled.div`
 `
 const Title = styled.h1`
     color: black;
-
     margin-bottom: 20px;
 `
 const Button = styled.button`

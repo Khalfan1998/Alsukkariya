@@ -11,6 +11,7 @@ import { useState, useEffect } from 'react'
 import { userRequest } from '../requestMethods'
 import { useHistory } from 'react-router-dom'
 import { Link } from "react-router-dom";
+import { Badge } from '@material-ui/core'
 
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
@@ -32,6 +33,7 @@ justify-content: space-between;
 padding: 20px;
 `
 const ClearButton = styled.button`
+margin-left: 10px;
 padding: 10px;
 font-weight: 600;
 cursor: pointer;
@@ -177,6 +179,7 @@ const Cart = () => {
 const cart = useSelector(state=>state.cart)
 const [stripeToken,setStripeToken] = useState(null)
 const history = useHistory()
+const quantity = useSelector(state=>state.cart.quantity)
 
 const onToken = (token)=>{
     setStripeToken(token);
@@ -215,7 +218,9 @@ useEffect(()=>{
                     </Link>
                     <TopTexts>
                         <TopText>
-                            Shopping Bag()
+                            Shopping Bag--
+                                <Badge badgeContent={quantity} color="primary"></Badge>
+                             
                         </TopText>
                         <ClearButton type="filled">
                         Clear Cart
