@@ -33,7 +33,7 @@ justify-content: space-between;
 padding: 20px;
 `
 const ClearButton = styled.button`
-margin-left: 10px;
+margin-left: 200px;
 padding: 10px;
 font-weight: 600;
 cursor: pointer;

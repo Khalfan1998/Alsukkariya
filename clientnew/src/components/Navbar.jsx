@@ -55,7 +55,7 @@ const Logo = styled.h1`
 "Logo:active": { textDecoration: "underline" }
     color: black;
     font-weight: bold;
-    ${mobile({ fontSize: "18px" })}
+    ${mobile({ fontSize: "14px" })}
     ${mobile({ paddingLeft: "1px" })}
     ${mobile({ paddingBottom: "10px" })}
 `
