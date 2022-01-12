@@ -36,6 +36,8 @@ const ClearButton = styled.button`
 margin-left: 155px;
 padding: 10px;
 font-weight: 600;
+width: 200px;
+height: 40px;
 cursor: pointer;
 border: ${props=>props.type === "filled" && "none"};
 background-color: ${props=>props.type === "filled" ? "black" : "transparent"};
@@ -55,9 +57,10 @@ const TopTexts = styled.div`
 ${mobile({ display: "none" })}
 `
 const TopText = styled.span`
+text-align: center;
 text-decoration: underline;
 cursor: pointer;
-margin: 0px 10px;
+padding-left: 46%;
 `
 
 const Bottom = styled.div`
@@ -210,6 +213,10 @@ useEffect(()=>{
                 <Title>
                     YOUR SHOPPING CART
                 </Title>
+                <TopText>
+                Shopping Bag--(
+                                <Badge badgeContent={quantity} color="primary"></Badge>
+                                </TopText>
                 <Top>
                 <Link to="/products/Products">
                     <TopButton>
@@ -217,29 +224,12 @@ useEffect(()=>{
                     </TopButton>
                     </Link>
                     <TopTexts>
-                        <TopText>
-                            Shopping Bag--
-                                <Badge badgeContent={quantity} color="primary"></Badge>
-                             
-                        </TopText>
+    
                         <ClearButton type="filled">
                         Clear Cart
                     </ClearButton>
                     </TopTexts>
-                    <StripeCheckout
-                        name="Khalfan Shop"
-                        image="https://i.postimg.cc/pTFsScVB/display2-removebg-preview.png"
-                        billingAddress
-                        shippingAddress
-                        description={`Your total is BHD${cart.total}`}
-                        amount={cart.total*100}
-                        token={onToken}
-                        stripeKey={KEY}
-                        >
-                    <TopButton type="filled">
-                        CHECKOUT NOW
-                    </TopButton>
-                    </StripeCheckout>
+                   
                 </Top>
                 <Bottom>
                     <Info>
