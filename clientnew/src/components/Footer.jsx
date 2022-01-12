@@ -151,6 +151,11 @@ const Footer = () => {
                         Register
                         </Link>
                     </ListItem>
+                    <ListItem>
+                    <Link to="/products/Products" style={{textDecoration:"none"}}>
+                        Products
+                        </Link>
+                    </ListItem>
    
                 </List>
             </Center>

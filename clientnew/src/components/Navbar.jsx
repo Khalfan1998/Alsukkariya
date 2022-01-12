@@ -47,6 +47,10 @@ const Center = styled.div`
     flex:1;
     text-align: center;
 `
+const Image = styled.img`
+width: 8%;
+`
+
 
 const Logo = styled.h1`
 "Logo:link": { textDecoration: "none" },
@@ -84,11 +88,8 @@ const Navbar = () => {
     return (
         <Container>
             <Wrapper>
-            <Left><Language>EN</Language>
-            <SearchContainer>
-                <Input placeholder="Search"/>
-                <Search style={{color:"gray", fontSize:16}}/>
-            </SearchContainer>
+            <Left>
+            <Image src ="https://i.postimg.cc/7LBs7Mwv/sukariya-logo.png"/>
             </Left>
             <Link to="/" style={{textDecoration:"none"}}>
             <Center><Logo>🌴Al-Sukkariya</Logo></Center>
