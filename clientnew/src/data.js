@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: 1,
     img: "https://i.postimg.cc/SKwkZqmd/slider3alsukkariya.png",
-    title: "Lorem 1",
+    title: "Premium Dates & more | تمور فاخرة وأكثر 🌴",
     desc: "amet consectetur morbi tristique... ",
     bg: "f1fcfd",
   },
@@ -10,7 +10,7 @@ export const sliderItems = [
   {
     id: 2,
     img: "https://i.postimg.cc/VNSzB5P5/slider2alsukkariya.png",
-    title: "Lorem 2",
+    title: " جودة عاليه🔝",
     desc: "amet consectetur morbi tristique...",
     bg: "fcf1ed",
   },
@@ -18,7 +18,7 @@ export const sliderItems = [
   {
     id: 3,
     img: "https://i.postimg.cc/Z5sTdpg1/slider1alsukkariya.png",
-    title: "Lorem 3",
+    title: "منقاة بعناية من أفضل مزارع القصيم🌴",
     desc: "amet consectetur morbi tristique...",
     bg: "fbf0f4",
   },
@@ -27,14 +27,14 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://i.postimg.cc/1tT8p01f/categoryleftnew.png",
+    img: "https://i.postimg.cc/gkPwVCMp/sarah-dorweiler-x2-Tmfd1-Sg-A-unsplash.jpg",
     title: "SUKARI LARGE",
     cat: "Products",
   },
 
   {
     id: 2,
-    img: "https://i.postimg.cc/HnyV3JT3/categoryrightnew.png",
+    img: "https://i.postimg.cc/KjG6FvGF/alex-lvrs-2z-Dw14y-CYqk-unsplash.jpg",
     title: "SUKARI GALAXY",
     cat: "Products",
   },
@@ -48,7 +48,7 @@ export const popularProducts = [
 
   {
     id: 2,
-    img: "https://i.postimg.cc/pTFsScVB/display2-removebg-preview.png",
+    img: "https://i.postimg.cZc/pTFsScVB/display2-removebg-preview.png",
   },
 
   {

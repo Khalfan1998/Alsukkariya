@@ -91,7 +91,7 @@ const Navbar = () => {
             </SearchContainer>
             </Left>
             <Link to="/" style={{textDecoration:"none"}}>
-            <Center><Logo>Al-Sukkariya</Logo></Center>
+            <Center><Logo>🌴Al-Sukkariya</Logo></Center>
             </Link>
             <Right>
             <Link to="/register" style={{textDecoration:"none"}}>

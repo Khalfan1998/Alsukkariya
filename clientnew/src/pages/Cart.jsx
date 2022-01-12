@@ -111,10 +111,20 @@ const ProductAmountContainer = styled.div`
 display: flex;
 align-items: center;
 margin-bottom: 20px;
+cursor: pointer;
 `
 const ProductAmount = styled.div`
+width: 30px;
+height: 30px;
+border-radius: 10px;
+border: 1px solid teal;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0px 5px;
 font-size: 24px;
-margin: 5px;
+
+
 ${mobile({ margin: "5px 15px" })}
 `
 const ProductPrice = styled.div`
@@ -216,7 +226,7 @@ useEffect(()=>{
                         image="https://i.postimg.cc/pTFsScVB/display2-removebg-preview.png"
                         billingAddress
                         shippingAddress
-                        description={`Your total is $${cart.total}`}
+                        description={`Your total is BHD${cart.total}`}
                         amount={cart.total*100}
                         token={onToken}
                         stripeKey={KEY}

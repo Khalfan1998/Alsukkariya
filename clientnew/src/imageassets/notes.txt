@@ -3,6 +3,7 @@ Fix Colors in product page to be under Color text
 1:22 Video 3 Creating Order
 Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
+Use DELETE Cart API for Clear Cart
 
 ADD NAVBAR TO SIGN IN AND REGISTER PAGE, FIX POSITIONING
 
