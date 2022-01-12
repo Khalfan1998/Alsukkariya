@@ -96,6 +96,7 @@ const FilterSize = styled.select`
 const FilterSizeOption = styled.option``;
 
 const AddContainer = styled.div`
+  padding-top: 10%;
   width: 50%;
   display: flex;
   align-items: center;

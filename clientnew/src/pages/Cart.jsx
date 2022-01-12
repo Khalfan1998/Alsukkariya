@@ -33,7 +33,7 @@ justify-content: space-between;
 padding: 20px;
 `
 const ClearButton = styled.button`
-margin-left: 200px;
+margin-left: 155px;
 padding: 10px;
 font-weight: 600;
 cursor: pointer;
@@ -269,7 +269,9 @@ useEffect(()=>{
                                   BHD  {product.price*product.quantity}
                                 </ProductPrice>
                             </PriceDetail>
+                            <Hr/>
                         </Product>
+                       
                         ))}
                         
                         <Hr/>
