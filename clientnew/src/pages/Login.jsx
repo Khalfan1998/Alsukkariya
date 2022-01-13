@@ -5,13 +5,13 @@ import { mobile } from "../responsive";
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
-const Container = styled.div`
-background: linear-gradient(
+//opacity
+{/*background:linear-gradient(
   rgba(255, 255, 255, 0.5),
   rgba(255, 255, 255, 0.5)
-),
-url("https://i.postimg.cc/MZfJKk1D/pexels-deepanker-verma-1482061.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+), */}
+const Container = styled.div`
+background: url("https://i.postimg.cc/5yDzf6dR/background-fill.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
   center;
 background-size: cover;
 height: 100vh;

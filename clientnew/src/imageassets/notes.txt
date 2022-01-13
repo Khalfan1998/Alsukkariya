@@ -1,9 +1,29 @@
 TO DO:
+
 Fix Colors in product page to be under Color text
 1:22 Video 3 Creating Order
 Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
-Use DELETE Cart API for Clear Cart
+Make + and - Button instantly remove or add amount to cart (reducer)
+Make slider smaller height and make image bigger than text on right
+change button round edge
+Make logo go to home page
+Rounded edges add to cart and color of product
+Animation for add to cart
+Change checkout color button
+Add benefitpay UI instead of stripe( iban number, customer copy pastes, pays to owner)
+Add cash on delivery payment method
+Benefitpay receit to owner, after payment process order
+Footer smaller and same color and size in every page
+move footer links to the top left for menu
+Change Font of whole page
+Make all the links go to the top of every page
+make checkout button same color as product
+change sign in page/register page, backgrounds to hexagon
+remove categories section in home page
+Make product image in same line as product title in product page
+Remove continue shopping and put it as products in the menu instead
+
 
 ADD NAVBAR TO SIGN IN AND REGISTER PAGE, FIX POSITIONING
 

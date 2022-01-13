@@ -29,6 +29,8 @@ const Left = styled.div`
 const Center = styled.div`
     flex:1;
     text-align: center;
+    ${mobile({ textAlign: "left" })}
+    
 `
 const Image = styled.img`
 width: 8%;
@@ -41,7 +43,7 @@ const Logo = styled.h1`
 "Logo:hover": { textDecoration: "underline" },
 "Logo:active": { textDecoration: "underline" }
     color: black;
-    font-weight: bold;
+    font-weight: 800;
     ${mobile({ fontSize: "14px" })}
     ${mobile({ paddingLeft: "1px" })}
     ${mobile({ paddingBottom: "10px" })}
@@ -75,7 +77,7 @@ const Navbar = () => {
             <Image src ="https://i.postimg.cc/7LBs7Mwv/sukariya-logo.png"/>
             </Left>
             <Link to="/" style={{textDecoration:"none"}}>
-            <Center><Logo>🌴Al-Sukkariya</Logo></Center>
+            <Center><Logo>Al-Sukkariya</Logo></Center>
             </Link>
             <Right>
             <Link to="/register" style={{textDecoration:"none"}}>

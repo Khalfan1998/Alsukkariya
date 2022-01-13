@@ -27,14 +27,14 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://i.postimg.cc/gkPwVCMp/sarah-dorweiler-x2-Tmfd1-Sg-A-unsplash.jpg",
+    img: "https://i.postimg.cc/sfSrwkQj/rauf-alvi-e-Buafk0-Ekl8-unsplash-2.jpg",
     title: "SUKARI LARGE",
     cat: "Products",
   },
 
   {
     id: 2,
-    img: "https://i.postimg.cc/KjG6FvGF/alex-lvrs-2z-Dw14y-CYqk-unsplash.jpg",
+    img: "https://i.postimg.cc/QMpQ6x3g/abdullah-arif-Hi-ENMow-CYHg-unsplash-removebg-preview.jpg",
     title: "SUKARI GALAXY",
     cat: "Products",
   },

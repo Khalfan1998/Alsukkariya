@@ -12,6 +12,7 @@ flex: 1;
 display: flex;
 flex-direction: column;
 padding: 20px;
+${mobile({ backgroundColor: "#eee" })}
 `
 
 const Logo = styled.h1`
@@ -40,6 +41,7 @@ const Center = styled.div`
 flex: 1;
 padding: 20px;
 ${mobile({ display: "none" })}
+${mobile({ backgroundColor: "#eee" })}
 `
 
 const Title = styled.h3`
@@ -105,27 +107,27 @@ const Footer = () => {
                 <Logo>Al-Sukkariya</Logo>
                 <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque nostrum culpa.</Desc>
                 <SocialContainer>
-                    <FacebookContainer>
+                    {/* <FacebookContainer>
                     <SocialIcon color="3B5999">
-                    <a href="https://facebook.com" style={{textDecoration:"none"}}>
+                    <a href="https://facebook.com/alsukkariya" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
                         <Facebook />
                         </a>
                     </SocialIcon>
-                    </FacebookContainer>
+                    </FacebookContainer> */}
                     <InstagramContainer>
                     <SocialIcon color="E4405F">
-                    <a href="https://www.instagram.com/alsukkariya/" style={{textDecoration:"none"}}>
+                    <a href="https://www.instagram.com/alsukkariya/" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
                         <Instagram/>
                         </a>
                     </SocialIcon>
                     </InstagramContainer>
-                    <TwitterContainer>
+                    {/* <TwitterContainer>
                     <SocialIcon color="55ACEE">
-                        <a href ="https://twitter.com" style={{textDecoration:"none"}}>
+                        <a href ="https://twitter.com/alsukkariya" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
                         <Twitter/>
                         </a>
                     </SocialIcon>
-                    </TwitterContainer>
+                    </TwitterContainer> */}
                 </SocialContainer>
             </Left>
             <Center>

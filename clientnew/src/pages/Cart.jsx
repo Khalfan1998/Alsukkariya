@@ -45,6 +45,9 @@ cursor: pointer;
 border: ${props=>props.type === "filled" && "none"};
 background-color: ${props=>props.type === "filled" ? "black" : "transparent"};
 color: ${props=>props.type === "filled" && "white"};
+${mobile({ width: "70px" })}
+${mobile({ marginLeft: "40px" })}
+${mobile({ fontSize: "10px" })}
 `
 
 const TopButton = styled.button`
@@ -54,16 +57,20 @@ cursor: pointer;
 border: ${props=>props.type === "filled" && "none"};
 background-color: ${props=>props.type === "filled" ? "#F1C55B" : "transparent"};
 color: ${props=>props.type === "filled" && "black"};
+${mobile({ width: "70px" })}
+${mobile({ fontSize: "10px" })}
+
 `
 
 const TopTexts = styled.div`
-${mobile({ display: "none" })}
+
 `
 const TopText = styled.span`
 text-align: center;
 text-decoration: underline;
 cursor: pointer;
 padding-left: 46%;
+${mobile({ paddingLeft: "36%" })}
 `
 
 const Bottom = styled.div`
@@ -125,7 +132,7 @@ const ProductAmount = styled.div`
 width: 30px;
 height: 30px;
 border-radius: 10px;
-border: 1px solid teal;
+border: 1px solid black;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -175,8 +182,8 @@ const SummaryItemPrice = styled.span`
 const Button = styled.button`
 width: 100%;
 padding: 10px;
-background-color: #F1C55B;
-color: black;
+background-color: #5D2C2F;
+color: white;
 font-weight: 600;
 `
 
@@ -223,7 +230,7 @@ useEffect(()=>{
                 </Title>
                 <TopText>
                 Shopping Bag    
-                                <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}}></Badge>
+                                <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}} ></Badge>
                                 </TopText>
                 <Top>
                 <Link to="/products/Products">

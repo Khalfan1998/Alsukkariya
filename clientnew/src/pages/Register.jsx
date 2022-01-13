@@ -2,14 +2,15 @@ import styled from "styled-components"
 import { mobile } from "../responsive"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+//opacity
+{/*background:linear-gradient(
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.5)
+), */}
 
 const Container = styled.div`
 height: 100vh;
-background: linear-gradient(
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.5)
-  ),
-  url("https://i.postimg.cc/nz68YMYz/registerbg.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+background:url("https://i.postimg.cc/5yDzf6dR/background-fill.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
     center;
 background-size: cover;
 `
