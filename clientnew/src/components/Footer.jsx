@@ -130,7 +130,7 @@ const Footer = () => {
                     </TwitterContainer> */}
                 </SocialContainer>
             </Left>
-            <Center>
+            {/* <Center>
                 <Title>Useful Links</Title>
                 <List>
                     <ListItem>
@@ -160,7 +160,7 @@ const Footer = () => {
                     </ListItem>
    
                 </List>
-            </Center>
+            </Center> */}
             <Right>
                 <Title>Contact</Title>
                 <ContactItem><Room style={{marginRight:"10px"}}/>

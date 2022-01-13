@@ -38,6 +38,7 @@ padding: 20px;
 const ClearButton = styled.button`
 margin-left: 155px;
 padding: 10px;
+border-radius: 8px;
 font-weight: 600;
 width: 200px;
 height: 40px;
@@ -50,17 +51,18 @@ ${mobile({ marginLeft: "40px" })}
 ${mobile({ fontSize: "10px" })}
 `
 
-const TopButton = styled.button`
-padding: 10px;
-font-weight: 600;
-cursor: pointer;
-border: ${props=>props.type === "filled" && "none"};
-background-color: ${props=>props.type === "filled" ? "#F1C55B" : "transparent"};
-color: ${props=>props.type === "filled" && "black"};
-${mobile({ width: "70px" })}
-${mobile({ fontSize: "10px" })}
+// const TopButton = styled.button`
+// padding: 10px;
+// border-radius: 8px;
+// font-weight: 600;
+// cursor: pointer;
+// border: ${props=>props.type === "filled" && "none"};
+// background-color: ${props=>props.type === "filled" ? "#F1C55B" : "transparent"};
+// color: ${props=>props.type === "filled" && "black"};
+// ${mobile({ width: "70px" })}
+// ${mobile({ fontSize: "10px" })}
 
-`
+// `
 
 const TopTexts = styled.div`
 
@@ -182,6 +184,7 @@ const SummaryItemPrice = styled.span`
 const Button = styled.button`
 width: 100%;
 padding: 10px;
+border-radius: 8px;
 background-color: #5D2C2F;
 color: white;
 font-weight: 600;
@@ -234,9 +237,9 @@ useEffect(()=>{
                                 </TopText>
                 <Top>
                 <Link to="/products/Products">
-                    <TopButton>
+                    {/* <TopButton>
                         CONTINUE SHOPPING
-                    </TopButton>
+                    </TopButton> */}
                     </Link>
                     <TopTexts>
     

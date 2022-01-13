@@ -14,10 +14,11 @@ import { Link } from "react-router-dom";
 
 
 
-const Container = styled.div``;
+const Container = styled.div`
+`;
 
 const Wrapper = styled.div`
-  padding: 50px;
+  padding: 100px;
   display: flex;
   ${mobile({ padding: "10px", flexDirection:"column" })}
   
@@ -28,9 +29,10 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
-  height: 90vh;
+  width: 92%;
+  height: 40vh;
   object-fit: cover;
+  margin-bottom: 28%;
   ${mobile({ height: "40vh" })}
  
 `;
@@ -123,20 +125,22 @@ const Amount = styled.span`
   margin: 0px 5px;
 `;
 
-const TopButton = styled.button`
-padding: 10px;
-margin-left: 40px;
-margin-top: 20px;
-font-weight: 600;
-cursor: pointer;
-border: ${props=>props.type === "filled" && "none"};
-background-color: ${props=>props.type === "filled" ? "#F1C55B" : "transparent"};
-color: ${props=>props.type === "filled" && "black"};
-`
+// const TopButton = styled.button`
+// padding: 10px;
+// margin-left: 40px;
+// margin-top: 20px;
+// font-weight: 600;
+// border-radius: 8px;
+// cursor: pointer;
+// border: ${props=>props.type === "filled" && "none"};
+// background-color: ${props=>props.type === "filled" ? "#F1C55B" : "transparent"};
+// color: ${props=>props.type === "filled" && "black"};
+// `
 
 const Button = styled.button`
   padding: 15px;
   border: 2px solid teal;
+  border-radius: 8px;
   background-color: white;
   cursor: pointer;
   font-weight: 500;
@@ -182,9 +186,9 @@ const Product = () => {
       <Navbar />
       <Announcement />
       <Link to="/products/Products">
-       <TopButton>
+       {/* <TopButton>
         CONTINUE SHOPPING
-       </TopButton>
+       </TopButton> */}
         </Link>
       <Wrapper>
         <ImgContainer>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -74,6 +74,7 @@ const Desc = styled.p`
 const Button = styled.button`
     padding: 10px;
     font-size: 20px;
+    border-radius: 8px;
     background-color: transparent;
     cursor: pointer;
 `

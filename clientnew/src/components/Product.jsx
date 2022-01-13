@@ -68,7 +68,6 @@ const Product = ({item}) => {
             <Circle/>
             <Image src={item.img}/>
             <Info>
-             
                 <Icon>
                   <Link to={`/product/${item._id}`}>
                     <SearchOutlined/>

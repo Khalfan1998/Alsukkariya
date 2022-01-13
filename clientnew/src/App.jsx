@@ -12,11 +12,13 @@ import {
 } from "react-router-dom";
 import Success from "./pages/Success";
 import { useSelector } from "react-redux";
+import ScrollToTop from "./ScrollToTop"
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
   return (
     <Router>
+      <ScrollToTop/>
       <Switch>
         <Route exact path="/">
           <Home/>

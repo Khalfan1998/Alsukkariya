@@ -30,10 +30,12 @@ const Center = styled.div`
     flex:1;
     text-align: center;
     ${mobile({ textAlign: "left" })}
+   
+   
     
 `
 const Image = styled.img`
-width: 8%;
+width: 20%;
 `
 
 
@@ -43,6 +45,7 @@ const Logo = styled.h1`
 "Logo:hover": { textDecoration: "underline" },
 "Logo:active": { textDecoration: "underline" }
     color: black;
+    font-size: 28px;
     font-weight: 800;
     ${mobile({ fontSize: "14px" })}
     ${mobile({ paddingLeft: "1px" })}
@@ -74,10 +77,26 @@ const Navbar = () => {
         <Container>
             <Wrapper>
             <Left>
-            <Image src ="https://i.postimg.cc/7LBs7Mwv/sukariya-logo.png"/>
+            <Link to="/" style={{textDecoration:"none"}}>
+                <MenuItem>Home</MenuItem>
+                </Link>
+                <Link to="/products/Products" style={{textDecoration:"none"}}>
+                <MenuItem>Products</MenuItem>
+                </Link>
+                <Link to="/products/Footer" style={{textDecoration:"none"}}>
+                <MenuItem>About Us</MenuItem>
+                </Link>
+                <Link to="/products/Footer" style={{textDecoration:"none"}}>
+                <MenuItem>Contact</MenuItem>
+                </Link>
             </Left>
             <Link to="/" style={{textDecoration:"none"}}>
-            <Center><Logo>Al-Sukkariya</Logo></Center>
+            
+            <Center>
+                <Image src ="https://i.postimg.cc/7LBs7Mwv/sukariya-logo.png"/>
+                {/* <Logo>Al-Sukkariya</Logo> */}
+                
+            </Center>
             </Link>
             <Right>
             <Link to="/register" style={{textDecoration:"none"}}>

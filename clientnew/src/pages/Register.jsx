@@ -55,6 +55,7 @@ margin: 20px 0px;
 const Button = styled.button`
 margin-left: 360px;
 width: 40%;
+border-radius: 8px;
 border:none;
 padding: 15px 20px;
 background-color: teal;
