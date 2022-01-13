@@ -12,6 +12,8 @@ import { userRequest } from '../requestMethods'
 import { useHistory } from 'react-router-dom'
 import { Link } from "react-router-dom";
 import { Badge } from '@material-ui/core'
+import { useDispatch } from "react-redux";
+import { resetCart } from '../redux/cartRedux'
 
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
@@ -23,6 +25,7 @@ padding: 20px;
 ${mobile({ padding: "10px" })}
 `
 const Title = styled.h1`
+font-size: 25px;
 font-weight: 300;
 text-align: center;
 `
@@ -183,10 +186,15 @@ const cart = useSelector(state=>state.cart)
 const [stripeToken,setStripeToken] = useState(null)
 const history = useHistory()
 const quantity = useSelector(state=>state.cart.quantity)
+const dispatch = useDispatch();
 
 const onToken = (token)=>{
     setStripeToken(token);
 }
+
+const handleClick = () => {
+    dispatch(resetCart());
+};
 
 useEffect(()=>{
     const makeRequest = async () =>{
@@ -225,7 +233,7 @@ useEffect(()=>{
                     </Link>
                     <TopTexts>
     
-                        <ClearButton type="filled">
+                        <ClearButton onClick={handleClick} type="filled">
                         Clear Cart
                     </ClearButton>
                     </TopTexts>
