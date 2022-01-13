@@ -222,8 +222,8 @@ useEffect(()=>{
                     YOUR SHOPPING CART
                 </Title>
                 <TopText>
-                Shopping Bag--(
-                                <Badge badgeContent={quantity} color="primary"></Badge>
+                Shopping Bag    
+                                <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}}></Badge>
                                 </TopText>
                 <Top>
                 <Link to="/products/Products">
