@@ -98,6 +98,7 @@ const ProductList = () => {
             <Products cat = {cat} filters= {filters} sort = {sort}/>
             <Footer/>
         </Container>
+        
     )
 }
 

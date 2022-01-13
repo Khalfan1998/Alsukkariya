@@ -139,7 +139,7 @@ const Amount = styled.span`
 
 const Button = styled.button`
   padding: 15px;
-  border: 2px solid teal;
+  border: 2px solid black;
   border-radius: 8px;
   background-color: white;
   cursor: pointer;
@@ -147,6 +147,9 @@ const Button = styled.button`
   &:hover{
       background-color: #f8f4f4;
   }
+  &:active{
+    background-color: green;
+}
 `;
 
 const Product = () => {

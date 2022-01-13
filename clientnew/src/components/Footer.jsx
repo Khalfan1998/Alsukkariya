@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
 display: flex;
+margin-top: 100px;
 ${mobile({ flexDirection: "column" })}
 `
 const Left = styled.div`

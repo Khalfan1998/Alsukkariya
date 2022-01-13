@@ -13,7 +13,8 @@ Add cash on delivery payment method
 Footer smaller 
 Make menu links go to bottom of page
 Change Font of whole page
-Make product image in same line as product title in product page
+make slider automatic home page
+
 
 
 Done:
@@ -23,12 +24,12 @@ Make logo go to home page
 Change checkout color button
 Rounded edges add to cart and color of product
 change button round edge
-Footer same color and size in every page
+Footer same color and size in every page(mobile)
 change sign in page/register page, backgrounds to hexagon
 remove categories section in home page
 make checkout button same color as product
 Remove continue shopping and put it as products in the menu instead
-
+Make product image in same line as product title in product page
 
 
 
