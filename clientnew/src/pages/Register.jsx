@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { mobile } from "../responsive"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Link } from "react-router-dom";
+
 //opacity
 {/*background:linear-gradient(
   rgba(255, 255, 255, 0.5),
@@ -53,7 +55,7 @@ font-size: 12px;
 margin: 20px 0px;
 `
 const Button = styled.button`
-margin-left: 360px;
+margin-left: 400px;
 width: 40%;
 border-radius: 8px;
 border:none;
@@ -84,7 +86,9 @@ const Register = () => {
                     <Agreement>
                         By creating an account, I consent to processing of my personal data in accordance with the <b>PRIVACY POLICY</b>
                     </Agreement>
-                    <Button>CREATE</Button>
+                    <Link to="/login">
+                     <Button>CREATE</Button>
+                        </Link>
                 </Form>
             </Wrapper>
             <FooterContainer>

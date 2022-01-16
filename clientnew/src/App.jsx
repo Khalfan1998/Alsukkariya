@@ -13,6 +13,7 @@ import {
 import Success from "./pages/Success";
 import { useSelector } from "react-redux";
 import ScrollToTop from "./ScrollToTop"
+import Checkout from "./pages/Checkout";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -41,6 +42,9 @@ const App = () => {
         </Route>
         <Route path="/register">
         {user ? <Redirect to ="/"/> : <Register/>}
+        </Route>
+        <Route path="/checkout">
+          <Checkout/>
         </Route>
       </Switch>
     </Router>

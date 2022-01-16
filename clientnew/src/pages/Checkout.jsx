@@ -18,11 +18,21 @@ import { resetCart } from '../redux/cartRedux'
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
 const Container = styled.div`
+background: url("https://i.postimg.cc/5yDzf6dR/background-fill.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+  center;
+background-size: cover;
+height: 120vh;
 
 `
 const Wrapper = styled.div`
+width: 25%;
 padding: 20px;
+background-color: white;
+margin-left: 35%;
+margin-top: 10%;
 ${mobile({ padding: "10px" })}
+${mobile({ width: "75%" })}
+${mobile({ marginLeft: "33px" })}
 `
 const Title = styled.h1`
 font-size: 25px;
@@ -49,6 +59,14 @@ color: ${props=>props.type === "filled" && "white"};
 ${mobile({ width: "70px" })}
 ${mobile({ marginLeft: "40px" })}
 ${mobile({ fontSize: "10px" })}
+`
+const FooterContainer = styled.div`
+background-color: white;
+margin-top: 20%;
+`
+const NavbarContainer = styled.div`
+background-color: white;
+${mobile({ paddingBottom: "5%" })}
 `
 
 // const TopButton = styled.button`
@@ -207,7 +225,7 @@ font-weight: 600;
 `
 
 
-const Cart = () => {
+const Checkout = () => {
 const cart = useSelector(state=>state.cart)
 const [stripeToken,setStripeToken] = useState(null)
 const history = useHistory()
@@ -241,66 +259,12 @@ useEffect(()=>{
 }, [stripeToken, cart.total, history]);
     return (
         <Container>
-            <Navbar/>
-            <Announcement/>
+            <NavbarContainer>
+          <Navbar/>
+          </NavbarContainer>
+           
             <Wrapper>
-                <Title>
-                    YOUR SHOPPING CART
-                </Title>
-                <TopText>
-                Shopping Bag    
-                                <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}} ></Badge>
-                                </TopText>
-                <Top>
-                <Link to="/products/Products">
-                    {/* <TopButton>
-                        CONTINUE SHOPPING
-                    </TopButton> */}
-                    </Link>
-                    <TopTexts>
-    
-                        <ClearButton onClick={handleClick} type="filled">
-                        Clear Cart
-                    </ClearButton>
-                    </TopTexts>
-                   
-                </Top>
-                <Bottom>
-                    <Info>
-                        {cart.products.map(product=>(
-                        <Product>
-                            <ProductDetail>
-                                <Image src={product.img}/>
-                                <Details>
-                                    <ProductName>
-                                        <b>Product:</b> {product.title}
-                                    </ProductName>
-                                    <ProductId>
-                                        <b>Description:</b> {product.desc}
-                                    </ProductId>
-
-                                </Details>
-                            </ProductDetail>
-                            <PriceDetail>
-                                <ProductAmountContainer>
-                                <Remove/>
-                                    <ProductAmount>
-                                        {product.quantity}
-                                    </ProductAmount>
-                                    <Add/>
-                                </ProductAmountContainer>
-                                <ProductPrice>
-                                  BHD  {product.price*product.quantity}
-                                </ProductPrice>
-                            </PriceDetail>
-                            <Hr/>
-                        </Product>
-                       
-                        ))}
-                        
-                        <Hr/>
-                        
-                    </Info>
+                
                     <Summary>
                         <SummaryTitle>
                             ORDER SUMMARY
@@ -337,31 +301,22 @@ useEffect(()=>{
                             BHD {cart.total}
                             </SummaryItemPrice>
                         </SummaryItem>
-                        {/* <StripeCheckout
-                        name="Khalfan Shop"
-                        image="https://i.postimg.cc/pTFsScVB/display2-removebg-preview.png"
-                        billingAddress
-                        shippingAddress
-                        description={`Your total is BHD${cart.total}`}
-                        amount={cart.total*100}
-                        token={onToken}
-                        stripeKey={KEY}
-                        > */}
-                        <Link to="/login">
-                            <CheckoutButton>Checkout</CheckoutButton>
-                            </Link>
-                            {/* <Button>BenefitPay</Button> */}
-                        {/* </StripeCheckout> */}
+                      
+                          
+                       <Button>BenefitPay</Button>
+                       
                         <br/>
                         <br/>
-                        {/* <CoDButton>CASH ON DELIVERY</CoDButton> */}
+                      <CoDButton>CASH ON DELIVERY</CoDButton> 
                         
                     </Summary>
-                </Bottom>
+               
             </Wrapper>
-            <Footer/>
+            <FooterContainer>
+      <Footer/>
+      </FooterContainer>
         </Container>
     )
 }
 
-export default Cart
+export default Checkout

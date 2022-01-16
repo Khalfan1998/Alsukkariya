@@ -5,6 +5,7 @@ import { mobile } from "../responsive";
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Link } from "react-router-dom";
 //opacity
 {/*background:linear-gradient(
   rgba(255, 255, 255, 0.5),
@@ -67,7 +68,7 @@ margin-bottom: 10px;
 ${mobile({ marginLeft: "170px" })}
 `
 
-const Link = styled.a`
+const Account = styled.a`
 margin: 5px 0px;
 font-size: 12px;
 text-decoration: underline;
@@ -106,12 +107,17 @@ const Login = () => {
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button onClick={handleClick} disabled={isFetching}>
+          <Link to="/checkout">
+          {/* for-Button onClick={handleClick} disabled={isFetching} */}
+          <Button>
             LOGIN
           </Button>
+          </Link>
           {error && <Error>Something went wrong...</Error>}
-          <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          <Account>DO NOT YOU REMEMBER THE PASSWORD?</Account>
+          <Link to="/register">
+          <Account>CREATE A NEW ACCOUNT</Account>
+          </Link>
         </Form>
       </Wrapper>
       <FooterContainer>
