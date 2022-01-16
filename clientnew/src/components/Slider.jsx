@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const Container = styled.div`
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -43,7 +43,7 @@ const Wrapper = styled.div`
 
 const Slide = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     background-color: #${props=>props.bg};
@@ -54,7 +54,10 @@ const ImgContainer = styled.div`
 `
 
 const Image = styled.img`
-    height: 80%;
+    height: 100%;
+    width: 80%;
+    
+    
 `
 
 const InfoContainer = styled.div`
@@ -63,7 +66,7 @@ const InfoContainer = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: 70px;
+    font-size: 40px;
 `
 const Desc = styled.p`
     margin: 50px 0px;

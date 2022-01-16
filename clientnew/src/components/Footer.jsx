@@ -4,6 +4,7 @@ import { mobile } from "../responsive"
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
+height: 20vh;
 display: flex;
 margin-top: 100px;
 ${mobile({ flexDirection: "column" })}
@@ -13,7 +14,9 @@ flex: 1;
 display: flex;
 flex-direction: column;
 padding: 20px;
+margin-left: 200px;
 ${mobile({ backgroundColor: "#eee" })}
+${mobile({ marginLeft: "0px"})}
 `
 
 const Logo = styled.h1`
@@ -41,7 +44,8 @@ cursor:pointer;
 const Center = styled.div`
 flex: 1;
 padding: 20px;
-${mobile({ display: "none" })}
+flex-wrap: wrap;
+
 ${mobile({ backgroundColor: "#eee" })}
 `
 
@@ -94,8 +98,9 @@ display: flex;
 align-items: center;
 `
 const Payment = styled.img`
-margin-left: 100px;
-width: 50%
+width: 40%;
+height: 200px;
+${mobile({ marginLeft: "120px" })}
 `
 
 
@@ -131,49 +136,44 @@ const Footer = () => {
                     </TwitterContainer> */}
                 </SocialContainer>
             </Left>
-            {/* <Center>
-                <Title>Useful Links</Title>
-                <List>
-                    <ListItem>
-                    <Link to="/" style={{textDecoration:"none"}}>
-                        Home
-                        </Link>
-                    </ListItem>
-                    <ListItem>
-                    <Link to="/cart" style={{textDecoration:"none"}}>
-                        Cart
-                        </Link>
-                    </ListItem>
-                    <ListItem>
-                    <Link to="/login" style={{textDecoration:"none"}}>
-                        Sign In
-                        </Link>
-                    </ListItem>
-                    <ListItem>
-                    <Link to="/register" style={{textDecoration:"none"}}>
-                        Register
-                        </Link>
-                    </ListItem>
-                    <ListItem>
-                    <Link to="/products/Products" style={{textDecoration:"none"}}>
-                        Products
-                        </Link>
-                    </ListItem>
-   
-                </List>
-            </Center> */}
-            <Right>
-                <Title>Contact</Title>
+            {/* <Title>Contact</Title>
                 <ContactItem><Room style={{marginRight:"10px"}}/>
                     Address 3123, Area 312313
                 </ContactItem>
                 <ContactItem><Phone style={{marginRight:"10px"}}/>
                     +973 3939393
-                    <Payment src ="https://i.postimg.cc/K8HS0KJb/Payment-options-from-Carus-Jewellery.png"/>
+                   
                 </ContactItem>
                 <ContactItem><MailOutline style={{marginRight:"10px"}}/>
                     contact@gmail.com
+                </ContactItem> */}
+                 <Center>
+                <Title>Contact</Title>
+                <List>
+                    <ListItem>
+                    
+                <ContactItem><Room style={{marginRight:"10px"}}/>
+                    Address 3123, Area 312313
                 </ContactItem>
+                        
+                    </ListItem>
+                    <ListItem>
+                    <ContactItem><Phone style={{marginLeft:"10px"}}/>
+                    +973 3939393
+                   
+                </ContactItem>
+                    </ListItem>
+                    <ListItem>
+                    <ContactItem><MailOutline style={{marginRight:"10px"}}/>
+                    contact@gmail.com
+                </ContactItem>
+                    </ListItem>
+            
+   
+                </List>
+            </Center> 
+            <Right>
+            <Payment src ="https://i.postimg.cc/hPJnRPvZ/1591801116711.png"/>
                 
             </Right>
         </Container>
