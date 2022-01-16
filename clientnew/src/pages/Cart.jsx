@@ -185,8 +185,16 @@ const Button = styled.button`
 width: 100%;
 padding: 10px;
 border-radius: 8px;
-background-color: #5D2C2F;
+background-color: #EA342E;
 color: white;
+font-weight: 600;
+`
+const CoDButton = styled.button`
+width: 100%;
+padding: 10px;
+border-radius: 8px;
+background-color: white;
+color: teal;
 font-weight: 600;
 `
 
@@ -331,8 +339,11 @@ useEffect(()=>{
                         token={onToken}
                         stripeKey={KEY}
                         >
-                            <Button>CHECKOUT NOW</Button>
+                            <Button>BenefitPay</Button>
                         </StripeCheckout>
+                        <br/>
+                        <br/>
+                        <CoDButton>CASH ON DELIVERY</CoDButton>
                         
                     </Summary>
                 </Bottom>

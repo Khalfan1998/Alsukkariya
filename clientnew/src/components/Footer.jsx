@@ -97,10 +97,13 @@ margin-bottom: 20px;
 display: flex;
 align-items: center;
 `
+const ContactMobile = styled.div`
+${mobile({ marginLeft: "90px" })}
+`
 const Payment = styled.img`
-width: 40%;
+width: 50%;
 height: 200px;
-${mobile({ marginLeft: "120px" })}
+${mobile({ marginLeft: "100px" })}
 `
 
 
@@ -158,15 +161,19 @@ const Footer = () => {
                         
                     </ListItem>
                     <ListItem>
-                    <ContactItem><Phone style={{marginLeft:"10px"}}/>
+                       
+                    <ContactItem><Phone style={{marginLeft:"10px"}} />
                     +973 3939393
-                   
+                    
                 </ContactItem>
+               
                     </ListItem>
                     <ListItem>
+                    <ContactMobile>
                     <ContactItem><MailOutline style={{marginRight:"10px"}}/>
                     contact@gmail.com
                 </ContactItem>
+                 </ContactMobile>
                     </ListItem>
             
    
