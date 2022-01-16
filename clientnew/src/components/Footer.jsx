@@ -173,7 +173,7 @@ const Footer = () => {
                 </List>
             </Center> 
             <Right>
-            <Payment src ="https://i.postimg.cc/hPJnRPvZ/1591801116711.png"/>
+            <Payment src ="https://i.postimg.cc/y8jXsBkt/1591801116711.png"/>
                 
             </Right>
         </Container>

@@ -8,7 +8,6 @@ Make + and - Button instantly remove or add amount to cart (reducer)
 Add Benefitpay UI instead of stripe( iban number, customer copy pastes, pays to owner)
 Benefitpay receipt to owner, after payment process order
 Add cash on delivery payment method
-Footer smaller 
 Make menu links go to bottom of page
 make slider automatic home page
 
@@ -30,6 +29,7 @@ Make product image in same line as product title in product page
 Change Font of whole page
 Make slider smaller height and make image bigger than text on right
 Animation for add to cart
+Footer smaller 
 
 
 
