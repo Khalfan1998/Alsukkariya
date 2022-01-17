@@ -2,6 +2,7 @@ import { Facebook, Instagram, MailOutline, Phone, Room, Twitter } from "@materia
 import styled from "styled-components"
 import { mobile } from "../responsive"
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 const Container = styled.div`
 height: 20vh;
@@ -14,13 +15,13 @@ flex: 1;
 display: flex;
 flex-direction: column;
 padding: 20px;
-margin-left: 200px;
+margin-left: 350px;
 ${mobile({ backgroundColor: "#eee" })}
 ${mobile({ marginLeft: "0px"})}
 `
 
 const Logo = styled.h1`
-
+cursor: pointer;
 `
 const Desc = styled.p`
 margin: 20px 0px;
@@ -44,7 +45,9 @@ cursor:pointer;
 const Center = styled.div`
 flex: 1;
 padding: 20px;
+margin-left: 40px;
 flex-wrap: wrap;
+${mobile({ marginLeft : "0px" })}
 
 ${mobile({ backgroundColor: "#eee" })}
 `
@@ -106,14 +109,16 @@ height: 200px;
 ${mobile({ marginLeft: "100px" })}
 `
 
+const scrollToTop = () => window.scrollTo({top: 0, behavior: "smooth"});
 
 
 
 const Footer = () => {
     return (
         <Container>
+            <ScrollToTop/>
             <Left>
-                <Logo>Al-Sukkariya</Logo>
+                <Logo onClick={scrollToTop}>Al-Sukkariya</Logo>
                 <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque nostrum culpa.</Desc>
                 <SocialContainer>
                     {/* <FacebookContainer>
@@ -180,7 +185,7 @@ const Footer = () => {
                 </List>
             </Center> 
             <Right>
-            <Payment src ="https://i.postimg.cc/CLw0RGmX/1591801116711.png"/>
+           
                 
             </Right>
         </Container>

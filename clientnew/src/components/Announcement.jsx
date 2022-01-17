@@ -2,7 +2,7 @@ import styled from "styled-components"
 import {mobile} from "../responsive"
 
 const Container = styled.div`
-    height: 20px;
+    height: 40px;
     background-color: #5D2C2F;
     color: white;
     display: flex;

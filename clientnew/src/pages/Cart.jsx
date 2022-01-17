@@ -145,7 +145,7 @@ font-size: 24px;
 ${mobile({ margin: "5px 15px" })}
 `
 const ProductPrice = styled.div`
-font-size: 30px;
+font-size: 0px;
 font-weight: 200;
 ${mobile({ marginBottom: "20px" })}
 `
@@ -182,8 +182,8 @@ const SummaryItemPrice = styled.span`
 
 `
 const CheckoutButton = styled.button`
-width: 50%;
-margin-left: 95px;
+width: 100%;
+
 padding: 10px;
 border-radius: 8px;
 background-color: black;
@@ -191,8 +191,8 @@ color: white;
 font-weight: 600;
 `
 const Button = styled.button`
-width: 50%;
-margin-left: 95px;
+width: 100%;
+
 padding: 10px;
 border-radius: 8px;
 background-color: #EA342E;
@@ -200,8 +200,8 @@ color: white;
 font-weight: 600;
 `
 const CoDButton = styled.button`
-width: 50%;
-margin-left: 95px;
+width: 100%;
+
 padding: 10px;
 border-radius: 8px;
 background-color: white;
@@ -246,14 +246,19 @@ useEffect(()=>{
         <Container>
             <Navbar/>
             <Announcement/>
+            <br/>
+            <br/>
             <Wrapper>
                 <Title>
                     YOUR SHOPPING CART
                 </Title>
+                <br/>
+            <br/>
                 <TopText>
                 Shopping Bag    
                                 <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}} ></Badge>
                                 </TopText>
+                                
                 <Top>
                 <Link to="/products/Products">
                     {/* <TopButton>
