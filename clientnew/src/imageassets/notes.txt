@@ -6,22 +6,22 @@ Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 Make + and - Button instantly remove or add amount to cart (reducer)
 Add cash on delivery payment method
-Make menu links go to bottom of page
+
 make slider automatic home page
 replace checkout button with benefit pay or cash. (then popout when clicked)
 If benefit pay (put in address and telephone number, copy paste iban number and pay, checkout.
 If cash (put in address and telephone number, checkout.
 Add Benefitpay UI instead of stripe( iban number, customer copy pastes, pays to owner)
 Benefitpay receipt to owner, after payment process order
-Add proceed to checkout button
-Login, or register an account
-Checkout page with order summary ( BenefitPay or Cash On Delivery)
-change benefitpay logo in footer
-
+Make Benefit Pay button and Cash on delivery button on same row
+Make Proceed to checkout if not logged in @ cart page
+If logged in show buttons benefit pay or cash @ cart page
 
 
 Done:
 
+Make menu links go to bottom of page
+change benefitpay logo in footer
 Make all the links go to the top of every page
 Make logo go to home page
 Change checkout color button
@@ -37,7 +37,10 @@ Change Font of whole page
 Make slider smaller height and make image bigger than text on right
 Animation for add to cart
 Footer smaller 
-
+Remove checkout Page
+Add proceed to checkout button
+Checkout page with order summary ( BenefitPay or Cash On Delivery)
+Login, or register an account
 
 
 

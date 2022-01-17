@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from 'styled-components'
 import {mobile} from "../responsive"
+import ScrollToTop from "../ScrollToTop";
 
 
 const Container = styled.div`
@@ -71,11 +72,16 @@ const MenuItem = styled.div`
 const Navbar = () => {
     const quantity = useSelector(state=>state.cart.quantity)
 
+    const scrollToBottom = () => window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth"
+    })
 
 
     return (
         <Container>
             <Wrapper>
+                <ScrollToTop/>
             <Left>
             <Link to="/" style={{textDecoration:"none"}}>
                 <MenuItem>Home</MenuItem>
@@ -83,12 +89,12 @@ const Navbar = () => {
                 <Link to="/products/Products" style={{textDecoration:"none"}}>
                 <MenuItem>Products</MenuItem>
                 </Link>
-                <Link to="/products/Footer" style={{textDecoration:"none"}}>
-                <MenuItem>About Us</MenuItem>
-                </Link>
-                <Link to="/products/Footer" style={{textDecoration:"none"}}>
-                <MenuItem>Contact</MenuItem>
-                </Link>
+               
+                <MenuItem onClick={scrollToBottom}>About Us</MenuItem>
+                
+                
+                <MenuItem onClick={scrollToBottom}>Contact</MenuItem>
+                
             </Left>
             <Link to="/" style={{textDecoration:"none"}}>
             

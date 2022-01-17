@@ -161,7 +161,7 @@ flex: 1;
 border: 0.5px solid lightgray;
 border-radius: 10px;
 padding: 20px;
-height: 50vh;
+height: 60vh;
 `
 
 
@@ -182,15 +182,17 @@ const SummaryItemPrice = styled.span`
 
 `
 const CheckoutButton = styled.button`
-width: 100%;
+width: 50%;
+margin-left: 95px;
 padding: 10px;
 border-radius: 8px;
-background-color: #5D2C2F;
+background-color: black;
 color: white;
 font-weight: 600;
 `
 const Button = styled.button`
-width: 100%;
+width: 50%;
+margin-left: 95px;
 padding: 10px;
 border-radius: 8px;
 background-color: #EA342E;
@@ -198,7 +200,8 @@ color: white;
 font-weight: 600;
 `
 const CoDButton = styled.button`
-width: 100%;
+width: 50%;
+margin-left: 95px;
 padding: 10px;
 border-radius: 8px;
 background-color: white;
@@ -348,13 +351,15 @@ useEffect(()=>{
                         stripeKey={KEY}
                         > */}
                         <Link to="/login">
-                            <CheckoutButton>Checkout</CheckoutButton>
+                            <CheckoutButton>Proceed to Checkout</CheckoutButton>
+                            <br/>
+                            <br/>
                             </Link>
-                            {/* <Button>BenefitPay</Button> */}
+                            <Button>BenefitPay</Button> 
                         {/* </StripeCheckout> */}
                         <br/>
                         <br/>
-                        {/* <CoDButton>CASH ON DELIVERY</CoDButton> */}
+                         <CoDButton>CASH ON DELIVERY</CoDButton>
                         
                     </Summary>
                 </Bottom>

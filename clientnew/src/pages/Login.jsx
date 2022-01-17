@@ -107,7 +107,7 @@ const Login = () => {
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Link to="/checkout">
+          <Link to="/cart">
           {/* for-Button onClick={handleClick} disabled={isFetching} */}
           <Button>
             LOGIN
