@@ -56,15 +56,15 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-export const Modal = ({ showModal, setShowModal }) => {
+export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
   return (
     <>
-      {showModal ? (
+      {showModalBenefit ? (
         <Background>
-          <ModalWrapper showModal={showModal}>
+          <ModalWrapper showModalBenefit={showModalBenefit}>
             <ModalContent>
               <form>
-                <h1>You will pay # BHD On Delivery</h1>
+                <h1>You will pay # BHD On BenefitPay To IBAN:9312379123</h1>
                 <div class="field">
                   <label for="name">Name:</label>
                   <input
@@ -106,7 +106,7 @@ export const Modal = ({ showModal, setShowModal }) => {
             </ModalContent>
             <CloseModalButton
               aria-label="Close modal"
-              onClick={() => setShowModal((prev) => !prev)}
+              onClick={() => setShowModalBenefit((prev) => !prev)}
             />
           </ModalWrapper>
         </Background>

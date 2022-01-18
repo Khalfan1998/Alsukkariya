@@ -15,6 +15,7 @@ import { Badge } from '@material-ui/core'
 import { useDispatch } from "react-redux";
 import { resetCart } from '../redux/cartRedux'
 import { Modal } from '../components/Modal'
+import { ModalBenefit } from '../components/ModalBenefit'
 import { GlobalStyle } from '../globalStyles'
 
 
@@ -223,10 +224,15 @@ const history = useHistory()
 const quantity = useSelector(state=>state.cart.quantity)
 const dispatch = useDispatch();
 const [showModal, setShowModal] = useState(false);
+const [showModalBenefit, setShowModalBenefit] = useState(false);
 
 const openModal = () => {
   setShowModal(prev => !prev);
 };
+
+const openModalBenefit = () => {
+    setShowModalBenefit(prev => !prev);
+  };
 
 const onToken = (token)=>{
     setStripeToken(token);
@@ -260,6 +266,8 @@ useEffect(()=>{
 
             <Wrapper>
                 <Modal showModal={showModal} setShowModal={setShowModal} />
+                <GlobalStyle />
+                <ModalBenefit showModalBenefit={showModalBenefit} setShowModalBenefit={setShowModalBenefit} />
                 <GlobalStyle />
                 <Title>
                     YOUR SHOPPING CART
@@ -369,7 +377,7 @@ useEffect(()=>{
                             <br/>
                             <br/>
                             </Link>
-                            <Button>BenefitPay</Button> 
+                            <Button onClick={openModalBenefit} >BenefitPay</Button> 
                         {/* </StripeCheckout> */}
                         <br/>
                         <br/>
