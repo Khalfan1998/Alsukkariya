@@ -153,7 +153,8 @@ ${mobile({ marginBottom: "20px" })}
 const Hr = styled.hr`
 background-color: #eee;
 border:none;
-height: 10px;
+margin-top: 20px;
+height: 5px;
 `
 
 const Summary = styled.div`
@@ -246,8 +247,7 @@ useEffect(()=>{
         <Container>
             <Navbar/>
             <Announcement/>
-            <br/>
-            <br/>
+
             <Wrapper>
                 <Title>
                     YOUR SHOPPING CART
@@ -283,9 +283,7 @@ useEffect(()=>{
                                     <ProductName>
                                         <b>Product:</b> {product.title}
                                     </ProductName>
-                                    <ProductId>
-                                        <b>Description:</b> {product.desc}
-                                    </ProductId>
+                                    
 
                                 </Details>
                             </ProductDetail>
@@ -306,8 +304,7 @@ useEffect(()=>{
                        
                         ))}
                         
-                        <Hr/>
-                        
+                    
                     </Info>
                     <Summary>
                         <SummaryTitle>
@@ -369,6 +366,7 @@ useEffect(()=>{
                     </Summary>
                 </Bottom>
             </Wrapper>
+            <Hr/>
             <Footer/>
         </Container>
     )

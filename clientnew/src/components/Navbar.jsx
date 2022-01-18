@@ -30,13 +30,13 @@ const Left = styled.div`
 const Center = styled.div`
     flex:1;
     text-align: center;
-    ${mobile({ textAlign: "left" })}
+
    
    
     
 `
 const Image = styled.img`
-width: 20%;
+width: 80%;
 `
 
 
@@ -66,7 +66,7 @@ const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
-    ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+    ${mobile({ fontSize: "8px", marginLeft: "10px" })}
 `
 
 const Navbar = () => {
@@ -99,7 +99,7 @@ const Navbar = () => {
             <Link to="/" style={{textDecoration:"none"}}>
             
             <Center>
-                <Image src ="https://i.postimg.cc/7LBs7Mwv/sukariya-logo.png"/>
+                <Image src ="https://i.postimg.cc/bwCJFWGx/Logo-S2.png"/>
                 {/* <Logo>Al-Sukkariya</Logo> */}
                 
             </Center>

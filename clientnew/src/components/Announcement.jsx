@@ -3,8 +3,8 @@ import {mobile} from "../responsive"
 
 const Container = styled.div`
     height: 40px;
-    background-color: #5D2C2F;
-    color: white;
+    background-color: lightgrey;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;

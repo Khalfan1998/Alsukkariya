@@ -7,15 +7,16 @@ import ScrollToTop from "../ScrollToTop";
 const Container = styled.div`
 height: 20vh;
 display: flex;
-margin-top: 100px;
+margin-top: 50px;
 ${mobile({ flexDirection: "column" })}
 `
 const Left = styled.div`
+margin-left: 150px;
 flex: 1;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 padding: 20px;
-margin-left: 350px;
+
 ${mobile({ backgroundColor: "#eee" })}
 ${mobile({ marginLeft: "0px"})}
 `
@@ -24,7 +25,7 @@ const Logo = styled.h1`
 cursor: pointer;
 `
 const Desc = styled.p`
-margin: 20px 0px;
+
 `
 const SocialContainer = styled.div`
 display: flex;
@@ -43,17 +44,19 @@ cursor:pointer;
 `
 
 const Center = styled.div`
-flex: 1;
+margin-left: 20px;
 padding: 20px;
-margin-left: 40px;
-flex-wrap: wrap;
+flex: 1;
+display: flex;
+flex-direction: row;
+align-items: center;
 ${mobile({ marginLeft : "0px" })}
 
 ${mobile({ backgroundColor: "#eee" })}
 `
 
 const Title = styled.h3`
-margin-bottom: 30px;
+
 `
 
 const List = styled.ul`
@@ -88,6 +91,11 @@ a:hover { text-decoration: none; color:white; }
 a:focus { text-decoration: none; color:white; }
 a:active { text-decoration: none; color:white; }
 `
+const Image = styled.img`
+padding-right: 50px;
+cursor: pointer;
+width: 35%;
+`
 
 const Right = styled.div`
 flex: 1;
@@ -118,7 +126,8 @@ const Footer = () => {
         <Container>
             <ScrollToTop/>
             <Left>
-                <Logo onClick={scrollToTop}>Al-Sukkariya</Logo>
+            <Image onClick={scrollToTop} src ="https://i.postimg.cc/bwCJFWGx/Logo-S2.png"/>
+                
                 <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque nostrum culpa.</Desc>
                 <SocialContainer>
                     {/* <FacebookContainer>
@@ -128,13 +137,7 @@ const Footer = () => {
                         </a>
                     </SocialIcon>
                     </FacebookContainer> */}
-                    <InstagramContainer>
-                    <SocialIcon color="E4405F">
-                    <a href="https://www.instagram.com/alsukkariya/" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
-                        <Instagram/>
-                        </a>
-                    </SocialIcon>
-                    </InstagramContainer>
+                    
                     {/* <TwitterContainer>
                     <SocialIcon color="55ACEE">
                         <a href ="https://twitter.com/alsukkariya" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
@@ -156,7 +159,7 @@ const Footer = () => {
                     contact@gmail.com
                 </ContactItem> */}
                  <Center>
-                <Title>Contact</Title>
+                
                 <List>
                     <ListItem>
                     
@@ -185,7 +188,13 @@ const Footer = () => {
                 </List>
             </Center> 
             <Right>
-           
+            <InstagramContainer>
+                    <SocialIcon color="E4405F">
+                    <a href="https://www.instagram.com/alsukkariya/" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
+                        <Instagram/>
+                        </a>
+                    </SocialIcon>
+                    </InstagramContainer>
                 
             </Right>
         </Container>

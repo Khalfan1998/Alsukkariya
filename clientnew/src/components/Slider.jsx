@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const Container = styled.div`
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -43,14 +43,14 @@ const Wrapper = styled.div`
 
 const Slide = styled.div`
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     background-color: #${props=>props.bg};
 `
 const ImgContainer = styled.div`
     height: 100%;
-    flex: 1;
+    flex: 4 1;
 `
 
 const Image = styled.img`
@@ -61,7 +61,9 @@ const Image = styled.img`
 `
 
 const InfoContainer = styled.div`
-    flex: 1;
+    margin-right: 80px;
+    width: 50px;
+    flex: 2 1;
     padding: 50px;
 `
 
@@ -80,6 +82,9 @@ const Button = styled.button`
     border-radius: 8px;
     background-color: transparent;
     cursor: pointer;
+    &:hover{
+        background-color: lightblue;
+    }
 `
 
 const Slider = () => {

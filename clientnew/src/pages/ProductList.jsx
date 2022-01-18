@@ -7,6 +7,10 @@ import Footer from "../components/Footer"
 import { mobile } from "../responsive"
 import { useLocation } from "react-router-dom"
 import { useState } from "react"
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { publicRequest } from "../requestMethods";
+
 
 const Container = styled.div`
 
@@ -14,6 +18,14 @@ const Container = styled.div`
 const Title = styled.h1`
 margin: 20px;
 `
+const Desc = styled.p`
+  margin: 20px 0px;
+`;
+
+const Price = styled.span`
+  font-weight: 100;
+  font-size: 40px;
+`;
 const FilterContainer = styled.div`
 display: flex;
 justify-content: space-between;
@@ -34,6 +46,12 @@ padding: 10px;
 margin-right: 20px;
 ${mobile({ margin: "10px 0px" })}
 `
+const InfoContainer = styled.div`
+  flex: 1;
+  padding: 0px 50px;
+  ${mobile({ padding: "10px" })}
+  
+`;
 
 const Option = styled.option`
 
@@ -44,6 +62,19 @@ const ProductList = () => {
     const cat = location.pathname.split("/")[2]
     const [filters,setFilters] = useState({})
     const [sort,setSort] = useState("newest")
+    const id = location.pathname.split("/")[2]
+    const [product,setProduct] = useState({});
+    const dispatch = useDispatch()
+  
+    useEffect(()=>{
+      const getProduct = async ()=>{
+        try {
+          const res = await publicRequest.get("/products/find/" + id)
+          setProduct(res.data);
+        } catch {}
+      }
+      getProduct();
+    },[id])
     
 
     const handleFilters = (e)=>{
@@ -96,6 +127,9 @@ const ProductList = () => {
                 </Filter>
             </FilterContainer>
             <Products cat = {cat} filters= {filters} sort = {sort}/>
+           
+            <br/>
+            <br/>
             <Footer/>
         </Container>
         
