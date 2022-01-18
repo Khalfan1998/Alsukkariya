@@ -11,7 +11,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
-    ${mobile({ display: "none" })}
+    ${mobile({ height: "20vh" })}
     
 `;
 
@@ -47,6 +47,7 @@ const Slide = styled.div`
     display: flex;
     align-items: center;
     background-color: #${props=>props.bg};
+    ${mobile({ height: "20vh" })}
 `
 const ImgContainer = styled.div`
     height: 100%;

@@ -8,8 +8,7 @@ Make each product show available sizes/colors
 
 Put dots under slider to show how many images there are
 add description price and title to products under page
-move shop now button in slider
-Make slider show in home page
+Make slider show in home page phone
 automatic slider
 Make admin panel
 Make Login / Register

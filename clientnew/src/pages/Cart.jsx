@@ -14,6 +14,11 @@ import { Link } from "react-router-dom";
 import { Badge } from '@material-ui/core'
 import { useDispatch } from "react-redux";
 import { resetCart } from '../redux/cartRedux'
+import { Modal } from '../components/Modal'
+import { GlobalStyle } from '../globalStyles'
+
+
+
 
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
@@ -202,7 +207,7 @@ font-weight: 600;
 `
 const CoDButton = styled.button`
 width: 100%;
-
+cursor: pointer;
 padding: 10px;
 border-radius: 8px;
 background-color: white;
@@ -217,6 +222,11 @@ const [stripeToken,setStripeToken] = useState(null)
 const history = useHistory()
 const quantity = useSelector(state=>state.cart.quantity)
 const dispatch = useDispatch();
+const [showModal, setShowModal] = useState(false);
+
+const openModal = () => {
+  setShowModal(prev => !prev);
+};
 
 const onToken = (token)=>{
     setStripeToken(token);
@@ -249,6 +259,8 @@ useEffect(()=>{
             <Announcement/>
 
             <Wrapper>
+                <Modal showModal={showModal} setShowModal={setShowModal} />
+                <GlobalStyle />
                 <Title>
                     YOUR SHOPPING CART
                 </Title>
@@ -361,7 +373,7 @@ useEffect(()=>{
                         {/* </StripeCheckout> */}
                         <br/>
                         <br/>
-                         <CoDButton>CASH ON DELIVERY</CoDButton>
+                         <CoDButton onClick={openModal} >CASH ON DELIVERY</CoDButton>
                         
                     </Summary>
                 </Bottom>
