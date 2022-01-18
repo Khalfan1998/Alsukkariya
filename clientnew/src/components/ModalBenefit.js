@@ -15,7 +15,7 @@ const ModalWrapper = styled.div`
   width: 800px;
   height: 450px;
   box-shadow: 0 5px 16px rgba(0, 0, 0.2);
-  background: #fff;
+  background: #f1fcfd;
   color: #000;
   display: grid;
   //   grid-template-columns: 1fr 1fr;
@@ -26,6 +26,7 @@ const ModalWrapper = styled.div`
 `;
 
 const ModalContent = styled.div`
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
