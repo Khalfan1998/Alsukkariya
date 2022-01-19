@@ -3,6 +3,9 @@ import { mobile } from "../responsive"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
+import { register } from "../redux/apiCalls";
+import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 
 //opacity
 {/*background:linear-gradient(
@@ -64,7 +67,19 @@ cursor: pointer;
 ${mobile({ marginLeft: "170px" })}
 `
 
+
 const Register = () => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const dispatch = useDispatch();
+    
+  
+    const handleClick = (e) => {
+      e.preventDefault();
+      register(dispatch, { username, password, email });
+    };
+
     return (
         <Container>
               <NavbarContainer>
@@ -77,16 +92,20 @@ const Register = () => {
                 <Form>
                     <Input placeholder="name"/>
                     <Input placeholder="last name"/>
-                    <Input placeholder="username"/>
-                    <Input placeholder="email"/>
-                    <Input placeholder="password" type="password"/>
+                    <Input placeholder="username"
+                        onChange={(e) => setUsername(e.target.value)}/>
+                    <Input placeholder="email"
+                        onChange={(e) => setEmail(e.target.value)}/>
+                    <Input placeholder="password"
+                        type="password"
+                        onChange={(e) => setPassword(e.target.value)}/>
                     <Input placeholder="confirm password" type="password"/>
                     <Agreement>
                         By creating an account, I consent to processing of my personal data in accordance with the <b>PRIVACY POLICY</b>
                     </Agreement>
-                    <Link to="/login">
-                     <Button>CREATE</Button>
-                        </Link>
+                    
+                     <Button onClick={handleClick}>CREATE</Button>
+                        
                 </Form>
             </Wrapper>
             <FooterContainer>

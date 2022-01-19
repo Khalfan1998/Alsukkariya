@@ -105,7 +105,7 @@ const Navbar = () => {
             </Center>
             </Link>
             <Right>
-            <MenuItem>Logout</MenuItem>
+            <MenuItem >Logout</MenuItem>
             <Link to="/register" style={{textDecoration:"none"}}>
                 <MenuItem>REGISTER</MenuItem>
                 </Link>
