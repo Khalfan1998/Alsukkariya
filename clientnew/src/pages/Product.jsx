@@ -29,9 +29,10 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: 92%;
+  width: 35%;
   height: 40vh;
   object-fit: cover;
+  margin-left: 30%;
   margin-bottom: 28%;
   ${mobile({ height: "40vh" })}
  
@@ -46,6 +47,7 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-weight: 200;
+  color: #236750;
 `;
 
 const Desc = styled.p`
@@ -55,6 +57,7 @@ const Desc = styled.p`
 const Price = styled.span`
   font-weight: 100;
   font-size: 40px;
+  color: #AC8252;
 `;
 
 const FilterContainer = styled.div`

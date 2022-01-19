@@ -1,7 +1,7 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://i.postimg.cc/SKwkZqmd/slider3alsukkariya.png",
+    img: "https://i.postimg.cc/Z5sTdpg1/slider1alsukkariya.png",
     title: "Premium Dates & more | تمور فاخرة وأكثر 🌴",
     desc: "amet consectetur morbi tristique... ",
     bg: "f1fcfd",
@@ -17,7 +17,7 @@ export const sliderItems = [
 
   {
     id: 3,
-    img: "https://i.postimg.cc/Z5sTdpg1/slider1alsukkariya.png",
+    img: "https://i.postimg.cc/SKwkZqmd/slider3alsukkariya.png",
     title: "منقاة بعناية من أفضل مزارع القصيم🌴",
     desc: "amet consectetur morbi tristique...",
     bg: "fbf0f4",
