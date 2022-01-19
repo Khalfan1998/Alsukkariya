@@ -12,9 +12,7 @@ import { Link } from "react-router-dom";
   rgba(255, 255, 255, 0.5)
 ), */}
 const Container = styled.div`
-background: url("https://i.postimg.cc/5yDzf6dR/background-fill.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-  center;
-background-size: cover;
+background-color: #eee;
 height: 100vh;
 
 `

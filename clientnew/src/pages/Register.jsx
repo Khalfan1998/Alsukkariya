@@ -12,9 +12,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
 height: 100vh;
-background:url("https://i.postimg.cc/5yDzf6dR/background-fill.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-    center;
-background-size: cover;
+background-color: #eee
 `
 const Wrapper = styled.div`
 width: 40%;

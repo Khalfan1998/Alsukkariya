@@ -6,18 +6,19 @@ Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 
 
+(MAIN) Make admin panel
+(MAIN) Make Login / Register
+(MAIN) Make + and - Button instantly remove or add amount to cart (reducer)
+(MAIN) Benefitpay order to owner, receipt to customer, after payment process order
+(MAIN) Cash on delivery order to owner, receipt to customer, after payment process order
 Put dots under slider to show how many images there are
 add description price and title to products under page
 Make slider show in home page phone
 automatic slider
-Make admin panel
-Make Login / Register
-Make + and - Button instantly remove or add amount to cart (reducer)
 make slider automatic home page
 If Benefit pay (put in name, address and telephone number, copy paste iban number and pay, Order.
 If Cash (put in name, address and telephone number, Order.
 Add Benefitpay UI instead of stripe( iban number, customer copy pastes, pays to owner)
-Benefitpay receipt to owner, after payment process order
 Make Benefit Pay button and Cash on delivery button on same row
 Make Proceed to checkout if not logged in @ cart page
 If logged in show buttons benefit pay or cash @ cart page

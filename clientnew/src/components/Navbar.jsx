@@ -9,7 +9,7 @@ import ScrollToTop from "../ScrollToTop";
 
 
 const Container = styled.div`
-    height: 60px;
+    height: 80px;
     ${mobile({ height: "50px" })}
 `
 
@@ -36,7 +36,7 @@ const Center = styled.div`
     
 `
 const Image = styled.img`
-width: 80%;
+width: 110%;
 `
 
 
