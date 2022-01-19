@@ -80,7 +80,7 @@ const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const dispatch = useDispatch();
-    const { isFetching, error } = useSelector((state) => state.user);
+    
   
     const handleClick = (e) => {
       e.preventDefault();
@@ -105,13 +105,10 @@ const Login = () => {
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Link to="/cart">
-          {/* for-Button onClick={handleClick} disabled={isFetching} */}
-          <Button>
+        <Button onClick={handleClick} >
             LOGIN
           </Button>
-          </Link>
-          {error && <Error>Something went wrong...</Error>}
+         
           <Account>DO NOT YOU REMEMBER THE PASSWORD?</Account>
           <Link to="/register">
           <Account>CREATE A NEW ACCOUNT</Account>

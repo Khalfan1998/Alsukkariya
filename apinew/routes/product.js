@@ -11,6 +11,7 @@ const router = require("express").Router();
 
 router.post("/", verifyTokenAndAdmin, async (req, res) => {
   const newProduct = new Product(req.body);
+
   try {
     const savedProduct = await newProduct.save();
     res.status(200).json(savedProduct);
@@ -19,7 +20,7 @@ router.post("/", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-// //UPDATE
+//UPDATE
 router.put("/:id", verifyTokenAndAdmin, async (req, res) => {
   try {
     const updatedProduct = await Product.findByIdAndUpdate(

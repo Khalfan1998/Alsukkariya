@@ -11,6 +11,7 @@ const router = require("express").Router();
 
 router.post("/", verifyToken, async (req, res) => {
   const newCart = new Cart(req.body);
+
   try {
     const savedCart = await newCart.save();
     res.status(200).json(savedCart);
@@ -19,10 +20,10 @@ router.post("/", verifyToken, async (req, res) => {
   }
 });
 
-// //UPDATE
+//UPDATE
 router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
   try {
-    const updatedCart = await Product.findByIdAndUpdate(
+    const updatedCart = await Cart.findByIdAndUpdate(
       req.params.id,
       {
         $set: req.body,
