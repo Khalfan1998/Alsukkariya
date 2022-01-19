@@ -5,6 +5,7 @@ import {
   registerStart,
   registerSuccess,
   registerFailure,
+  logout,
 } from "./userRedux";
 import { publicRequest } from "../requestMethods";
 
@@ -26,4 +27,8 @@ export const register = async (dispatch, user) => {
   } catch (err) {
     dispatch(registerFailure());
   }
+};
+
+export const logOut = async (dispatch, user) => {
+  dispatch(logout());
 };

@@ -1,11 +1,13 @@
 import { Badge } from "@material-ui/core";
 import { ShoppingCartOutlined } from "@material-ui/icons";
 import React from 'react'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from 'styled-components'
+import { logOut } from "../redux/apiCalls";
 import {mobile} from "../responsive"
 import ScrollToTop from "../ScrollToTop";
+
 
 
 const Container = styled.div`
@@ -71,12 +73,20 @@ const MenuItem = styled.div`
 
 const Navbar = () => {
     const quantity = useSelector(state=>state.cart.quantity)
+    const dispatch = useDispatch();
 
     const scrollToBottom = () => window.scrollTo({
         top: document.documentElement.scrollHeight,
         behavior: "smooth"
     })
 
+
+    
+  
+    const handleClick = (e) => {
+      e.preventDefault();
+      logOut(dispatch);
+    };
 
     return (
         <Container>
@@ -105,7 +115,7 @@ const Navbar = () => {
             </Center>
             </Link>
             <Right>
-            <MenuItem >Logout</MenuItem>
+            <MenuItem onClick={handleClick}>Logout</MenuItem>
             <Link to="/register" style={{textDecoration:"none"}}>
                 <MenuItem>REGISTER</MenuItem>
                 </Link>
