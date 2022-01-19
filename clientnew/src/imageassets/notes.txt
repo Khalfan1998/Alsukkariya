@@ -6,7 +6,8 @@ Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 
 
-Make register take you to login page instead of instantly logging in
+If logged in, hide sign in and register
+if not logged in, hide logout
 (MAIN) Make admin panel
 (MAIN) Make Login / Register
 (MAIN) Make + and - Button instantly remove or add amount to cart (reducer)

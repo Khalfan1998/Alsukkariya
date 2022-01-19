@@ -100,8 +100,8 @@ flex: 2;
 display: flex;
 `
 const Image = styled.img`
-height: 180px;
-width: 200px;
+height: 250px;
+width: 250px;
 `
 const Details = styled.div`
 padding: 20px;

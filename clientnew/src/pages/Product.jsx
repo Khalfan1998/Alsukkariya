@@ -29,11 +29,11 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: 35%;
-  height: 40vh;
-  object-fit: cover;
-  margin-left: 30%;
-  margin-bottom: 28%;
+width: 92%;
+height: 40vh;
+object-fit: cover;
+margin-bottom: 28%;
+margin-left: 10%;
   ${mobile({ height: "40vh" })}
  
 `;
