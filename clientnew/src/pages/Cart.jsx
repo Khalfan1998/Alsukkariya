@@ -24,7 +24,7 @@ import { GlobalStyle } from '../globalStyles'
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
 const Container = styled.div`
-
+background: #eae8e6;
 `
 const Wrapper = styled.div`
 padding: 20px;
@@ -165,10 +165,19 @@ height: 5px;
 
 const Summary = styled.div`
 flex: 1;
-border: 0.5px solid lightgray;
+border: 1.5px solid lightgray;
+background: white;
 border-radius: 10px;
 padding: 20px;
 height: 60vh;
+`
+const FooterContainer = styled.div`
+background-color: white;
+
+`
+const NavbarContainer = styled.div`
+background-color: white;
+${mobile({ paddingBottom: "5%" })}
 `
 
 
@@ -261,7 +270,9 @@ useEffect(()=>{
 }, [stripeToken, cart.total, history]);
     return (
         <Container>
-            <Navbar/>
+            <NavbarContainer>
+          <Navbar/>
+          </NavbarContainer>
             <Announcement/>
 
             <Wrapper>
@@ -386,8 +397,10 @@ useEffect(()=>{
                     </Summary>
                 </Bottom>
             </Wrapper>
-            <Hr/>
-            <Footer/>
+            
+            <FooterContainer>
+      <Footer/>
+      </FooterContainer>
         </Container>
     )
 }

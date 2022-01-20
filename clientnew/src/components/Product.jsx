@@ -27,7 +27,7 @@ import styled from "styled-components";
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
+    background: #eae8e6;
     position: relative;
     &:hover ${Info}{
       opacity: 1;

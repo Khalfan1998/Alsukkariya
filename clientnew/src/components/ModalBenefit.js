@@ -15,7 +15,7 @@ const ModalWrapper = styled.div`
   width: 800px;
   height: 450px;
   box-shadow: 0 5px 16px rgba(0, 0, 0.2);
-  background: #f1fcfd;
+  background: #eae8e6;
   color: #000;
   display: grid;
   //   grid-template-columns: 1fr 1fr;
@@ -56,6 +56,49 @@ const CloseModalButton = styled(MdClose)`
   padding: 0;
   z-index: 10;
 `;
+const Title = styled.h1`
+  @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+  font-family: "Maven Pro", sans-serif;
+  margin-left: 80px;
+  font-size: 24px;
+  font-weight: 300;
+`;
+const FooterContainer = styled.div`
+  background-color: white;
+  margin-top: 15%;
+`;
+const NavbarContainer = styled.div`
+  background-color: white;
+`;
+
+const Form = styled.form`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Input = styled.input`
+  flex: 1;
+  min-width: 40%;
+  margin: 20px 200px 0px 40px;
+  padding: 10px;
+`;
+const Agreement = styled.span`
+  font-size: 12px;
+  margin: 20px 0px;
+`;
+const Button = styled.button`
+  margin-top: 50px;
+  margin-left: 500px;
+  width: 15%;
+  height: 15%;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 20px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+`;
 
 export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
   return (
@@ -64,46 +107,21 @@ export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
         <Background>
           <ModalWrapper showModalBenefit={showModalBenefit}>
             <ModalContent>
-              <form>
-                <h1>You will pay # BHD On BenefitPay To IBAN:9312379123</h1>
-                <div class="field">
-                  <label for="name">Name:</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                <div class="field">
-                  <label for="email">Email:</label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email address"
-                  />
-                </div>
-                <div class="field">
-                  <label for="name">Address:</label>
-                  <input
-                    type="text"
-                    id="address"
-                    name="address"
-                    placeholder="Enter your fullname"
-                  />
-                </div>
-                <div class="field">
-                  <label for="name">Phone Number:</label>
-                  <input
-                    type="number"
-                    id="number"
-                    name="number"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                <button type="order">Order</button>
-              </form>
+              <Title>
+                You will pay <span style={{ fontWeight: "bold" }}> # BHD </span>{" "}
+                On BenefitPay To{" "}
+                <span style={{ fontWeight: "bold", marginLeft: "100px" }}>
+                  IBAN:9312379123
+                </span>
+              </Title>
+              <Form>
+                <Input placeholder="Name" />
+                <Input placeholder="E-mail" />
+                <Input placeholder="Address" />
+                <Input placeholder="Phone number" />
+
+                <Button>Order</Button>
+              </Form>
             </ModalContent>
             <CloseModalButton
               aria-label="Close modal"

@@ -6,16 +6,32 @@ import Navbar from '../components/Navbar'
 //import Newsletter from '../components/Newsletter'
 import Products from '../components/Products'
 import Slider from '../components/Slider'
+import styled from "styled-components";
+import { mobile } from "../responsive";
+
+const FooterContainer = styled.div`
+background-color: white;
+
+`
+const NavbarContainer = styled.div`
+background-color: white;
+${mobile({ paddingBottom: "5%" })}
+`
+
 
 const Home = () => {
     return (
-        <div>
-            <Navbar/>
+        <div style={{ background: "#eae8e6" }} >
+            <NavbarContainer>
+          <Navbar/>
+          </NavbarContainer>
             <Announcement/>
             <Slider/>
             {/* <Categories/> */}
             <Products />
-            <Footer/>
+            <FooterContainer>
+      <Footer/>
+      </FooterContainer>
         </div>
     )
 }

@@ -56,7 +56,7 @@ const Desc = styled.p`
 
 const Price = styled.span`
   font-weight: 100;
-  font-size: 40px;
+  font-size: 30px;
   color: #AC8252;
 `;
 

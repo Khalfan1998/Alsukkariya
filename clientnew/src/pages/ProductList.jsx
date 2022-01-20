@@ -13,7 +13,7 @@ import { publicRequest } from "../requestMethods";
 
 
 const Container = styled.div`
-
+background: #eae8e6;
 `
 const Title = styled.h1`
 margin: 20px;
@@ -53,6 +53,15 @@ const InfoContainer = styled.div`
   
 `;
 
+const FooterContainer = styled.div`
+background-color: white;
+
+`
+const NavbarContainer = styled.div`
+background-color: white;
+${mobile({ paddingBottom: "5%" })}
+`
+
 const Option = styled.option`
 
 `
@@ -88,7 +97,9 @@ const ProductList = () => {
     
     return (
         <Container>
-            <Navbar/>
+             <NavbarContainer>
+          <Navbar/>
+          </NavbarContainer>
             <Announcement/>
             <Title>{cat}</Title>
             <FilterContainer>
@@ -130,7 +141,9 @@ const ProductList = () => {
            
             <br/>
             <br/>
-            <Footer/>
+            <FooterContainer>
+      <Footer/>
+      </FooterContainer>
         </Container>
         
     )

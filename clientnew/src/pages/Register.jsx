@@ -15,10 +15,11 @@ import { useState } from "react";
 
 const Container = styled.div`
 height: 100vh;
-background-color: #eee
+background: #EAE8E6;
 `
 const Wrapper = styled.div`
 width: 40%;
+border: 1px solid black;
 margin-left: 30%;
 margin-top: 10%;
 padding: 20px;

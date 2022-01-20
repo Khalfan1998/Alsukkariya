@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
   rgba(255, 255, 255, 0.5)
 ), */}
 const Container = styled.div`
-background-color: #eee;
+background: #EAE8E6;
 height: 100vh;
 
 `
@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 width: 25%;
 padding: 20px;
 background-color: white;
+border: 1px solid black;
 margin-left: 35%;
 margin-top: 10%;
 ${mobile({ width: "75%" })}

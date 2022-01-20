@@ -5,7 +5,7 @@ const Container = styled.div`
     height: 40px;
     background: url("https://i.postimg.cc/5yDzf6dR/background-fill.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
     center;
-  background-size: cover;
+  background-size: 2000px 100px;
     color: white;
     display: flex;
     align-items: center;
