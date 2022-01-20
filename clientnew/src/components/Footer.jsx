@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 import ScrollToTop from "../ScrollToTop";
 
 const Container = styled.div`
+background: #eae8e6;
 height: 20vh;
 display: flex;
 margin-top: 50px;
 ${mobile({ flexDirection: "column" })}
 `
 const Left = styled.div`
-margin-left: 150px;
+margin-top: 20px;
+margin-left: 0px;
 flex: 1;
 display: flex;
 flex-direction: row;
@@ -44,7 +46,7 @@ cursor:pointer;
 `
 
 const Center = styled.div`
-margin-left: 20px;
+margin-right: 100px;
 padding: 20px;
 flex: 1;
 display: flex;
@@ -64,7 +66,7 @@ margin: 0;
 padding: 0;
 list-style: none;
 display: flex;
-flex-wrap: wrap;
+
 `
 
 const ListItem = styled.li`
@@ -94,11 +96,12 @@ a:active { text-decoration: none; color:white; }
 const Image = styled.img`
 padding-right: 50px;
 cursor: pointer;
-width: 35%;
+width: 25%;
 `
 
 const Right = styled.div`
-flex: 1;
+margin-top: 20px;
+flex: end;
 padding: 20px;
 ${mobile({ backgroundColor: "#eee" })}
 `

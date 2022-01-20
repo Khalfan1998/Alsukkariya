@@ -12,14 +12,13 @@ import { Link } from "react-router-dom";
   rgba(255, 255, 255, 0.5)
 ), */}
 const Container = styled.div`
-background: #EAE8E6;
 height: 100vh;
 
 `
 const Wrapper = styled.div`
 width: 25%;
 padding: 20px;
-background-color: white;
+background: #eae8e6;
 border: 1px solid black;
 margin-left: 35%;
 margin-top: 10%;
@@ -48,6 +47,8 @@ flex-direction: column;
 
 const Input = styled.input`
 flex: 1;
+border-radius: 8px;
+border:none;
 min-width: 40%;
 margin: 10px 0;
 padding: 10px;

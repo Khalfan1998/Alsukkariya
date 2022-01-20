@@ -80,6 +80,7 @@ const Form = styled.form`
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
+  border-radius: 8px;
   margin: 20px 200px 0px 40px;
   padding: 10px;
 `;
@@ -88,7 +89,7 @@ const Agreement = styled.span`
   margin: 20px 0px;
 `;
 const Button = styled.button`
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 500px;
   width: 15%;
   height: 15%;

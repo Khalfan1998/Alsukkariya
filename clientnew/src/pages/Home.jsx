@@ -21,7 +21,7 @@ ${mobile({ paddingBottom: "5%" })}
 
 const Home = () => {
     return (
-        <div style={{ background: "#eae8e6" }} >
+        <div>
             <NavbarContainer>
           <Navbar/>
           </NavbarContainer>

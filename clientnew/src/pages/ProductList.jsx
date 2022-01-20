@@ -13,7 +13,7 @@ import { publicRequest } from "../requestMethods";
 
 
 const Container = styled.div`
-background: #eae8e6;
+
 `
 const Title = styled.h1`
 margin: 20px;

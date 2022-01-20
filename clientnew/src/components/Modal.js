@@ -81,6 +81,7 @@ const Form = styled.form`
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
+  border-radius: 8px;
   margin: 20px 200px 0px 140px;
   padding: 10px;
 `;
@@ -110,7 +111,7 @@ export const Modal = ({ showModal, setShowModal }) => {
             <ModalContent>
               <Title>
                 You will pay <span style={{ fontWeight: "bold" }}> # BHD </span>{" "}
-                On Delivery
+                Cash On Delivery
               </Title>
               <Form>
                 <Input placeholder="Name" />

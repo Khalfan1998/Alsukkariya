@@ -15,7 +15,7 @@ import { useState } from "react";
 
 const Container = styled.div`
 height: 100vh;
-background: #EAE8E6;
+
 `
 const Wrapper = styled.div`
 width: 40%;
@@ -23,7 +23,7 @@ border: 1px solid black;
 margin-left: 30%;
 margin-top: 10%;
 padding: 20px;
-background-color: white;
+background: #eae8e6;
 ${mobile({ width: "75%" })}
 ${mobile({ marginLeft: "33px" })}
 `
@@ -47,6 +47,8 @@ flex-wrap: wrap;
 
 const Input = styled.input`
 flex: 1;
+border-radius: 8px;
+border:none;
 min-width: 40%;
 margin: 20px 10px 0px 0px;
 padding: 10px;

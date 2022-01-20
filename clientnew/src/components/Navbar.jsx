@@ -11,6 +11,7 @@ import ScrollToTop from "../ScrollToTop";
 
 
 const Container = styled.div`
+background: #eae8e6;
     height: 80px;
     ${mobile({ height: "50px" })}
 `

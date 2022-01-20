@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 
 
 const Container = styled.div`
+
 `;
 
 const Wrapper = styled.div`
@@ -127,6 +128,14 @@ const Amount = styled.span`
   justify-content: center;
   margin: 0px 5px;
 `;
+const FooterContainer = styled.div`
+background-color: white;
+
+`
+const NavbarContainer = styled.div`
+background-color: white;
+${mobile({ paddingBottom: "5%" })}
+`
 
 // const TopButton = styled.button`
 // padding: 10px;
@@ -189,7 +198,9 @@ const Product = () => {
 
   return (
     <Container>
-      <Navbar />
+      <NavbarContainer>
+          <Navbar/>
+          </NavbarContainer>
       <Announcement />
       <Link to="/products/Products">
        {/* <TopButton>
@@ -217,7 +228,9 @@ const Product = () => {
         </InfoContainer>
       </Wrapper>
        
-      <Footer />
+      <FooterContainer>
+      <Footer/>
+      </FooterContainer>
     </Container>
   );
 };

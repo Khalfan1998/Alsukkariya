@@ -24,7 +24,7 @@ import { GlobalStyle } from '../globalStyles'
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
 const Container = styled.div`
-background: #eae8e6;
+
 `
 const Wrapper = styled.div`
 padding: 20px;
