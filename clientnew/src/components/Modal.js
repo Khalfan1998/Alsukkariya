@@ -82,6 +82,7 @@ const Input = styled.input`
   flex: 1;
   min-width: 40%;
   border-radius: 8px;
+  border: none;
   margin: 20px 200px 0px 140px;
   padding: 10px;
 `;

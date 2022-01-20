@@ -52,8 +52,9 @@ flex: 1;
 display: flex;
 flex-direction: row;
 align-items: center;
-${mobile({ marginLeft : "0px" })}
-
+${mobile({ flexWrap : "wrap" })}
+${mobile({ flexDirection : "column" })}
+${mobile({ marginRight : "0px" })}
 ${mobile({ backgroundColor: "#eee" })}
 `
 
@@ -66,7 +67,8 @@ margin: 0;
 padding: 0;
 list-style: none;
 display: flex;
-
+${mobile({ flexDirection : "column" })}
+${mobile({ marginRight : "50px" })}
 `
 
 const ListItem = styled.li`
@@ -74,6 +76,7 @@ width: 50%;
 margin-bottom: 10px;
 cursor: pointer;
 color: black;
+
 `
 const FacebookContainer = styled.a`
 a:visited { text-decoration: none; color:white; }
@@ -97,13 +100,17 @@ const Image = styled.img`
 padding-right: 50px;
 cursor: pointer;
 width: 25%;
+${mobile({ display : "none" })}
 `
 
 const Right = styled.div`
 margin-top: 20px;
 flex: end;
 padding: 20px;
-${mobile({ backgroundColor: "#eee" })}
+
+${mobile({ flex : "1" })}
+${mobile({ marginTop : "0px" })}
+${mobile({ marginLeft : "150px" })}
 `
 
 const ContactItem = styled.div`
@@ -112,7 +119,7 @@ display: flex;
 align-items: center;
 `
 const ContactMobile = styled.div`
-${mobile({ marginLeft: "90px" })}
+${mobile({ marginLeft: "10px" })}
 `
 const Payment = styled.img`
 width: 50%;
@@ -166,7 +173,7 @@ const Footer = () => {
                 <List>
                     <ListItem>
                     
-                <ContactItem><Room style={{marginRight:"10px"}}/>
+                <ContactItem><Room style={{marginRight:"10px", marginBottom:"18px"}}/>
                     Address 3123, Area 312313
                 </ContactItem>
                         
