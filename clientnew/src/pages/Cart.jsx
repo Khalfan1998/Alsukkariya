@@ -17,6 +17,7 @@ import { resetCart } from '../redux/cartRedux'
 import { Modal } from '../components/Modal'
 import { ModalBenefit } from '../components/ModalBenefit'
 import { GlobalStyle } from '../globalStyles'
+import Navbarmobile from '../components/Navbarmobile'
 
 
 
@@ -195,6 +196,7 @@ const SummaryItemText = styled.span`
 
 `
 const SummaryItemPrice = styled.span`
+font-weight: 600;
 
 `
 const CheckoutButton = styled.button`
@@ -275,6 +277,7 @@ useEffect(()=>{
             <NavbarContainer>
           <Navbar/>
           </NavbarContainer>
+          <Navbarmobile/>
             <Announcement/>
 
             <Wrapper>
@@ -323,10 +326,12 @@ useEffect(()=>{
                             <PriceDetail>
                                 <ProductAmountContainer>
                                 Quantity:
+                                  <Remove/>
                                     <ProductAmount>
                                         {product.quantity}
                                     </ProductAmount>
-                                  
+                                    <Add/>
+                                 
                                 </ProductAmountContainer>
                                 <ProductPrice>
                                   BHD  {product.price*product.quantity}

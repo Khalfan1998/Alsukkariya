@@ -8,10 +8,12 @@ Make each product show available sizes/colors
 
 (MAIN) Make admin panel
 (MAIN) Make + and - Button instantly remove or add amount to cart (reducer)
+(how to get the index of selected element in react native array) 
 (MAIN) Benefitpay order email to owner, owner checks for payment, then sends receipt email to customer, 
 then process order
 (MAIN) Cash on delivery order email to owner, receipt email to customer, process order
 (MAIN) Fix and make a Success screen after ordering
+Fix modal in mobile view
 Make menu in mobile view 3 dots and show all menu items instead
 Make Logo at bottom same size as logo at the top
 Fix Menu Navbar and Footer mobile view

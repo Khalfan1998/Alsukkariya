@@ -10,6 +10,7 @@ import { useState } from "react"
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { publicRequest } from "../requestMethods";
+import Navbarmobile from '../components/Navbarmobile'
 
 
 const Container = styled.div`
@@ -99,7 +100,9 @@ const ProductList = () => {
         <Container>
              <NavbarContainer>
           <Navbar/>
+          
           </NavbarContainer>
+          <Navbarmobile/>
             <Announcement/>
             <Title>{cat}</Title>
             <FilterContainer>

@@ -14,11 +14,12 @@ import { Link } from "react-router-dom";
 import { Badge } from '@material-ui/core'
 import { useDispatch } from "react-redux";
 import { resetCart } from '../redux/cartRedux'
+import Navbarmobile from '../components/Navbarmobile'
 
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
 const Container = styled.div`
-
+background: #DFD3C5;
 
 `
 const Wrapper = styled.div`
@@ -266,7 +267,9 @@ useEffect(()=>{
         <Container>
             <NavbarContainer>
           <Navbar/>
+          
           </NavbarContainer>
+          <Navbarmobile/>
            
             <Wrapper>
                 

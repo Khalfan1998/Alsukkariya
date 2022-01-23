@@ -13,7 +13,8 @@ import ScrollToTop from "../ScrollToTop";
 const Container = styled.div`
 background: #eae8e6;
     height: 80px;
-    ${mobile({ height: "80px" })}
+    ${mobile({ display: "none" })}
+    // ${mobile({ height: "80px" })}
 `
 
 const Wrapper = styled.div`

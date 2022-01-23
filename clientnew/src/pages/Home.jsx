@@ -8,6 +8,7 @@ import Products from '../components/Products'
 import Slider from '../components/Slider'
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import Navbarmobile from '../components/Navbarmobile'
 
 const FooterContainer = styled.div`
 background-color: white;
@@ -25,6 +26,7 @@ const Home = () => {
             <NavbarContainer>
           <Navbar/>
           </NavbarContainer>
+          <Navbarmobile/>
             <Announcement/>
             <Slider/>
             {/* <Categories/> */}

@@ -6,12 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
+import Navbarmobile from '../components/Navbarmobile'
 //opacity
 {/*background:linear-gradient(
   rgba(255, 255, 255, 0.5),
   rgba(255, 255, 255, 0.5)
 ), */}
 const Container = styled.div`
+background: #DFD3C5;
 height: 100vh;
 
 `
@@ -94,7 +96,9 @@ const Login = () => {
         <Container>
           <NavbarContainer>
           <Navbar/>
+          
           </NavbarContainer>
+          <Navbarmobile/>
       <Wrapper>
         <Title>SIGN IN</Title>
         <Form>

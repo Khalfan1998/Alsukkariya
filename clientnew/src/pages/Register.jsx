@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { register } from "../redux/apiCalls";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import Navbarmobile from '../components/Navbarmobile'
 
 //opacity
 {/*background:linear-gradient(
@@ -14,6 +15,7 @@ import { useState } from "react";
 ), */}
 
 const Container = styled.div`
+background: #DFD3C5;
 height: 100vh;
 
 `
@@ -87,7 +89,9 @@ const Register = () => {
         <Container>
               <NavbarContainer>
           <Navbar/>
+          
           </NavbarContainer>
+          <Navbarmobile/>
             <Wrapper>
                 <Title>
                     CREATE AN ACCOUNT

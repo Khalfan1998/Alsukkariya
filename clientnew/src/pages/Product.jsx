@@ -11,6 +11,7 @@ import { publicRequest } from "../requestMethods";
 import { addProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import Navbarmobile from '../components/Navbarmobile'
 
 
 
@@ -200,7 +201,9 @@ const Product = () => {
     <Container>
       <NavbarContainer>
           <Navbar/>
+          
           </NavbarContainer>
+          <Navbarmobile/>
       <Announcement />
       <Link to="/products/Products">
        {/* <TopButton>
