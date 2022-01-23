@@ -18,16 +18,14 @@ import { resetCart } from '../redux/cartRedux'
 const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
 
 const Container = styled.div`
-background: url("https://i.postimg.cc/5yDzf6dR/background-fill.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-  center;
-background-size: cover;
-height: 120vh;
+
 
 `
 const Wrapper = styled.div`
 width: 25%;
+background: #eae8e6;
+border: 1px solid black;
 padding: 20px;
-background-color: white;
 margin-left: 35%;
 margin-top: 10%;
 ${mobile({ padding: "10px" })}
@@ -171,15 +169,22 @@ ${mobile({ marginBottom: "20px" })}
 const Hr = styled.hr`
 background-color: #eee;
 border:none;
-height: 10px;
+height: 5px;
+margin-bottom: 20px;
 `
 
 const Summary = styled.div`
 flex: 1;
 border: 0.5px solid lightgray;
+background: white;
+
 border-radius: 10px;
 padding: 20px;
 height: 50vh;
+`
+const Confirmation = styled.div`
+text-align: center;
+line-height: 1.6;
 `
 
 
@@ -225,7 +230,7 @@ font-weight: 600;
 `
 
 
-const Checkout = () => {
+const Successpage = () => {
 const cart = useSelector(state=>state.cart)
 const [stripeToken,setStripeToken] = useState(null)
 const history = useHistory()
@@ -243,7 +248,7 @@ const handleClick = () => {
 useEffect(()=>{
     const makeRequest = async () =>{
         try {
-            const res = await userRequest.post("/checkout/payment",{
+            const res = await userRequest.post("/successpage/payment",{
                 tokenId: stripeToken.id,
                 amount: 500,
                 //change after to cart.total*100
@@ -301,13 +306,12 @@ useEffect(()=>{
                             BHD {cart.total}
                             </SummaryItemPrice>
                         </SummaryItem>
-                      
-                          
-                       <Button>BenefitPay</Button>
-                       
-                        <br/>
-                        <br/>
-                      <CoDButton>CASH ON DELIVERY</CoDButton> 
+                            <Hr/>
+                          <Confirmation>
+                              Thank you for shopping with us!
+                              You will receive an email soon to confirm your order.
+                          </Confirmation>
+                  
                         
                     </Summary>
                
@@ -319,4 +323,4 @@ useEffect(()=>{
     )
 }
 
-export default Checkout
+export default Successpage

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import { createGlobalStyle } from "styled-components";
+import { Link } from "react-router-dom";
 const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
 
@@ -94,7 +95,7 @@ const Button = styled.button`
   margin-top: 50px;
   margin-left: 600px;
   width: 15%;
-  height: 15%;
+  height: 50%;
   border-radius: 8px;
   border: none;
   padding: 15px 20px;
@@ -119,8 +120,9 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <Input placeholder="E-mail" />
                 <Input placeholder="Address" />
                 <Input placeholder="Phone number" />
-
-                <Button>Order</Button>
+                <Link to="/successpage">
+                  <Button>Order</Button>
+                </Link>
               </Form>
             </ModalContent>
             <CloseModalButton

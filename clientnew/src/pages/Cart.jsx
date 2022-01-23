@@ -82,7 +82,7 @@ ${mobile({ paddingLeft: "36%" })}
 `
 
 const Bottom = styled.div`
-margin-Top: 62px;
+margin-Top: 0px;
 display: flex;
 justify-content: space-between;
 ${mobile({ flexDirection: "column" })}
@@ -151,8 +151,8 @@ font-size: 24px;
 ${mobile({ margin: "5px 15px" })}
 `
 const ProductPrice = styled.div`
-font-size: 0px;
-font-weight: 200;
+font-size: 20px;
+font-weight: 550;
 ${mobile({ marginBottom: "20px" })}
 `
 
@@ -322,11 +322,11 @@ useEffect(()=>{
                             </ProductDetail>
                             <PriceDetail>
                                 <ProductAmountContainer>
-                                <Remove/>
+                                Quantity:
                                     <ProductAmount>
                                         {product.quantity}
                                     </ProductAmount>
-                                    <Add/>
+                                  
                                 </ProductAmountContainer>
                                 <ProductPrice>
                                   BHD  {product.price*product.quantity}

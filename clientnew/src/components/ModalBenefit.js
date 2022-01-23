@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Background = styled.div`
   width: 100%;
@@ -92,8 +93,8 @@ const Agreement = styled.span`
 const Button = styled.button`
   margin-top: 20px;
   margin-left: 500px;
-  width: 15%;
-  height: 15%;
+  width: 16%;
+  height: 80%;
   border-radius: 8px;
   border: none;
   padding: 15px 20px;
@@ -121,8 +122,9 @@ export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
                 <Input placeholder="E-mail" />
                 <Input placeholder="Address" />
                 <Input placeholder="Phone number" />
-
-                <Button>Order</Button>
+                <Link to="/successpage">
+                  <Button>Order</Button>
+                </Link>
               </Form>
             </ModalContent>
             <CloseModalButton
