@@ -66,16 +66,19 @@ const InfoContainer = styled.div`
     width: 50px;
     flex: 2 1;
     padding: 50px;
+ 
 `
 
 const Title = styled.h1`
     font-size: 40px;
+    ${mobile({ fontSize: "10px" })}
 `
 const Desc = styled.p`
     margin: 50px 0px;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
+    ${mobile({ fontSize: "5px" })}
 `
 const Button = styled.button`
     padding: 10px;

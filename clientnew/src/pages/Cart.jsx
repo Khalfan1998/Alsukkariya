@@ -251,6 +251,8 @@ const handleClick = () => {
     dispatch(resetCart());
 };
 
+
+
 useEffect(()=>{
     const makeRequest = async () =>{
         try {

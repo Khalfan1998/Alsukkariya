@@ -21,12 +21,14 @@ padding: 20px;
 
 ${mobile({ backgroundColor: "#eee" })}
 ${mobile({ marginLeft: "0px"})}
+${mobile({ flexDirection : "column" })}
 `
 
 const Logo = styled.h1`
 cursor: pointer;
 `
 const Desc = styled.p`
+margin-top: 26px;
 
 `
 const SocialContainer = styled.div`
@@ -46,13 +48,15 @@ cursor:pointer;
 `
 
 const Center = styled.div`
-margin-right: 100px;
+margin-top: 50px;
+margin-right: 10px;
 padding: 20px;
 flex: 1;
 display: flex;
 flex-direction: row;
 align-items: center;
 ${mobile({ flexWrap : "wrap" })}
+${mobile({ marginTop : "0px" })}
 ${mobile({ flexDirection : "column" })}
 ${mobile({ marginRight : "0px" })}
 ${mobile({ backgroundColor: "#eee" })}
@@ -100,13 +104,16 @@ const Image = styled.img`
 padding-right: 50px;
 cursor: pointer;
 width: 25%;
-${mobile({ display : "none" })}
+margin-top: 0px;
+${mobile({ marginLeft : "120px" })}
+
 `
 
 const Right = styled.div`
-margin-top: 20px;
+margin-top: 40px;
 flex: end;
 padding: 20px;
+margin-right: 120px;
 
 ${mobile({ flex : "1" })}
 ${mobile({ marginTop : "0px" })}
