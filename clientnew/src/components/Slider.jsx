@@ -48,16 +48,19 @@ const Slide = styled.div`
     align-items: center;
     background-color: #${props=>props.bg};
     ${mobile({ height: "20vh" })}
+    
 `
 const ImgContainer = styled.div`
     height: 100%;
     flex: 4 1;
+    ${mobile({ display: "none" })}
 `
 
 const Image = styled.img`
     height: 100%;
     width: 80%;
-    
+    ${mobile({ display: "none" })}
+
     
 `
 
@@ -66,12 +69,15 @@ const InfoContainer = styled.div`
     width: 50px;
     flex: 2 1;
     padding: 50px;
+    ${mobile({ textAlign: "center" })}
+    ${mobile({ marginLeft: "80px" })}
  
 `
 
 const Title = styled.h1`
     font-size: 40px;
     ${mobile({ fontSize: "10px" })}
+    ${mobile({ marginTop: "10px" })}
 `
 const Desc = styled.p`
     margin: 50px 0px;
@@ -86,6 +92,8 @@ const Button = styled.button`
     border-radius: 8px;
     background-color: transparent;
     cursor: pointer;
+    ${mobile({ fontSize: "3.5px" })}
+    ${mobile({ marginBottom: "10px" })}
     &:hover{
         background-color: lightblue;
     }

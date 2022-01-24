@@ -104,6 +104,8 @@ display: flex;
 const Image = styled.img`
 height: 250px;
 width: 250px;
+${mobile({ marginLeft: "55px " })}
+
 `
 const Details = styled.div`
 padding: 20px;

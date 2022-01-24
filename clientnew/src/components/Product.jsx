@@ -10,7 +10,7 @@ import styled from "styled-components";
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 3;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +44,7 @@ import styled from "styled-components";
   
   const Image = styled.img`
     height: 75%;
+    margin-Left: 4px;
     z-index: 2;
   `;
   
