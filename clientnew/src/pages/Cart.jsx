@@ -18,6 +18,7 @@ import { Modal } from '../components/Modal'
 import { ModalBenefit } from '../components/ModalBenefit'
 import { GlobalStyle } from '../globalStyles'
 import Navbarmobile from '../components/Navbarmobile'
+import "./Cart.css";
 
 
 
@@ -109,8 +110,14 @@ padding: 20px;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+
+`
+const ProductNameX = styled.span`
+
 `
 const ProductName = styled.span`
+
+ 
 
 `
 const ProductId = styled.span`
@@ -130,6 +137,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
 `
 const ProductAmountContainer = styled.div`
 display: flex;
@@ -178,7 +186,7 @@ background-color: white;
 `
 const NavbarContainer = styled.div`
 background-color: white;
-${mobile({ paddingBottom: "5%" })}
+${mobile({ display: "none" })}
 `
 
 
@@ -316,15 +324,21 @@ useEffect(()=>{
                             <ProductDetail>
                                 <Image src={product.img}/>
                                 <Details>
-                                    <ProductName>
+                                <div className="productnamescreen">
+                                <ProductNameX >
                                         <b>Product:</b> {product.title}
-                                    </ProductName>
-                                    
-
+                                    </ProductNameX>
+                                    </div>
                                 </Details>
                             </ProductDetail>
                             <PriceDetail>
+                            <div className="productnamemobile">
+                            <ProductName  >
+                                        <b>Product:</b> {product.title}
+                                    </ProductName>
+                                    </div>
                                 <ProductAmountContainer>
+                                    
                                 Quantity:
                                   <Remove/>
                                     <ProductAmount>

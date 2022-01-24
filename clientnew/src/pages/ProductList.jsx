@@ -60,7 +60,7 @@ background-color: white;
 `
 const NavbarContainer = styled.div`
 background-color: white;
-${mobile({ paddingBottom: "5%" })}
+${mobile({ display: "none" })}
 `
 
 const Option = styled.option`

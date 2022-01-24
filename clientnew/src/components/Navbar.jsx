@@ -33,6 +33,7 @@ const Left = styled.div`
 
 const Center = styled.div`
     flex:1;
+    margin-right: 140px;
     text-align: center;
 
    
@@ -40,7 +41,7 @@ const Center = styled.div`
     
 `
 const Image = styled.img`
-width: 110%;
+width: 46%;
 `
 
 

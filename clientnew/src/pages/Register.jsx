@@ -39,7 +39,7 @@ margin-top: 15%;
 `
 const NavbarContainer = styled.div`
 background-color: white;
-${mobile({ paddingBottom: "5%" })}
+${mobile({ display: "none" })}
 `
 
 const Form = styled.form`

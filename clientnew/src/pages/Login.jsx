@@ -34,7 +34,7 @@ margin-top: 20%;
 `
 const NavbarContainer = styled.div`
 background-color: white;
-${mobile({ paddingBottom: "5%" })}
+${mobile({ display: "none" })}
 `
 
 const Title = styled.h1`

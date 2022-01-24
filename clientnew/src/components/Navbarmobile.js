@@ -5,11 +5,20 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import "./Navbar.css";
 import { IconContext } from "react-icons";
+import { Badge } from "@material-ui/core";
+import { ShoppingCartOutlined } from "@material-ui/icons";
+import { useDispatch, useSelector } from "react-redux";
+import styled from "styled-components";
+import { logOut } from "../redux/apiCalls";
+import { mobile } from "../responsive";
+import ScrollToTop from "../ScrollToTop";
 
 function Navbarmobile() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+  const quantity = useSelector((state) => state.cart.quantity);
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -17,6 +26,18 @@ function Navbarmobile() {
         <div className="navbar">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <img src="https://i.postimg.cc/bwCJFWGx/Logo-S2.png" alt="logo" />
+          </Link>
+          <Link to="/cart">
+            <Badge
+              style={{ marginLeft: "100px", textDecoration: "none" }}
+              badgeContent={quantity}
+              color="primary"
+            >
+              <ShoppingCartOutlined />
+            </Badge>
           </Link>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
