@@ -1,6 +1,7 @@
 import {SearchOutlined} from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { mobile } from "../responsive";
   
   const Info = styled.div`
     opacity: 0;
@@ -70,14 +71,17 @@ import styled from "styled-components";
   `;
   
   const Title = styled.h1`
-
+  color: #236750;
   margin-left: 43%;
   font-size: 18px;
+  ${mobile({ marginLeft: "120px" })}
   `
   const Price = styled.div`
+  color: #AC8252;
   margin-top: 2%;
   margin-left: 46%;
   font-size: 16px;
+  ${mobile({ marginLeft: "140px" })}
   `
 
 const Product = ({item}) => {
