@@ -16,6 +16,9 @@ import Navbarmobile from '../components/Navbarmobile'
 const Container = styled.div`
 
 `
+const ProductInfo = styled.div`
+
+`
 const Title = styled.h1`
 margin: 20px;
 `
@@ -40,6 +43,7 @@ const FilterText = styled.span`
 font-size: 20px;
 font-weight: 600;
 margin-right: 20px;
+
 ${mobile({ marginRight: "0px" })}
 `
 const Select = styled.select`
@@ -141,7 +145,7 @@ const ProductList = () => {
                 </Filter>
             </FilterContainer>
             <Products cat = {cat} filters= {filters} sort = {sort}/>
-           
+            
             <br/>
             <br/>
             <FooterContainer>

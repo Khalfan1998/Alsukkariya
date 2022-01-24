@@ -18,6 +18,10 @@ import styled from "styled-components";
     cursor: pointer;
   `;
   
+  const LargeContainer = styled.div`
+  flex: 1;
+  
+`;
   const Container = styled.div`
   
     flex: 1;
@@ -30,7 +34,8 @@ import styled from "styled-components";
 
     position: relative;
     &:hover ${Info}{
-      opacity: 1;
+      background: transparent;
+      opacity: 0.8;
     }
   `;
   
@@ -63,20 +68,39 @@ import styled from "styled-components";
       transform: scale(1.1);
     }
   `;
+  
+  const Title = styled.h1`
+
+  margin-left: 43%;
+  font-size: 18px;
+  `
+  const Price = styled.div`
+  margin-top: 2%;
+  margin-left: 46%;
+  font-size: 16px;
+  `
 
 const Product = ({item}) => {
     return (
+      <LargeContainer>
         <Container>
             <Circle/>
             <Image src={item.img}/>
             <Info>
+              
                 <Icon>
                   <Link to={`/product/${item._id}`}>
                     <SearchOutlined/>
                     </Link>
+                    
                 </Icon>
             </Info>
+           
+           
         </Container>
+        <Title>{item.title}</Title>
+           <Price> BHD {item.price}</Price>
+        </LargeContainer>
     )
 }
 
