@@ -30,7 +30,7 @@ ${mobile({ marginLeft: "33px" })}
 
 const FooterContainer = styled.div`
 background-color: white;
-margin-top: 20%;
+margin-top: 7.3%;
 `
 const NavbarContainer = styled.div`
 background-color: white;

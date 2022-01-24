@@ -161,7 +161,7 @@ const Button = styled.button`
       background-color: #f8f4f4;
   }
   &:active{
-    background-color: green;
+    background-color: #78F400;
 }
 `;
 

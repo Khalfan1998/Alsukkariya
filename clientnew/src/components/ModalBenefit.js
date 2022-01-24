@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Background = styled.div`
   width: 100%;
@@ -104,6 +105,7 @@ const Button = styled.button`
 `;
 
 export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
+  const cart = useSelector((state) => state.cart);
   return (
     <>
       {showModalBenefit ? (
@@ -111,8 +113,9 @@ export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
           <ModalWrapper showModalBenefit={showModalBenefit}>
             <ModalContent>
               <Title>
-                You will pay <span style={{ fontWeight: "bold" }}> # BHD </span>{" "}
-                On BenefitPay To{" "}
+                You will pay
+                <span style={{ fontWeight: "bold" }}>{cart.total} BHD </span> On
+                BenefitPay To{" "}
                 <span style={{ fontWeight: "bold", marginLeft: "100px" }}>
                   IBAN:9312379123
                 </span>

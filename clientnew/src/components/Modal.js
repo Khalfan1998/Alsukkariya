@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
 
@@ -105,6 +107,8 @@ const Button = styled.button`
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {
+  const cart = useSelector((state) => state.cart);
+
   return (
     <>
       {showModal ? (
@@ -112,7 +116,10 @@ export const Modal = ({ showModal, setShowModal }) => {
           <ModalWrapper showModal={showModal}>
             <ModalContent>
               <Title>
-                You will pay <span style={{ fontWeight: "bold" }}> # BHD </span>{" "}
+                You will pay
+                <span style={{ fontWeight: "bold" }}>
+                  {cart.total} BHD{" "}
+                </span>{" "}
                 Cash On Delivery
               </Title>
               <Form>

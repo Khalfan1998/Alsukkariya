@@ -41,7 +41,8 @@ const Center = styled.div`
     
 `
 const Image = styled.img`
-width: 46%;
+width: 70px;
+height:70px;
 `
 
 

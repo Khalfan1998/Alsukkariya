@@ -79,8 +79,8 @@ const TopText = styled.span`
 text-align: center;
 text-decoration: underline;
 cursor: pointer;
-padding-left: 46%;
-${mobile({ paddingLeft: "36%" })}
+padding-left: 44%;
+${mobile({ paddingLeft: "30%" })}
 `
 
 const Bottom = styled.div`

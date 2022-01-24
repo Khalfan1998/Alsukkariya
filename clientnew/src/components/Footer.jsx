@@ -103,7 +103,8 @@ a:active { text-decoration: none; color:white; }
 const Image = styled.img`
 padding-right: 50px;
 cursor: pointer;
-width: 25%;
+width: 70px;
+height:70px;
 margin-top: 0px;
 ${mobile({ marginLeft : "120px" })}
 
@@ -145,7 +146,7 @@ const Footer = () => {
             <Left>
             <Image onClick={scrollToTop} src ="https://i.postimg.cc/bwCJFWGx/Logo-S2.png"/>
                 
-                <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque nostrum culpa.</Desc>
+                <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque.</Desc>
                 <SocialContainer>
                     {/* <FacebookContainer>
                     <SocialIcon color="3B5999">

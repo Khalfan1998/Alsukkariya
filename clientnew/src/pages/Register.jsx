@@ -35,7 +35,7 @@ font-weight: 300;
 `
 const FooterContainer = styled.div`
 background-color: white;
-margin-top: 15%;
+margin-top: 3.5%;
 `
 const NavbarContainer = styled.div`
 background-color: white;
