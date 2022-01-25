@@ -23,7 +23,8 @@ padding: 20px;
 background: #eae8e6;
 border: 1px solid black;
 margin-left: 35%;
-margin-top: 10%;
+margin-top: 7%;
+margin-bottom: 0%;
 ${mobile({ width: "75%" })}
 ${mobile({ marginLeft: "33px" })}
 `

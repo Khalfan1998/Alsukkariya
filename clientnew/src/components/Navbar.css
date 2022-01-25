@@ -37,9 +37,9 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 4px 8px 4px;
+  padding: 8px 0px 8px 4px;
   list-style: none;
-  height: 126px;
+  height: 60px;
   z-index: 999 !important;
 }
 
@@ -83,7 +83,6 @@ img {
 
 span {
   margin-left: 16px;
-  z-index: 999 !important;
 }
 
 @media screen and (min-width: 500px) {

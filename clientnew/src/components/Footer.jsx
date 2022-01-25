@@ -8,11 +8,11 @@ const Container = styled.div`
 background: #eae8e6;
 height: 20vh;
 display: flex;
-margin-top: 50px;
+
 ${mobile({ flexDirection: "column" })}
 `
 const Left = styled.div`
-margin-top: 20px;
+margin-top: -5px;
 margin-left: 0px;
 flex: 1;
 display: flex;
@@ -28,7 +28,7 @@ const Logo = styled.h1`
 cursor: pointer;
 `
 const Desc = styled.p`
-margin-top: 26px;
+margin-top: 40px;
 
 `
 const SocialContainer = styled.div`
@@ -48,7 +48,7 @@ cursor:pointer;
 `
 
 const Center = styled.div`
-margin-top: 50px;
+margin-top: 30px;
 margin-right: 10px;
 padding: 20px;
 flex: 1;
@@ -105,13 +105,13 @@ padding-right: 50px;
 cursor: pointer;
 width: 70px;
 height:70px;
-margin-top: 0px;
+margin-top: 30px;
 ${mobile({ marginLeft : "120px" })}
 
 `
 
 const Right = styled.div`
-margin-top: 40px;
+margin-top: 28px;
 flex: end;
 padding: 20px;
 margin-right: 120px;

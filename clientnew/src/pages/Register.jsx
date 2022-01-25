@@ -23,7 +23,8 @@ const Wrapper = styled.div`
 width: 40%;
 border: 1px solid black;
 margin-left: 30%;
-margin-top: 10%;
+margin-top: 7%;
+margin-bottom: 9%;
 padding: 20px;
 background: #eae8e6;
 ${mobile({ width: "75%" })}

@@ -103,6 +103,7 @@ flex: 2;
 display: flex;
 `
 const Image = styled.img`
+z-index: 1 !important;
 height: 250px;
 width: 250px;
 ${mobile({ marginLeft: "55px " })}
@@ -327,7 +328,7 @@ useEffect(()=>{
             <br/>
                 <TopText>
                 Shopping Bag    
-                                <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}} ></Badge>
+                                <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}}  ></Badge>
                                 </TopText>
                                 
                 <Top>

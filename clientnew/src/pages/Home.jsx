@@ -14,6 +14,11 @@ const FooterContainer = styled.div`
 background-color: white;
 
 `
+const ProductsContainer = styled.div`
+margin-bottom: 10%;
+
+`
+
 const NavbarContainer = styled.div`
 background-color: white;
 ${mobile({ display: "none" })}
@@ -30,7 +35,9 @@ const Home = () => {
             <Announcement/>
             <Slider/>
             {/* <Categories/> */}
+            <ProductsContainer>
             <Products />
+            </ProductsContainer>
             <FooterContainer>
       <Footer/>
       </FooterContainer>

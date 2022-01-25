@@ -7,8 +7,8 @@ Make each product show available sizes/colors
 
 
 
-Fix footer 
-Fix Z-index slidebar to appear over everything else
+Make input benefit pay and cash on delivery highlight in red if no input
+
 (MAIN) Make admin panel
 (MAIN) Make + and - Button instantly remove or add amount to cart (reducer)
 (how to get the index of selected element in react native array) 
@@ -37,6 +37,8 @@ If logged in show buttons benefit pay or cash @ cart page
 
 Done:
 
+Fix Z-index slidebar to appear over everything else
+Fix footer
 (MAIN) Make Login / Register
 Add cash on delivery payment method
 Make menu links go to bottom of page

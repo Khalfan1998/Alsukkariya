@@ -92,10 +92,12 @@ const Button = styled.button`
     border-radius: 8px;
     background-color: transparent;
     cursor: pointer;
+    color: black;
     ${mobile({ fontSize: "3.5px" })}
     ${mobile({ marginBottom: "10px" })}
     &:hover{
-        background-color: lightblue;
+        background-color: #5A3040;
+        color: #EAE8E6;
     }
 `
 

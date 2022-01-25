@@ -59,6 +59,11 @@ const InfoContainer = styled.div`
   
 `;
 
+const ProductListContainer = styled.div`
+margin-bottom: 10%;
+
+`
+
 const FooterContainer = styled.div`
 background-color: white;
 
@@ -145,10 +150,12 @@ const ProductList = () => {
                         </Select>
                 </Filter>
             </FilterContainer>
+            <ProductListContainer>
             <Products cat = {cat} filters= {filters} sort = {sort}/>
             
             <br/>
             <br/>
+            </ProductListContainer>
             <FooterContainer>
       <Footer/>
       </FooterContainer>

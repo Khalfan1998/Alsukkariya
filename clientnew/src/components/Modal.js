@@ -57,7 +57,7 @@ const ModalContent = styled.div`
 
   button {
     padding: 10px 24px;
-    background: #141414;
+    background: #31342c;
     color: #fff;
     border: none;
   }
@@ -89,10 +89,10 @@ const Form = styled.form`
 
 const Input = styled.input`
   flex: 1;
-  min-width: 40%;
+  min-width: 70%;
   border-radius: 8px;
   border: none;
-  margin: 20px 200px 0px 140px;
+  margin: 20px 200px 0px 80px;
   padding: 10px;
 `;
 const Agreement = styled.span`
@@ -100,14 +100,13 @@ const Agreement = styled.span`
   margin: 20px 0px;
 `;
 const Button = styled.button`
-  margin-top: 50px;
-  margin-left: 600%;
-  width: 100%;
-  height: 50%;
+  margin-top: 30px;
+  margin-left: 95%;
+  width: 540%;
+  height: 80%;
   border-radius: 8px;
   border: none;
   padding: 15px 20px;
-  background-color: teal;
   color: white;
   cursor: pointer;
 `;
@@ -122,18 +121,18 @@ export const Modal = ({ showModal, setShowModal }) => {
           <ModalWrapper showModal={showModal}>
             <ModalContent>
               <Title>
-                You will pay
+                Your total amount will be
                 <Hr />
                 <span style={{ fontWeight: "bold" }}>
                   {cart.total} BHD{" "}
                 </span>{" "}
-                Cash On Delivery
+                Via Cash On Delivery
               </Title>
               <Form>
-                <Input placeholder="Name" />
-                <Input placeholder="E-mail" />
-                <Input placeholder="Address" />
-                <Input placeholder="Phone number" />
+                <Input placeholder="Name" required />
+                <Input placeholder="E-mail" required />
+                <Input placeholder="Address" required />
+                <Input placeholder="Phone number" required />
                 <Link to="/successpage">
                   <Button>Order</Button>
                 </Link>

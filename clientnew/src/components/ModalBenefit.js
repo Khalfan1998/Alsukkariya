@@ -47,7 +47,7 @@ const ModalContent = styled.div`
 
   button {
     padding: 10px 24px;
-    background: #141414;
+    background: #31342c;
     color: #fff;
     border: none;
   }
@@ -87,10 +87,10 @@ const Form = styled.form`
 
 const Input = styled.input`
   flex: 1;
-  min-width: 40%;
+  min-width: 84%;
   border-radius: 8px;
   border: none;
-  margin: 20px 200px 0px 40px;
+  margin: 20px 200px 0px -18px;
   padding: 10px;
 `;
 const Agreement = styled.span`
@@ -98,14 +98,13 @@ const Agreement = styled.span`
   margin: 20px 0px;
 `;
 const Button = styled.button`
-  margin-top: 20px;
-  margin-left: 450%;
-  width: 100%;
+  margin-top: 30px;
+  margin-left: -22%;
+  width: 540%;
   height: 80%;
   border-radius: 8px;
   border: none;
   padding: 15px 20px;
-  background-color: teal;
   color: white;
   cursor: pointer;
 `;
