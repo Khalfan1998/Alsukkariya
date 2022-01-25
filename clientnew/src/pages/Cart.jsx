@@ -294,9 +294,6 @@ const decrementCount = (index) => {
     });
 };
 
-   
-
-
 
 useEffect(()=>{
     const makeRequest = async () =>{
@@ -323,7 +320,6 @@ useEffect(()=>{
           </NavbarContainer>
           <Navbarmobile/>
             <Announcement/>
-
             <Wrapper>
                 <Modal showModal={showModal} setShowModal={setShowModal} />
                 <GlobalStyle />
@@ -333,12 +329,11 @@ useEffect(()=>{
                     YOUR SHOPPING CART
                 </Title>
                 <br/>
-            <br/>
+                <br/>
                 <TopText>
                 Shopping Bag    
-                                <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}}  ></Badge>
-                                </TopText>
-                                
+                     <Badge badgeContent={quantity} color="primary" style={{marginLeft:"15px"}}  ></Badge>
+                </TopText>         
                 <Top>
                 <Link to="/products/Products">
                     {/* <TopButton>
@@ -346,17 +341,14 @@ useEffect(()=>{
                     </TopButton> */}
                     </Link>
                     <TopTexts>
-    
                         <ClearButton onClick={handleClick} type="filled">
                         Clear Cart
                     </ClearButton>
-                    </TopTexts>
-                   
+                    </TopTexts>   
                 </Top>
                 <Bottom>
                     <Info>
                         {cart.products.map((product,index)=>(
-                        
                         <Product>
                             <ProductDetail>
                                 <Image src={product.img}/>
@@ -375,14 +367,12 @@ useEffect(()=>{
                                     </ProductName>
                                     </div>
                                 <ProductAmountContainer>
-                                    
                                 Quantity:
                                   <Remove onClick={() => decrementCount(index)}/>
                                     <ProductAmount>
                                         {product.quantity}
                                     </ProductAmount>
                                     <Add onClick={() => incrementCount(index)}/>
-                                 
                                 </ProductAmountContainer>
                                 <ProductPrice>
                                   BHD  {product.price*product.quantity}
@@ -390,10 +380,7 @@ useEffect(()=>{
                             </PriceDetail>
                             <Hr/>
                         </Product>
-                       
                         ))}
-                        
-                    
                     </Info>
                     <Summary>
                         <SummaryTitle>
@@ -451,11 +438,9 @@ useEffect(()=>{
                         <br/>
                         <br/>
                          <CoDButton onClick={openModal} >CASH ON DELIVERY</CoDButton>
-                        
                     </Summary>
                 </Bottom>
             </Wrapper>
-            
             <FooterContainer>
       <Footer/>
       </FooterContainer>

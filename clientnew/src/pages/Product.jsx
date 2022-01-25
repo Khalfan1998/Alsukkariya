@@ -121,8 +121,8 @@ const AmountContainer = styled.div`
 `;
 
 const Amount = styled.span`
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   border: 1px solid black;
   display: flex;
@@ -162,7 +162,8 @@ const Button = styled.button`
       background-color: #f8f4f4;
   }
   &:active{
-    background-color: #78F400;
+    background-color: #104A36;
+    color: white;
 }
 `;
 
@@ -223,9 +224,9 @@ const Product = () => {
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              <Remove onClick = {()=> handleQuantity("dec")} />
+              <Remove style={{marginRight:"10px"}} onClick = {()=> handleQuantity("dec")} />
               <Amount>{quantity}</Amount>
-              <Add onClick = {()=> handleQuantity("inc")}/>
+              <Add style={{marginLeft:"10px"}} onClick = {()=> handleQuantity("inc")}/>
             </AmountContainer>
             <Button onClick ={handleClick}>ADD TO CART</Button>
           </AddContainer>

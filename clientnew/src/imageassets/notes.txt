@@ -6,7 +6,8 @@ Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 
 
-
+Remove text from home screen and put 2 images side by side
+(MAIN) Fix cart increment decrement without refreshing, and update total cart
 Make input benefit pay and cash on delivery highlight in red if no input
 Center all items with ruler
 (MAIN) Make admin panel
