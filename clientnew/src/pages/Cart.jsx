@@ -249,7 +249,10 @@ const quantity = useSelector(state=>state.cart.quantity)
 const dispatch = useDispatch();
 const [showModal, setShowModal] = useState(false);
 const [showModalBenefit, setShowModalBenefit] = useState(false);
-// const { products } = (state=>state.cart.quantity)
+const [products, setQuantity] = useState(1);
+
+
+  
 
 
 const openModal = () => {
@@ -276,18 +279,19 @@ const incrementCount = (index) => {
     products[index].quantity += 1;
     // products.splice(index,1,products);
     console.log(cart.products);
-    // this.setState({
-    //     productsList: products
-    // });
+    setQuantity({
+        productsList: products
+    });
+    
 };
 const decrementCount = (index) => {
     const products = cart.products;  
     products[index].quantity -= 1;
     // products.splice(index,1,products);
     console.log(cart.products);
-    // this.setState({
-    //     productsList: products
-    // });
+    setQuantity({
+        productsList: products
+    });
 };
 
    
