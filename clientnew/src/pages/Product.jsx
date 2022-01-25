@@ -36,6 +36,7 @@ height: 40vh;
 object-fit: cover;
 margin-bottom: 28%;
 margin-left: 10%;
+z-index: 1 !important;
   ${mobile({ height: "40vh" })}
  
 `;

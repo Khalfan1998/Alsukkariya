@@ -40,6 +40,7 @@ ${mobile({ width: "0px 20px", display:"flex", flexDirection:"column" })}
 `
 
 const FilterText = styled.span`
+z-index: 1 !important;
 font-size: 20px;
 font-weight: 600;
 margin-right: 20px;

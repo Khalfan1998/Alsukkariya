@@ -58,14 +58,14 @@ padding: 10px;
 `
 
 const Button = styled.button`
-width: 40%;
+width: 30%;
 border:none;
 padding: 15px 20px;
 border-radius: 8px;
 background-color: teal;
 color: white;
 cursor: pointer;
-margin-left: 230px;
+margin-left: 70%;
 margin-bottom: 10px;
 ${mobile({ marginLeft: "170px" })}
 `

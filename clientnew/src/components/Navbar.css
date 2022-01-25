@@ -1,6 +1,6 @@
 .navbar {
   background-color: #eae8e6;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -37,9 +37,9 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 4px;
+  padding: 8px 4px 8px 4px;
   list-style: none;
-  height: 60px;
+  height: 126px;
   z-index: 999 !important;
 }
 

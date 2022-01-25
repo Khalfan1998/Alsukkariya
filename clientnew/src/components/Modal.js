@@ -9,9 +9,10 @@ const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
 
   font-family: "Maven Pro", sans-serif;
-  margin-right: 80px;
+  margin-right: 0%;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
 `;
 
 const Background = styled.div`
@@ -21,20 +22,25 @@ const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
+`;
+
+const Hr = styled.hr`
+  border: none;
 `;
 
 const ModalWrapper = styled.div`
-  width: 800px;
-  height: 450px;
+  width: 600px;
+  height: 600px;
   box-shadow: 0 5px 16px rgba(0, 0, 0.2);
   background: #dfd3c5;
   color: #000;
   display: grid;
   //   grid-template-columns: 1fr 1fr;
   position: relative;
-  z-index: 10;
+  z-index: 5;
   border-radius: 10px;
-  margin-bottom: 120px;
+  margin-bottom: 160px;
 `;
 
 const ModalContent = styled.div`
@@ -95,8 +101,8 @@ const Agreement = styled.span`
 `;
 const Button = styled.button`
   margin-top: 50px;
-  margin-left: 600px;
-  width: 15%;
+  margin-left: 600%;
+  width: 100%;
   height: 50%;
   border-radius: 8px;
   border: none;
@@ -117,6 +123,7 @@ export const Modal = ({ showModal, setShowModal }) => {
             <ModalContent>
               <Title>
                 You will pay
+                <Hr />
                 <span style={{ fontWeight: "bold" }}>
                   {cart.total} BHD{" "}
                 </span>{" "}

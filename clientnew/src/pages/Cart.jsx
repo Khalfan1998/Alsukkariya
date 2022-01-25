@@ -29,6 +29,7 @@ const Container = styled.div`
 
 `
 const Wrapper = styled.div`
+
 padding: 20px;
 ${mobile({ padding: "10px" })}
 `
@@ -181,6 +182,7 @@ background: white;
 border-radius: 10px;
 padding: 20px;
 height: 60vh;
+z-index: 1;
 `
 const FooterContainer = styled.div`
 background-color: white;
@@ -246,6 +248,8 @@ const quantity = useSelector(state=>state.cart.quantity)
 const dispatch = useDispatch();
 const [showModal, setShowModal] = useState(false);
 const [showModalBenefit, setShowModalBenefit] = useState(false);
+const { products } = (state=>state.cart.quantity)
+
 
 const openModal = () => {
   setShowModal(prev => !prev);
@@ -262,6 +266,26 @@ const onToken = (token)=>{
 const handleClick = () => {
     dispatch(resetCart());
 };
+
+
+const incrementCount = (product,index) => {
+    const products = this.state.productsList;           
+    product.quantity += 1;
+    products.splice(index,1,product);
+    this.setState({
+        productsList: products
+    });
+};
+const decrementCount = (product,index) => {
+    const products = (state=>state.cart.quantity)         
+    product.quantity -= 1;
+    products.splice(index,1,product);
+    this.setState({
+        productsList: products
+    });
+};
+
+   
 
 
 
@@ -282,6 +306,7 @@ useEffect(()=>{
     };
     stripeToken && makeRequest();
 }, [stripeToken, cart.total, history]);
+
     return (
         <Container>
             <NavbarContainer>
@@ -321,7 +346,7 @@ useEffect(()=>{
                 </Top>
                 <Bottom>
                     <Info>
-                        {cart.products.map(product=>(
+                        {cart.products.map((product,index)=>(
                         <Product>
                             <ProductDetail>
                                 <Image src={product.img}/>
@@ -342,11 +367,11 @@ useEffect(()=>{
                                 <ProductAmountContainer>
                                     
                                 Quantity:
-                                  <Remove/>
+                                  <Remove onClick={() => decrementCount(product,index)}/>
                                     <ProductAmount>
                                         {product.quantity}
                                     </ProductAmount>
-                                    <Add/>
+                                    <Add onClick={() => incrementCount(product,index)}/>
                                  
                                 </ProductAmountContainer>
                                 <ProductPrice>

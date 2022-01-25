@@ -51,7 +51,7 @@ import { mobile } from "../responsive";
   const Image = styled.img`
     height: 75%;
     margin-Left: 4px;
-    z-index: 2;
+    z-index: 1 !important;
   `;
   
   const Icon = styled.div`

@@ -115,10 +115,11 @@ margin-top: 40px;
 flex: end;
 padding: 20px;
 margin-right: 120px;
-
-${mobile({ flex : "1" })}
+${mobile({ backgroundColor: "#eee" })}
+${mobile({ flex : "2" })}
 ${mobile({ marginTop : "0px" })}
-${mobile({ marginLeft : "150px" })}
+${mobile({ marginLeft : "0px" })}
+${mobile({ marginRight : "0px" })}
 `
 
 const ContactItem = styled.div`

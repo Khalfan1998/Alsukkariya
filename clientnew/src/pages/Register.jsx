@@ -57,12 +57,13 @@ padding: 10px;
 
 `
 const Agreement = styled.span`
+z-index: 1 !important;
 font-size: 12px;
 margin: 20px 0px;
 `
 const Button = styled.button`
-margin-left: 400px;
-width: 40%;
+margin-left: 80%;
+width: 30%;
 border-radius: 8px;
 border:none;
 padding: 15px 20px;
