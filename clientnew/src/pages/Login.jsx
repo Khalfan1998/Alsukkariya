@@ -29,6 +29,11 @@ ${mobile({ width: "75%" })}
 ${mobile({ marginLeft: "33px" })}
 `
 
+const ProductListContainer = styled.div`
+margin-bottom: 10%;
+
+`
+
 const FooterContainer = styled.div`
 background-color: white;
 margin-top: 7.3%;
@@ -100,6 +105,7 @@ const Login = () => {
           
           </NavbarContainer>
           <Navbarmobile/>
+          <ProductListContainer>
       <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
@@ -122,6 +128,7 @@ const Login = () => {
           </Link>
         </Form>
       </Wrapper>
+      </ProductListContainer>
       <FooterContainer>
       <Footer/>
       </FooterContainer>

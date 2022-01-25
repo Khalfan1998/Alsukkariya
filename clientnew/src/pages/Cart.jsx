@@ -249,7 +249,7 @@ const quantity = useSelector(state=>state.cart.quantity)
 const dispatch = useDispatch();
 const [showModal, setShowModal] = useState(false);
 const [showModalBenefit, setShowModalBenefit] = useState(false);
-const { products } = (state=>state.cart.quantity)
+// const { products } = (state=>state.cart.quantity)
 
 
 const openModal = () => {
@@ -269,21 +269,25 @@ const handleClick = () => {
 };
 
 
-const incrementCount = (product,index) => {
-    const products = this.state.productsList;           
-    product.quantity += 1;
-    products.splice(index,1,product);
-    this.setState({
-        productsList: products
-    });
+const incrementCount = (index) => {
+    console.log(index);
+    
+    const products = cart.products;  
+    products[index].quantity += 1;
+    // products.splice(index,1,products);
+    console.log(cart.products);
+    // this.setState({
+    //     productsList: products
+    // });
 };
-const decrementCount = (product,index) => {
-    const products = (state=>state.cart.quantity)         
-    product.quantity -= 1;
-    products.splice(index,1,product);
-    this.setState({
-        productsList: products
-    });
+const decrementCount = (index) => {
+    const products = cart.products;  
+    products[index].quantity -= 1;
+    // products.splice(index,1,products);
+    console.log(cart.products);
+    // this.setState({
+    //     productsList: products
+    // });
 };
 
    
@@ -348,6 +352,7 @@ useEffect(()=>{
                 <Bottom>
                     <Info>
                         {cart.products.map((product,index)=>(
+                        
                         <Product>
                             <ProductDetail>
                                 <Image src={product.img}/>
@@ -368,11 +373,11 @@ useEffect(()=>{
                                 <ProductAmountContainer>
                                     
                                 Quantity:
-                                  <Remove onClick={() => decrementCount(product,index)}/>
+                                  <Remove onClick={() => decrementCount(index)}/>
                                     <ProductAmount>
                                         {product.quantity}
                                     </ProductAmount>
-                                    <Add onClick={() => incrementCount(product,index)}/>
+                                    <Add onClick={() => incrementCount(index)}/>
                                  
                                 </ProductAmountContainer>
                                 <ProductPrice>

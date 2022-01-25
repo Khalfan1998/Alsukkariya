@@ -8,7 +8,7 @@ Make each product show available sizes/colors
 
 
 Make input benefit pay and cash on delivery highlight in red if no input
-
+Center all items with ruler
 (MAIN) Make admin panel
 (MAIN) Make + and - Button instantly remove or add amount to cart (reducer)
 (how to get the index of selected element in react native array) 
