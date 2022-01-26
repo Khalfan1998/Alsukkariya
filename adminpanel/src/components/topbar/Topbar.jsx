@@ -19,7 +19,7 @@ export default function Topbar() {
             <div className="topbarIconContainer">
             <Settings/>
             </div>
-            <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="" className="topAvatar" />
+            <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="" className="topProfilePic" />
         </div>
       </div>
       </div>
