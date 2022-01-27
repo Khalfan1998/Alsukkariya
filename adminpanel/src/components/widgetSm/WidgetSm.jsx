@@ -30,7 +30,7 @@ export default function WidgetSm() {
           <li className="widgetSmListItem">
               <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" />
               <div className="widgetSmUser">
-                  <span className="widgetSmUsername">Jack Johnson</span>
+                  <span className="widgetSmUsername">Alex Philip</span>
                   <span className="widgetSmUserTitle">Software Developer</span>
               </div>
               <button className="widgetSmButton">
@@ -41,7 +41,7 @@ export default function WidgetSm() {
           <li className="widgetSmListItem">
               <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" />
               <div className="widgetSmUser">
-                  <span className="widgetSmUsername">Jack Johnson</span>
+                  <span className="widgetSmUsername">George Robinson</span>
                   <span className="widgetSmUserTitle">Software Developer</span>
               </div>
               <button className="widgetSmButton">
@@ -52,7 +52,7 @@ export default function WidgetSm() {
           <li className="widgetSmListItem">
               <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" />
               <div className="widgetSmUser">
-                  <span className="widgetSmUsername">Jack Johnson</span>
+                  <span className="widgetSmUsername">Ali Ahmad</span>
                   <span className="widgetSmUserTitle">Software Developer</span>
               </div>
               <button className="widgetSmButton">
