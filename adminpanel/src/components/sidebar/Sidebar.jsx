@@ -12,7 +12,7 @@ export default function Sidebar() {
               <Link to="/" className="link">
                   <li className="sidebarListItem active">
                     <LineStyle className="sidebarIcon"/>
-                    Home
+                    Home --
                   </li>
                   </Link>
                   <li className="sidebarListItem">
@@ -31,19 +31,19 @@ export default function Sidebar() {
               <Link to="/users" className="link">
                   <li className="sidebarListItem">
                     <PermIdentity className="sidebarIcon"/>
-                    Users
+                    Users --
                   </li>
                   </Link>
                   <Link to="/products" className="link">
                   <li className="sidebarListItem">
                     <Storefront className="sidebarIcon"/>
-                    Products
+                    Products --
                   </li>
                   </Link>
                   <Link to="/transactions" className="link">
                   <li className="sidebarListItem">
                     <AttachMoney className="sidebarIcon"/>
-                    Transactions
+                    Transactions --
                   </li>
                   </Link>
                   <li className="sidebarListItem">

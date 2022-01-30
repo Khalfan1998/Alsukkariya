@@ -25,6 +25,14 @@ export default function Product() {
                     <span className="productInfoValue">1</span>
                 </div>
                 <div className="productInfoItem">
+                    <span className="productInfoKey">price:</span>
+                    <span className="productInfoValue">BHD 7.5</span>
+                </div>
+                <div className="productInfoItem">
+                    <span className="productInfoKey">raw materials price:</span>
+                    <span className="productInfoValue">BHD 3</span>
+                </div>
+                <div className="productInfoItem">
                     <span className="productInfoKey">sales:</span>
                     <span className="productInfoValue">4123</span>
                 </div>

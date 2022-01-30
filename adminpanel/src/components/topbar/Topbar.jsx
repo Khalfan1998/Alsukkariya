@@ -23,7 +23,7 @@ export default function Topbar() {
             <Settings/>
             </div>
             {/*    */}
-            <AccountCircle style={{cursor: "pointer"}}/>
+            <AccountCircle className="topProfilePic" style={{cursor: "pointer"}}/>
         </div>
       </div>
       </div>

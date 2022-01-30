@@ -13,6 +13,14 @@ export default function NewProduct() {
           <input type="text" placeholder="Sukari Large" />
         </div>
         <div className="addProductItem">
+          <label>Price</label>
+          <input type="text" placeholder="price" />
+        </div>
+        <div className="addProductItem">
+          <label>Raw Materials Price</label>
+          <input type="text" placeholder="price" />
+        </div>
+        <div className="addProductItem">
           <label>Stock</label>
           <input type="text" placeholder="123" />
         </div>

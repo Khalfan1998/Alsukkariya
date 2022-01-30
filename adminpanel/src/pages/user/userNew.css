@@ -46,8 +46,8 @@
 }
 
 .userShowImg {
-  width: 40px;
-  height: 40px;
+  width: 100px !important;
+  height: 100px !important;
   border-radius: 50%;
   object-fit: cover;
 }
