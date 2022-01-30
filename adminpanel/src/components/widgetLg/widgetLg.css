@@ -33,6 +33,10 @@
   margin-right: 20px;
 }
 
+.widgetLgDate {
+  font-weight: 500 !important;
+}
+
 .widgetLgDate,
 .widgetLgAmount {
   font-weight: 300;
