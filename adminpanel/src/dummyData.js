@@ -51,6 +51,22 @@ export const userData = [
   },
 ];
 
+export const productData = [
+  {
+    name: "Jan",
+    "Sales": 4000,
+  },
+  {
+    name: "Feb",
+    "Sales": 1000,
+  },
+  {
+    name: "Mar",
+    "Sales": 2000,
+  },
+
+];
+
 export const userRows = [
   {
     id: 1,
@@ -131,5 +147,24 @@ export const userRows = [
     email: "jack@gmail.com",
     status: "active",
     transaction: "BHD 345",
+  },
+];
+
+export const productRows = [
+  {
+    id: 1,
+    name: "Sukari Large",
+    img: "https://i.postimg.cc/Vk0YXd8v/sukari-large-removebg-preview.png",
+    stock: 123,
+    status: "active",
+    price: "BHD 345",
+  },
+  {
+    id: 2,
+    name: "Sukari Galaxy",
+    img: "https://i.postimg.cc/NfMGfdC1/sukari-galaxy-removebg-preview.png",
+    stock: 123,
+    status: "active",
+    price: "BHD 345",
   },
 ];
