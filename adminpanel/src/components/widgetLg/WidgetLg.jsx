@@ -1,3 +1,4 @@
+import { AccountCircle } from "@material-ui/icons";
 import "./widgetLg.css";
 
 export default function WidgetLg() {
@@ -16,7 +17,8 @@ export default function WidgetLg() {
       </tr>
       <tr className="widgetLgTr">
           <td className="widgetLgUser">
-              <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" />
+            <AccountCircle/>
+              {/* <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" /> */}
             <span className="widgetLgName">James Davis</span>
           </td>
           <td className="widgetLgDate">21st June 2021</td>
@@ -25,7 +27,8 @@ export default function WidgetLg() {
       </tr>
       <tr className="widgetLgTr">
           <td className="widgetLgUser">
-              <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" />
+          <AccountCircle/>
+              {/* <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" /> */}
             <span className="widgetLgName">Alex Philip</span>
           </td>
           <td className="widgetLgDate">21st June 2021</td>
@@ -34,7 +37,8 @@ export default function WidgetLg() {
       </tr>
       <tr className="widgetLgTr">
           <td className="widgetLgUser">
-              <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" />
+          <AccountCircle/>
+              {/* <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" /> */}
             <span className="widgetLgName">George Robinson</span>
           </td>
           <td className="widgetLgDate">21st June 2021</td>
@@ -43,7 +47,8 @@ export default function WidgetLg() {
       </tr>
       <tr className="widgetLgTr">
           <td className="widgetLgUser">
-              <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" />
+          <AccountCircle/>
+              {/* <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" /> */}
             <span className="widgetLgName">Ali Ahmad</span>
           </td>
           <td className="widgetLgDate">21st June 2021</td>
@@ -52,7 +57,8 @@ export default function WidgetLg() {
       </tr>
       <tr className="widgetLgTr">
           <td className="widgetLgUser">
-              <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" />
+          <AccountCircle/>
+              {/* <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="User" className="widgetLgImg" /> */}
             <span className="widgetLgName">Yousif Khalifa</span>
           </td>
           <td className="widgetLgDate">21st June 2021</td>

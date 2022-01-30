@@ -1,6 +1,6 @@
 import React from 'react';
 import "./topbar.css"
-import {NotificationsNone, Language, Settings} from "@material-ui/icons"
+import {NotificationsNone, Language, Settings, AccountCircle} from "@material-ui/icons"
 
 export default function Topbar() {
   return (
@@ -19,7 +19,8 @@ export default function Topbar() {
             <div className="topbarIconContainer">
             <Settings/>
             </div>
-            <img src="https://i.postimg.cc/13MnLztm/mika-1.png" alt="" className="topProfilePic" />
+            {/*    */}
+            <AccountCircle/>
         </div>
       </div>
       </div>

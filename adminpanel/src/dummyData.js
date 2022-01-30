@@ -1,3 +1,5 @@
+import { AccountCircle } from "@material-ui/icons";
+
 export const userData = [
   {
     name: "Jan",
@@ -46,5 +48,88 @@ export const userData = [
   {
     name: "Dec",
     "Active User": 2000,
+  },
+];
+
+export const userRows = [
+  {
+    id: 1,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 2,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 3,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 4,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 5,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 6,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 7,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 8,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 9,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
+  },
+  {
+    id: 10,
+    username: "Jack Davis",
+    avatar: <AccountCircle />,
+    email: "jack@gmail.com",
+    status: "active",
+    transaction: "BHD 345",
   },
 ];
