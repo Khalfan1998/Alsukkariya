@@ -6,6 +6,10 @@ Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 
 
+product page sales chart bigger height
+product info larger to fit the box
+create product raw materials in same line
+
 page to enable or disable Discount Component on orders
 (MAIN) Connect admin panel to website / database
 (MAIN) Fix cart increment decrement without refreshing, and update total cart
