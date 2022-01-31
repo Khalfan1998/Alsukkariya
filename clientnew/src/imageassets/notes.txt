@@ -6,6 +6,7 @@ Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 
 
+page to enable or disable Discount Component on orders
 (MAIN) Connect admin panel to website / database
 (MAIN) Fix cart increment decrement without refreshing, and update total cart
 (MAIN) Make + and - Button instantly remove or add amount to cart (reducer)

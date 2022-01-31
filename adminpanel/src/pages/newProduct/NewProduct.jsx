@@ -18,7 +18,7 @@ export default function NewProduct() {
         </div>
         <div className="addProductItem">
           <label>Raw Materials Price</label>
-          <input type="text" placeholder="price/attach invoice" />
+          <input type="text" placeholder="price     /attach invoice" />
           <input type="file" id="file" />
         </div>
         <div className="addProductItem">
