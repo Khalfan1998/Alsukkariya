@@ -1,17 +1,33 @@
 import "./widgetSm.css";
 import {AccountCircle, Visibility} from "@material-ui/icons"
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { userRequest } from "../../requestMethods";
 
 export default function WidgetSm() {
+const [users, setUsers] = useState([])
+
+useEffect(()=>{
+  const getUsers = async ()=>{
+    try{
+    const res = await userRequest.get("users/?new=true")
+    setUsers(res.data)
+  }catch{}
+  }
+  getUsers();
+},[])
+
   return <div className="widgetSm">
       <span className="widgetSmTitle">Newly Joined Members</span>
       <ul className="widgetSmList">
-          <li className="widgetSmListItem">
-              {/* <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" /> */}
-              <AccountCircle/>
+        {users.map(user=>(
+          <li className="widgetSmListItem" key={user._id}>
+              <img src={user.img || "https://i.postimg.cc/TYzCNGDQ/blank-profile-picture-g1ddcd9ae9-1280.png"}
+              alt="memberImg" 
+              className="widgetSmImg" />
+             
               <div className="widgetSmUser">
-                  <span className="widgetSmUsername">Jack Johnson</span>
-                  <span className="widgetSmUserTitle">Software Developer</span>
+                  <span className="widgetSmUsername">{user.username}</span>
               </div>
               <Link to="/user/1">
               <button className="widgetSmButton">
@@ -20,62 +36,7 @@ export default function WidgetSm() {
               </button>
               </Link>
           </li>
-          <li className="widgetSmListItem">
-                <AccountCircle/>
-              {/* <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" /> */}
-              <div className="widgetSmUser">
-                  <span className="widgetSmUsername">Jeremy Davis</span>
-                  <span className="widgetSmUserTitle">Software Developer</span>
-              </div>
-              <Link to="/user/1">
-              <button className="widgetSmButton">
-                <Visibility className="widgetSmIcon"/>
-                Display
-              </button>
-              </Link>
-          </li>
-          <li className="widgetSmListItem">
-          <AccountCircle/>
-              {/* <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" /> */}
-              <div className="widgetSmUser">
-                  <span className="widgetSmUsername">Alex Philip</span>
-                  <span className="widgetSmUserTitle">Software Developer</span>
-              </div>
-              <Link to="/user/1">
-              <button className="widgetSmButton">
-                <Visibility className="widgetSmIcon"/>
-                Display
-              </button>
-              </Link>
-          </li>
-          <li className="widgetSmListItem">
-          <AccountCircle/>
-              {/* <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" /> */}
-              <div className="widgetSmUser">
-                  <span className="widgetSmUsername">George Robinson</span>
-                  <span className="widgetSmUserTitle">Software Developer</span>
-              </div>
-              <Link to="/user/1">
-              <button className="widgetSmButton">
-                <Visibility className="widgetSmIcon"/>
-                Display
-              </button>
-              </Link>
-          </li>
-          <li className="widgetSmListItem">
-          <AccountCircle/>
-              {/* <img src="https://i.postimg.cc/XqWNh7Nn/charles-deluvio-K4m-SJ7kc0-As-unsplash.jpg" alt="memberImg" className="widgetSmImg" /> */}
-              <div className="widgetSmUser">
-                  <span className="widgetSmUsername">Ali Ahmad</span>
-                  <span className="widgetSmUserTitle">Software Developer</span>
-              </div>
-              <Link to="/user/1">
-              <button className="widgetSmButton">
-                <Visibility className="widgetSmIcon"/>
-                Display
-              </button>
-              </Link>
-          </li>
+          ))}
       </ul>
       </div>;
 }

@@ -17,8 +17,15 @@ export default function NewProduct() {
           <input type="text" placeholder="price" />
         </div>
         <div className="addProductItem">
-          <label>Raw Materials Price</label>
-          <input type="text" placeholder="price     /attach invoice" />
+          <label>Raw Materials Cost</label>
+          <input type="text" placeholder="Sukari Bag Cost     /attach invoice" />
+          <input type="file" id="file" />
+          <input type="text" placeholder="Sukari Box Cost     /attach invoice" />
+          <input type="file" id="file" />
+          <input type="text" placeholder="Sukari Date Cost     /attach invoice" />
+          <input type="file" id="file" />
+          <label>Raw Materials Total Cost</label>
+          <input type="text" placeholder="Total Raw Material Cost     /attach invoice" />
           <input type="file" id="file" />
         </div>
         <div className="addProductItem">

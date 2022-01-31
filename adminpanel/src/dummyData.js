@@ -3,51 +3,51 @@ import { AccountCircle } from "@material-ui/icons";
 export const userData = [
   {
     name: "Jan",
-    Sales: 4000,
+    "Active User": 4000,
   },
   {
     name: "Feb",
-    Sales: 1000,
+    "Active User": 1000,
   },
   {
     name: "Mar",
-    Sales: 2000,
+    "Active User": 2000,
   },
   {
     name: "Apr",
-    Sales: 3000,
+    "Active User": 3000,
   },
   {
     name: "May",
-    Sales: 1000,
+    "Active User": 1000,
   },
   {
     name: "Jun",
-    Sales: 7000,
+    "Active User": 7000,
   },
   {
     name: "July",
-    Sales: 2000,
+    "Active User": 2000,
   },
   {
     name: "Aug",
-    Sales: 1000,
+    "Active User": 1000,
   },
   {
     name: "Sep",
-    Sales: 3000,
+    "Active User": 3000,
   },
   {
     name: "Oct",
-    Sales: 4000,
+    "Active User": 4000,
   },
   {
     name: "Nov",
-    Sales: 6000,
+    "Active User": 6000,
   },
   {
     name: "Dec",
-    Sales: 2000,
+    "Active User": 2000,
   },
 ];
 

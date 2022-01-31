@@ -29,8 +29,24 @@ export default function Product() {
                     <span className="productInfoValue">BHD 7.5</span>
                 </div>
                 <div className="productInfoItem">
-                    <span className="productInfoKey">raw materials price:</span>
-                    <span className="productInfoValue">BHD 3</span>
+                    <span className="productInfoKey">raw materials cost:-</span>
+               
+                </div>
+                <div className="productInfoItem">
+                    <span className="productInfoKey">sukari bag cost:</span>
+                    <span className="productInfoValue">BHD 0.5</span>
+                </div>
+                <div className="productInfoItem">
+                    <span className="productInfoKey">sukari box cost:</span>
+                    <span className="productInfoValue">BHD 0.5</span>
+                </div>
+                <div className="productInfoItem">
+                    <span className="productInfoKey">sukari date cost:</span>
+                    <span className="productInfoValue">BHD 1</span>
+                </div>
+                <div className="productInfoItem">
+                    <span className="productInfoKey">raw materials total cost:</span>
+                    <span className="productInfoValue">BHD 2</span>
                 </div>
                 <div className="productInfoItem">
                     <span className="productInfoKey">sales:</span>
