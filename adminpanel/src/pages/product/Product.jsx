@@ -100,15 +100,11 @@ export default function Product() {
                     <span className="productInfoValue">4123</span>
                 </div>
                 <div className="productInfoItem">
-                    <span className="productInfoKey">active:</span>
-                    <span className="productInfoValue">yes</span>
-                </div>
-                <div className="productInfoItem">
                     <span className="productInfoKey">in stock:</span>
                     <span className="productInfoValue">{product.inStock}</span>
                 </div>  
               </div>
-          </div>
+          </div>        
       </div>
       <div className="productBottom">
           <form className="productForm">

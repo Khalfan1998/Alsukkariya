@@ -1,10 +1,46 @@
 .topbar {
   width: 100%;
   height: 50px;
-  background-color: white;
+  background-color: #eae8e6;
   position: sticky;
   top: 0;
   z-index: 999;
+}
+
+.announcementAdmin {
+  font-size: 15px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.announcementAdminEnable {
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.announcementAdminEnable:hover {
+  background-color: #f8f4f4;
+}
+
+.announcementAdminEnable:active {
+  background-color: #104a36;
+  color: white;
+}
+
+.announcementAdminDisable {
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.announcementAdminDisable:hover {
+  background-color: #f8f4f4;
+}
+
+.announcementAdminDisable:active {
+  background-color: #104a36;
+  color: white;
 }
 
 .topbarWrapper {
@@ -18,7 +54,7 @@
 .logo {
   font-weight: bold;
   font-size: 30px;
-  color: darkblue;
+  color: #236750;
   cursor: pointer;
 }
 

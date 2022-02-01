@@ -8,9 +8,13 @@ export default function Topbar() {
   <div className="topbar">
       <div className="topbarWrapper">
       <Link to="/" className="link">
-        <div className="topLeft"><span className="logo">KhalfanAdmin</span></div>
+        <div className="topLeft"><span className="logo">AlSukkariya Admin</span></div>
+       
         </Link>
         <div className="topRight">
+          <label className="announcementAdmin">Announcement</label>
+        <button className="announcementAdminEnable">Enable</button>
+        <button className="announcementAdminDisable">Disable</button>
             <div className="topbarIconContainer">
             <NotificationsNone/>
             <span className="topIconBadge">2</span>

@@ -20,7 +20,7 @@ useEffect(()=>{
   return <div className="widgetSm">
       <span className="widgetSmTitle">Newly Joined Members</span>
       <ul className="widgetSmList">
-        {users.map(user=>(
+        { users.map(user=>(
           <li className="widgetSmListItem" key={user._id}>
               <img src={user.img || "https://i.postimg.cc/TYzCNGDQ/blank-profile-picture-g1ddcd9ae9-1280.png"}
               alt="memberImg" 

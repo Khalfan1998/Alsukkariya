@@ -10,11 +10,22 @@
   justify-content: space-between;
 }
 
+h3.chartTitle {
+  margin-top: 20px;
+}
+
 .productTop {
   display: flex;
 }
 
-.productTopLeft,
+.chart {
+  height: 310px;
+}
+
+.productTopLeft {
+  flex: 2;
+}
+
 .productTopRight {
   flex: 1;
 }
