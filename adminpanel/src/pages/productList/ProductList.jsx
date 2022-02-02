@@ -21,7 +21,7 @@ export default function ProductList() {
       },[dispatch])
 
       const columns = [
-        { field: '_id', headerName: 'ID', width: 220 },
+       
         { field: 'product', headerName: 'Product', width: 200, renderCell: (params)=>{
           return (
             <div className="productListItem">
@@ -30,6 +30,7 @@ export default function ProductList() {
             </div>
           )
         } },
+        { field: '_id', headerName: 'ID', width: 220 },
         { field: 'inStock', headerName: 'Stock', width: 180 },
       
         {

@@ -9,6 +9,7 @@ import { userRequest } from "../../requestMethods";
 
 export default function Home() {
   const [userStats, setUserStats] = useState([])
+  const [pStats,setPStats] = useState([])
 
   const MONTHS = useMemo(
 ()=>[
@@ -31,14 +32,19 @@ export default function Home() {
   useEffect(() => {
     const getStats = async () => {
       try {
-        const res = await userRequest.get("/users/stats");
-        res.data.map((item) =>
-          setUserStats((prev) => [
+        const res = await userRequest.get("orders/income");
+        const list = res.data.sort((a,b)=>{
+            return a._id - b._id
+        })
+        list.map((item) =>
+          setPStats((prev) => [
             ...prev,
-            { name: MONTHS[item._id - 1], "Active User": item.total },
+            { name: MONTHS[item._id - 1], Sales: item.total },
           ])
         );
-      } catch {}
+      } catch (err) {
+        console.log(err);
+      }
     };
     getStats();
   }, [MONTHS]);
@@ -46,7 +52,7 @@ export default function Home() {
 
   return <div className="home">
       <FeaturedInfo/>
-      <Chart data={userStats} title="User Analytics" grid dataKey="Active User"/>
+      <Chart data={pStats} dataKey="Sales" title="Sales Performance"/>
       <div className="homeWidgets">
         <WidgetLg/>
         <WidgetSm/>

@@ -7,6 +7,11 @@ Make each product show available sizes/colors
 
 
 Admin:
+
+
+
+product list page- image and title first, before ID
+put logo in admin panel top left
 create product raw materials in same line
 link users to userList page (same as products page)
 add categories if neccessary
@@ -43,6 +48,9 @@ If logged in show buttons benefit pay or cash @ cart page
 
 Done:
 
+put sales for home page
+put categories for admin panel
+center product description top right box
 (MAIN) Connect admin panel to website / database
 product page sales chart bigger height
 product info larger to fit the box

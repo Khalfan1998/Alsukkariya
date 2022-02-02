@@ -1,6 +1,5 @@
 .userList {
   flex: 4;
-  
 }
 
 .user {
@@ -29,4 +28,17 @@
 .userListDelete {
   color: red;
   cursor: pointer;
+}
+
+.userAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  margin-left: 67%;
+  margin-bottom: 5px;
 }

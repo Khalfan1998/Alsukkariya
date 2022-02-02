@@ -273,7 +273,7 @@ const handleClick = () => {
 
 
 const incrementCount = (index) => {
-    console.log(index);
+    console.log(cart.products); 
     
     const products = cart.products;  
     products[index].quantity += 1;

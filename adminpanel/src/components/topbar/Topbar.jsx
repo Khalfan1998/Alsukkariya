@@ -8,7 +8,7 @@ export default function Topbar() {
   <div className="topbar">
       <div className="topbarWrapper">
       <Link to="/" className="link">
-        <div className="topLeft"><span className="logo">AlSukkariya Admin</span></div>
+        <div className="topLeft"><img src=" https://i.postimg.cc/bwCJFWGx/Logo-S2.png" alt="logo" className="AlSukkariyaLogo" /></div>
        
         </Link>
         <div className="topRight">

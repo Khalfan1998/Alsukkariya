@@ -49,6 +49,7 @@ h3.chartTitle {
 .productInfoTop {
   display: flex;
   align-items: center;
+  margin-left: 16%;
 }
 
 .productName {
@@ -57,7 +58,7 @@ h3.chartTitle {
 
 .productInfoBottom {
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 16%;
 }
 
 .productInfoItem {

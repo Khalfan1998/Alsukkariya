@@ -8,8 +8,12 @@ import { useDispatch } from "react-redux";
 export default function NewProduct() {
   const [inputs, setInputs]=useState({})
   const [file, setFile]=useState(null)
+  const [cat, setCat] = useState([]);
   const dispatch = useDispatch()
 
+  const handleCat = (e) => {
+    setCat(e.target.value.split(","));
+  };
 
   const handleChange = (e) =>{
     setInputs(prev=>{
@@ -51,7 +55,7 @@ uploadTask.on('state_changed',
     // Handle successful uploads on complete
     // For instance, get the download URL: https://firebasestorage.googleapis.com/...
     getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-      const product = ({...inputs, img: downloadURL });
+      const product = ({...inputs, img: downloadURL, categories: cat });
       addProduct(product,dispatch)
     });
   }
@@ -94,6 +98,10 @@ uploadTask.on('state_changed',
           <label>Raw Materials Total Cost</label>
           <input type="text" placeholder="Total Raw Material Cost     /attach invoice" />
           <input type="file" id="file" />
+        </div>
+        <div className="addProductItem">
+          <label>Categories</label>
+          <input type="text" placeholder="categories" onChange={handleCat} />
         </div>
         <div className="addProductItem">
           <label>Stock</label>

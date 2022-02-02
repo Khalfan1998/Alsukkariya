@@ -76,6 +76,10 @@ export default function Product() {
                     <span className="productInfoValue">BHD 7.5</span>
                 </div>
                 <div className="productInfoItem">
+                    <span className="productInfoKey">category:</span>
+                    <span className="productInfoValue">large</span>
+                </div>
+                <div className="productInfoItem">
                     <span className="productInfoKey">raw materials cost:-</span>
                
                 </div>
