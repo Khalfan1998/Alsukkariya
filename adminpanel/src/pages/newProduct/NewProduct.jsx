@@ -101,7 +101,7 @@ uploadTask.on('state_changed',
         </div>
         <div className="addProductItem">
           <label>Categories</label>
-          <input type="text" placeholder="categories" onChange={handleCat} />
+          <input type="text" placeholder="Large or Galaxy" onChange={handleCat} />
         </div>
         <div className="addProductItem">
           <label>Stock</label>

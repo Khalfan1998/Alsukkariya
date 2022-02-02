@@ -68,7 +68,7 @@ export default function Product() {
               </div>
               <div className="productInfoBottom">
                 <div className="productInfoItem">
-                    <span className="productInfoKey">id:</span>
+                    <span className="productInfoKey">Id:</span>
                     <span className="productInfoValue">{product._id}</span>
                 </div>
                 <div className="productInfoItem">

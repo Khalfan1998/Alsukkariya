@@ -11,6 +11,7 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Transactions from "./pages/transactions/Transactions";
 import Login from "./pages/login/Login";
+import Test from "./pages/testPage/Test";
 
 function App() {
   const admin = JSON.parse(
@@ -51,6 +52,9 @@ function App() {
               </Route>
               <Route path="/transactions">
                 <Transactions />
+              </Route>
+              <Route path="/test">
+                <Test />
               </Route>
             </div>
           </>
