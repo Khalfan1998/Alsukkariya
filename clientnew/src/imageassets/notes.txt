@@ -8,11 +8,13 @@ Make each product show available sizes/colors
 
 Admin:
 
-
+Order details page for each transaction
+If Cash on delivery (approved)
+If Benefit Pay (pending, then approved)
 create product raw materials in same line
 link users to userList page (same as products page)
-add categories if neccessary
 button to enable or disable Discount linked to announcement Component on orders
+
 
 Client:
 (MAIN) Make + and - Button instantly remove or add amount to cart, without refreshing, update total (reducer)
@@ -45,7 +47,8 @@ If logged in show buttons benefit pay or cash @ cart page
 
 Done:
 
-
+add categories if neccessary
+name email phone number ID ( for user list)
 product list page- image and title first, before ID
 put logo in admin panel top left
 put sales for home page

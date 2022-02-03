@@ -36,7 +36,7 @@ useEffect(()=>{
             <span className="widgetLgName">{order.userId}</span>
           </td>
           <td className="widgetLgDate">{format(order.createdAt)}</td>
-          <td className="widgetLgDate">${order.amount}</td>
+          <td className="widgetLgDate">BHD {order.amount}</td>
           <td className="widgetLgDate">Cash on Delivery</td>
           <td className="widgetLgOrderStatus"><Button type={order.status}/>
           </td>

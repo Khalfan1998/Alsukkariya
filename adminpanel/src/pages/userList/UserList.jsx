@@ -22,30 +22,27 @@ export default function UserList() {
   },[])
 
     const columns = [
-        { field: '_id', headerName: 'ID', width: 200 },
-        { field: 'username', headerName: 'Username', width: 180, renderCell: (params)=>{
+        
+        { field: 'name', headerName: 'Name', width: 200, renderCell: (params)=>{
           return (
             <div className="user">
               <AccountCircle className="userImg" src={params.row.avatar}/>
-              {params.row.username}
+              {params.row.name}
             </div>
           )
         } },
-        { field: 'email', headerName: 'Email', width: 180 },
-        {
-          field: 'status',
-          headerName: 'Status',
-          width: 120,
-        },
-
+        { field: 'email', headerName: 'Email', width: 200 },
+        { field: 'number', headerName: 'Phone Number', width: 180 },
+        { field: '_id', headerName: 'ID', width: 240 },
+       
         {
           field: "action",
           headerName:"Action",
-          width: 150,
+          width: 200,
           renderCell: (params)=>{
             return(
               <>
-              <Link to={"/user/"+params.row.id}>
+              <Link to={"/user/"+params.row._id}>
               <button className="userListEdit">Edit</button>
               </Link>
               <DeleteOutline className="userListDelete" />
@@ -65,8 +62,8 @@ export default function UserList() {
         rows={users} disableSelectionOnClick
         columns={columns}
         getRowId={row=>row._id}
-        pageSize={10}
-        rowsPerPageOptions={[5]}
+        pageSize={20}
+        rowsPerPageOptions={[20]}
         checkboxSelection
       />
   </div>;

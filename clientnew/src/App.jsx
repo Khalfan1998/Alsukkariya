@@ -15,6 +15,7 @@ import { useSelector } from "react-redux";
 import ScrollToTop from "./ScrollToTop"
 import Successpage from "./pages/Successpage";
 import Navbarmobile from "./components/Navbarmobile";
+import EmailTemplate from "./pages/EmailTemplate";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -46,6 +47,9 @@ const App = () => {
         </Route>
         <Route path="/successpage">
           <Successpage/>
+        </Route>
+        <Route path="/emailtemplate">
+          <EmailTemplate/>
         </Route>
       </Switch>
     </Router>

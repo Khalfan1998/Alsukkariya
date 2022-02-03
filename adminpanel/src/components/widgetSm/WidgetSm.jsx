@@ -27,7 +27,7 @@ useEffect(()=>{
               className="widgetSmImg" />
              
               <div className="widgetSmUser">
-                  <span className="widgetSmUsername">{user.username}</span>
+                  <span className="widgetSmUsername">{user.name}</span>
               </div>
               <Link to="/user/1">
               <button className="widgetSmButton">

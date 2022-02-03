@@ -73,11 +73,11 @@ export default function Product() {
                 </div>
                 <div className="productInfoItem">
                     <span className="productInfoKey">price:</span>
-                    <span className="productInfoValue">BHD 7.5</span>
+                    <span className="productInfoValue">BHD {product.price}</span>
                 </div>
                 <div className="productInfoItem">
                     <span className="productInfoKey">category:</span>
-                    <span className="productInfoValue">large</span>
+                    <span className="productInfoValue">   </span>
                 </div>
                 <div className="productInfoItem">
                     <span className="productInfoKey">raw materials cost:-</span>
