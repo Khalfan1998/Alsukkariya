@@ -1,3 +1,20 @@
 .test {
   flex: 4;
 }
+
+.h1title {
+  margin-bottom: 40px;
+}
+
+.labeltitle {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.inputtext {
+  margin-bottom: 40px;
+}
+
+.button {
+  margin-left: 42% !important;
+}

@@ -8,6 +8,7 @@ import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
 import Icon from '@material-ui/core/Icon';
 import { v4 as uuidv4 } from 'uuid';
+import { DeleteOutline } from "@material-ui/icons";
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -57,21 +58,27 @@ export default function Test() {
 
   return <div className="test">
       <Container>
-      <h1>Add New Product</h1>
+      <h1 className="h1title">Add New Product</h1>
       <form className={classes.root} onSubmit={handleSubmit}>
         { inputFields.map(inputField => (
-          <div key={inputField.id}>
-            <label>Category</label>
+          <div className="inputtext" key={inputField.id}>
+            <TextField
+              name="firstName"
+              label="Description"
+              variant="filled"
+              value={inputField.firstName}
+              onChange={event => handleChangeInput(inputField.id, event)}
+            />
            
             <TextField
               name="lastName"
-              label="Last Name"
+              label="input field"
               variant="filled"
               value={inputField.lastName}
               onChange={event => handleChangeInput(inputField.id, event)}
             />
             <IconButton disabled={inputFields.length === 1} onClick={() => handleRemoveFields(inputField.id)}>
-              <RemoveIcon />
+              <DeleteOutline />
             </IconButton>
             <IconButton
               onClick={handleAddFields}
@@ -81,13 +88,14 @@ export default function Test() {
           </div>
         )) }
         <Button
-          className={classes.button}
+         className="button"
           variant="contained" 
           color="primary" 
           type="submit" 
-          SendIcon={<Icon>send</Icon>}
           onClick={handleSubmit}
-        >Send</Button>
+        >
+            Create
+            </Button>
       </form>
     </Container>
  
