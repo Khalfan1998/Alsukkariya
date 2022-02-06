@@ -17,6 +17,11 @@ button to enable or disable Discount linked to announcement Component on orders
 
 
 Client:
+
+
+(MAIN) send email html template order to customer( Send Order Confirmation Email react / laravel) (sendgrid.com)
+https://medium.com/swlh/send-email-with-node-js-from-react-website-using-nodemailer-and-sendgrid-2d2e54545a1a
+
 (MAIN) Make + and - Button instantly remove or add amount to cart, without refreshing, update total (reducer)
 (MAIN) Benefitpay order email to owner, owner checks for payment, then sends receipt email to customer, 
 then process order

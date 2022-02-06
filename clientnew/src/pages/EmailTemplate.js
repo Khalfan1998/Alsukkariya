@@ -8,7 +8,7 @@ export default function ContactUs() {
     emailjs
       .sendForm(
         "gmail",
-        "template_yzx3sql",
+        "emailtemplate",
         e.target,
         "user_55A95fDRXwEhih3fhx36R"
       )
@@ -28,22 +28,22 @@ export default function ContactUs() {
       <div className="container">
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
-            <div className="col-8 form-group mx-auto">
+            {/* <div className="col-8 form-group mx-auto">
               <input
                 type="text"
                 className="form-control"
                 placeholder="Name"
                 name="name"
               />
-            </div>
-            <div className="col-8 form-group pt-2 mx-auto">
+            </div> */}
+            {/* <div className="col-8 form-group pt-2 mx-auto">
               <input
                 type="email"
                 className="form-control"
                 placeholder="Email Address"
                 name="email"
               />
-            </div>
+            </div> */}
             <div className="col-8 form-group pt-2 mx-auto">
               <input
                 type="text"
@@ -52,7 +52,7 @@ export default function ContactUs() {
                 name="subject"
               />
             </div>
-            <div className="col-8 form-group pt-2 mx-auto">
+            {/* <div className="col-8 form-group pt-2 mx-auto">
               <textarea
                 className="form-control"
                 id=""
@@ -61,7 +61,7 @@ export default function ContactUs() {
                 placeholder="Your message"
                 name="message"
               ></textarea>
-            </div>
+            </div> */}
             <div className="col-8 pt-3 mx-auto">
               <input
                 type="submit"

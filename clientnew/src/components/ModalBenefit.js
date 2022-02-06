@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import emailjs from "emailjs-com";
 
 const Background = styled.div`
   width: 100%;
@@ -99,15 +100,32 @@ const Agreement = styled.span`
 `;
 const Button = styled.button`
   margin-top: 30px;
-  margin-left: -22%;
-  width: 540%;
-  height: 80%;
+  margin-left: -4%;
+  margin-right: 15%;
+  width: 200%;
+  height: 20%;
   border-radius: 8px;
   border: none;
   padding: 15px 20px;
   color: white;
   cursor: pointer;
 `;
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs
+    .sendForm("gmail", "emailtemplate", e.target, "user_55A95fDRXwEhih3fhx36R")
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  e.target.reset();
+}
 
 export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
   const cart = useSelector((state) => state.cart);
@@ -127,14 +145,15 @@ export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
                 <Hr />
                 <span style={{ fontWeight: "bold" }}>IBAN:9312379123</span>
               </Title>
-              <Form>
+              <Form onSubmit={sendEmail}>
+                <Input placeholder="Subject" required name="subject" />
                 <Input placeholder="Name" />
                 <Input placeholder="E-mail" />
                 <Input placeholder="Address" />
                 <Input placeholder="Phone number" />
-                <Link to="/successpage">
-                  <Button>Order</Button>
-                </Link>
+                {/* <Link to="/successpage"> */}
+                <Button type="submit">Order</Button>
+                {/* </Link> */}
               </Form>
             </ModalContent>
             <CloseModalButton

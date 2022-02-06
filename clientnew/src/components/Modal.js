@@ -4,6 +4,7 @@ import { MdClose } from "react-icons/md";
 import { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import emailjs from "emailjs-com";
 
 const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
@@ -101,15 +102,32 @@ const Agreement = styled.span`
 `;
 const Button = styled.button`
   margin-top: 30px;
-  margin-left: 95%;
-  width: 540%;
-  height: 80%;
+  margin-left: 13%;
+  margin-right: 13%;
+  width: 200%;
+  height: 20%;
   border-radius: 8px;
   border: none;
   padding: 15px 20px;
   color: white;
   cursor: pointer;
 `;
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs
+    .sendForm("gmail", "emailtemplate", e.target, "user_55A95fDRXwEhih3fhx36R")
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  e.target.reset();
+}
 
 export const Modal = ({ showModal, setShowModal }) => {
   const cart = useSelector((state) => state.cart);
@@ -128,14 +146,15 @@ export const Modal = ({ showModal, setShowModal }) => {
                 </span>{" "}
                 Via Cash On Delivery
               </Title>
-              <Form>
+              <Form onSubmit={sendEmail}>
+                <Input placeholder="Subject" required name="subject" />
                 <Input placeholder="Name" required />
                 <Input placeholder="E-mail" required />
                 <Input placeholder="Address" required />
                 <Input placeholder="Phone number" required />
-                <Link to="/successpage">
-                  <Button>Order</Button>
-                </Link>
+                {/* <Link to="/successpage"> */}
+                <Button type="submit">Order</Button>
+                {/* </Link> */}
               </Form>
             </ModalContent>
             <CloseModalButton
