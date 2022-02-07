@@ -12,9 +12,7 @@ const cors = require("cors");
 const sgMail = require("@sendgrid/mail");
 
 //sendgrid api key
-sgMail.setApiKey(
-  "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"
-);
+sgMail.setApiKey(process.env.SG_KEY);
 
 dotenv.config();
 
