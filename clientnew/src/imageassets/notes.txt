@@ -6,8 +6,13 @@ Cart Page : amount: cart.total*100
 Make each product show available sizes/colors
 
 
+SendGrid API key:
+
+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
+
 Admin:
 
+Add calender (with holidays) feature for events to add marketing during some events.
 Order details page for each transaction
 If Cash on delivery (approved)
 If Benefit Pay (pending, then approved)

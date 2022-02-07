@@ -1,77 +1,78 @@
-import emailjs from "emailjs-com";
-import React from "react";
+import React, { Component } from "react";
 
-export default function ContactUs() {
-  function sendEmail(e) {
-    e.preventDefault();
+class EmailTemplate extends Component {
+  state = {
+    email: {
+      recipient: "",
+      sender: "",
+      subject: "",
+      text: "",
+    },
+  };
+  
+  sendEmail = (_) => {
+    const { email } = this.state;
+    fetch(
+      `http://localhost:5000/send-email?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`
+    ) //query string url
+      .catch((err) => console.error(err));
+  };
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "emailtemplate",
-        e.target,
-        "user_55A95fDRXwEhih3fhx36R"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
-
-  return (
-    <div>
-      <div className="container">
-        <form onSubmit={sendEmail}>
-          <div className="row pt-5 mx-auto">
-            {/* <div className="col-8 form-group mx-auto">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Name"
-                name="name"
-              />
-            </div> */}
-            {/* <div className="col-8 form-group pt-2 mx-auto">
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email Address"
-                name="email"
-              />
-            </div> */}
-            <div className="col-8 form-group pt-2 mx-auto">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Subject"
-                name="subject"
-              />
-            </div>
-            {/* <div className="col-8 form-group pt-2 mx-auto">
-              <textarea
-                className="form-control"
-                id=""
-                cols="30"
-                rows="8"
-                placeholder="Your message"
-                name="message"
-              ></textarea>
-            </div> */}
-            <div className="col-8 pt-3 mx-auto">
-              <input
-                type="submit"
-                className="btn btn-info"
-                value="Send Message"
-              ></input>
-            </div>
-          </div>
-        </form>
+  render() {
+    const { email } = this.state;
+    const spacer = {
+      margin: 10,
+    };
+    const textArea = {
+      borderRadius: 4,
+    };
+    return (
+      <div className="App">
+        <div style={{ marginTop: 10 }}>
+          <h2> Send Email </h2>
+          <label> Recipient </label>
+          <br />
+          <input
+            value={email.recipient}
+            onChange={(e) =>
+              this.setState({ email: { ...email, recipient: e.target.value } })
+            }
+          />
+          <div style={spacer} />
+          <label> Sender </label>
+          <br />
+          <input
+            value={email.sender}
+            onChange={(e) =>
+              this.setState({ email: { ...email, sender: e.target.value } })
+            }
+          />
+          <div style={spacer} />
+          <label> Subject </label>
+          <br />
+          <input
+            value={email.subject}
+            onChange={(e) =>
+              this.setState({ email: { ...email, subject: e.target.value } })
+            }
+          />
+          <div style={spacer} />
+          <label> Message </label>
+          <br />
+          <textarea
+            rows={3}
+            value={email.text}
+            style={textArea}
+            onChange={(e) =>
+              this.setState({ email: { ...email, text: e.target.value } })
+            }
+          />
+          <div style={spacer} />
+          <button onClick={this.sendEmail}> Send Email </button>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
+
+export default EmailTemplate;
