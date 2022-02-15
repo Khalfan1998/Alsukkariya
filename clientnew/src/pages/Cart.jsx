@@ -19,6 +19,7 @@ import { ModalBenefit } from '../components/ModalBenefit'
 import { GlobalStyle } from '../globalStyles'
 import Navbarmobile from '../components/Navbarmobile'
 import "./Cart.css";
+import {updateCartTotal} from "../redux/cartRedux"
 
 
 
@@ -250,8 +251,19 @@ const dispatch = useDispatch();
 const [showModal, setShowModal] = useState(false);
 const [showModalBenefit, setShowModalBenefit] = useState(false);
 const [products, setQuantity] = useState(1);
+const [product,setProduct] = useState({});
+
+const productsTotal = [
+    { price: 7.5, Quantity: 2 },
+    { price: 6.5, Quantity: 2 },
+  ];
+  
 
 
+  const handleUpdate = ()=>{
+    dispatch(
+    updateCartTotal({...product, quantity}))
+  }
   
 
 
@@ -273,7 +285,6 @@ const handleClick = () => {
 
 
 const incrementCount = (index) => {
-    console.log(cart.products); 
     
     const products = cart.products;  
     products[index].quantity += 1;
@@ -373,6 +384,7 @@ useEffect(()=>{
                                         {product.quantity}
                                     </ProductAmount>
                                     <Add onClick={() => incrementCount(index)}/>
+                                    {/* <Button onClick={() => handleUpdate(index)}>ADD TO CART</Button> */}
                                 </ProductAmountContainer>
                                 <ProductPrice>
                                   BHD  {product.price*product.quantity}
@@ -390,9 +402,12 @@ useEffect(()=>{
                             <SummaryItemText>
                                 Subtotal:
                             </SummaryItemText>
+                   
                             <SummaryItemPrice>
-                               BHD {cart.total}
+                               {/* BHD {  (productsTotal.reduce((n, {Quantity,price}) => n + Quantity*price, 0))} */}
+                                BHD {cart.total}
                             </SummaryItemPrice>
+                           
                         </SummaryItem>
                         <SummaryItem>
                             <SummaryItemText>
@@ -415,6 +430,7 @@ useEffect(()=>{
                                 Total:
                             </SummaryItemText>
                             <SummaryItemPrice>
+                            {/* BHD  {  (productsTotal.reduce((n, {Quantity,price}) => n + Quantity*price, 0))} */}
                             BHD {cart.total}
                             </SummaryItemPrice>
                         </SummaryItem>

@@ -26,6 +26,7 @@
 }
 
 .sidebarListItem {
+  font-size: 20px;
   padding: 5px;
   cursor: pointer;
   display: flex;
@@ -38,6 +39,7 @@
 }
 
 .sidebarIcon {
+  margin-top: 3px;
   margin-right: 5px;
   font-size: 20px !important;
 }

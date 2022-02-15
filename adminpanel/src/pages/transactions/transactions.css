@@ -3,7 +3,6 @@
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   padding: 20px;
-  
 }
 
 .widgetLgTitle {
@@ -45,20 +44,20 @@
   border-radius: 10px;
 }
 
-.widgetLgButton.Approved {
+.widgetLgButton.approved {
   font-weight: bold;
   background-color: #e5faf2;
   color: #3bb077;
 }
 
-.widgetLgButton.Declined {
+.widgetLgButton.declined {
   font-weight: bold;
   background-color: #fff0f1;
   color: #d95087;
 }
 
-.widgetLgButton.Pending {
+.widgetLgButton.pending {
   font-weight: bold;
-  background-color: #feffc7;
+  background-color: #ffe394;
   color: #ff9900;
 }

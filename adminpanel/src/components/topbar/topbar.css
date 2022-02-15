@@ -7,6 +7,12 @@
   z-index: 999;
 }
 
+.topLogOut {
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 8px;
+}
+
 .announcementAdmin {
   font-size: 15px;
   margin-right: 5px;

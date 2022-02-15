@@ -2,8 +2,18 @@ import React from 'react';
 import "./topbar.css"
 import {NotificationsNone, Language, Settings, AccountCircle} from "@material-ui/icons"
 import { Link } from 'react-router-dom';
+import { logOut } from "../../redux/apiCalls";
+import { useDispatch } from "react-redux";
 
 export default function Topbar() {
+  const dispatch = useDispatch();
+
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   logOut(dispatch);
+  // };
+
+
   return (
   <div className="topbar">
       <div className="topbarWrapper">
@@ -12,6 +22,7 @@ export default function Topbar() {
        
         </Link>
         <div className="topRight">
+        <button className="topLogOut">Logout</button>
           <label className="announcementAdmin">Announcement</label>
         <button className="announcementAdminEnable">Enable</button>
         <button className="announcementAdminDisable">Disable</button>
