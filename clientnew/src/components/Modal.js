@@ -5,6 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import emailjs from "emailjs-com";
+import { mobile } from "../responsive";
 
 const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
@@ -14,6 +15,8 @@ const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+  ${mobile({ fontSize: "15px" })}
+  ${mobile({ marginRight: "8%" })}
 `;
 
 const Background = styled.div`
@@ -42,6 +45,8 @@ const ModalWrapper = styled.div`
   z-index: 5;
   border-radius: 10px;
   margin-bottom: 160px;
+  ${mobile({ height: "500px" })}
+  ${mobile({ width: "300px" })}
 `;
 
 const ModalContent = styled.div`
@@ -73,6 +78,9 @@ const CloseModalButton = styled(MdClose)`
   height: 32px;
   padding: 0;
   z-index: 10;
+  ${mobile({ width: "20px" })}
+  ${mobile({ height: "20px" })}
+  ${mobile({ top: "20px" })}
 `;
 
 const FooterContainer = styled.div`
@@ -95,6 +103,9 @@ const Input = styled.input`
   border: none;
   margin: 20px 200px 0px 80px;
   padding: 10px;
+  ${mobile({ fontSize: "10px" })}
+  ${mobile({ marginRight: "55%" })}
+  ${mobile({ marginLeft: "10%" })}
 `;
 const Agreement = styled.span`
   font-size: 12px;
@@ -111,6 +122,9 @@ const Button = styled.button`
   padding: 15px 20px;
   color: white;
   cursor: pointer;
+  ${mobile({ height: "15%" })}
+  ${mobile({ width: "250px" })}
+  ${mobile({ marginLeft: "10%" })}
 `;
 
 function sendEmail(e) {
