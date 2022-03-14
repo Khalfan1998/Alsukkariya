@@ -107,7 +107,7 @@ width: 70px;
 height:70px;
 margin-top: 30px;
 ${mobile({ marginLeft : "120px" })}
-
+${mobile({ zIndex : "1 !important" })}
 `
 
 const Right = styled.div`
