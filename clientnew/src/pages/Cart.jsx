@@ -139,7 +139,8 @@ const ProductSize = styled.span`
 const PriceDetail = styled.div`
 flex: 1;
 display: flex;
-flex-direction: column;
+flex-direction: row;
+margin-top: 20px;
 align-items: center;
 justify-content: center;
 
@@ -165,6 +166,8 @@ font-size: 24px;
 ${mobile({ margin: "5px 15px" })}
 `
 const ProductPrice = styled.div`
+margin-left: 15px;
+margin-bottom: 18px;
 font-size: 20px;
 font-weight: 550;
 ${mobile({ marginBottom: "20px" })}
