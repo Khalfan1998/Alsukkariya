@@ -110,6 +110,7 @@ const Input = styled.input`
 const Agreement = styled.span`
   font-size: 12px;
   margin: 20px 0px;
+  z-index: 1;
 `;
 const Button = styled.button`
   margin-top: 30px;
