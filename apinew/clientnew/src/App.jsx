@@ -18,7 +18,7 @@ import Navbarmobile from "./components/Navbarmobile";
 import EmailTemplate from "./pages/EmailTemplate";
 
 const App = () => {
-  const user = useSelector((state) => state.user.currentUser);
+  // const user = useSelector((state) => state.user.currentUser);
   return (
     <Router>
       <ScrollToTop/>
@@ -39,11 +39,11 @@ const App = () => {
           <Success/>
         </Route>
         <Route path="/login">
-          {user ? <Redirect to ="/"/> : <Login/>}
+          {/* {user ? <Redirect to ="/"/> : <Login/>} */}
        
         </Route>
         <Route path="/register">
-        {user ? <Redirect to ="/"/> : <Register/>}
+        {/* {user ? <Redirect to ="/"/> : <Register/>} */}
         </Route>
         <Route path="/successpage">
           <Successpage/>
