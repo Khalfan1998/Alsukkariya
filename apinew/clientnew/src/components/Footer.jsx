@@ -45,6 +45,7 @@ align-items: center;
 justify-content: center;
 margin-right: 20px;
 cursor:pointer;
+${mobile({ marginLeft : "40%" })}
 `
 
 const Center = styled.div`
