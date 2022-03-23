@@ -146,8 +146,7 @@ const Footer = () => {
         <Container>
             <ScrollToTop/>
             <Left>
-            <Image onClick={scrollToTop} src ="https://i.postimg.cc/bwCJFWGx/Logo-S2.png"/>
-                
+            <Image onClick={scrollToTop} src ="https://i.postimg.cc/bwCJFWGx/Logo-S2.png"/>  
                 <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quis reprehenderit officiis, cupiditate ratione laudantium quos recusandae atque.</Desc>
                 <SocialContainer>
                     {/* <FacebookContainer>
@@ -156,8 +155,7 @@ const Footer = () => {
                         <Facebook />
                         </a>
                     </SocialIcon>
-                    </FacebookContainer> */}
-                    
+                    </FacebookContainer> */}    
                     {/* <TwitterContainer>
                     <SocialIcon color="55ACEE">
                         <a href ="https://twitter.com/alsukkariya" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
@@ -172,29 +170,22 @@ const Footer = () => {
                     Address 3123, Area 312313
                 </ContactItem>
                 <ContactItem><Phone style={{marginRight:"10px"}}/>
-                    +973 3939393
-                   
+                    +973 3939393           
                 </ContactItem>
                 <ContactItem><MailOutline style={{marginRight:"10px"}}/>
                     contact@gmail.com
                 </ContactItem> */}
-                 <Center>
-                
+                 <Center>         
                 <List>
-                    <ListItem>
-                    
+                    <ListItem>          
                 <ContactItem><Room style={{marginRight:"10px", marginBottom:"18px"}}/>
                     Address 3123, Area 312313
-                </ContactItem>
-                        
+                </ContactItem>             
                     </ListItem>
-                    <ListItem>
-                       
+                    <ListItem>             
                     <ContactItem><Phone style={{marginLeft:"10px"}} />
-                    +973 3939393
-                    
-                </ContactItem>
-               
+                    +973 3939393   
+                </ContactItem>  
                     </ListItem>
                     <ListItem>
                     <ContactMobile>
@@ -203,8 +194,6 @@ const Footer = () => {
                 </ContactItem>
                  </ContactMobile>
                     </ListItem>
-            
-   
                 </List>
             </Center> 
             <Right>
@@ -215,7 +204,6 @@ const Footer = () => {
                         </a>
                     </SocialIcon>
                     </InstagramContainer>
-                
             </Right>
         </Container>
     )

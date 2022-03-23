@@ -91,16 +91,12 @@ const Product = ({item}) => {
             <Circle/>
             <Image src={item.img}/>
             <Info>
-              
                 <Icon>
                   <Link to={`/product/${item._id}`}>
                     <SearchOutlined/>
                     </Link>
-                    
                 </Icon>
             </Info>
-           
-           
         </Container>
         <Title>{item.title}</Title>
            <Price> BHD {item.price}</Price>

@@ -102,7 +102,6 @@ const Login = () => {
         <Container>
           <NavbarContainer>
           <Navbar/>
-          
           </NavbarContainer>
           <Navbarmobile/>
           <ProductListContainer>
@@ -121,7 +120,6 @@ const Login = () => {
         <Button onClick={handleClick} >
             LOGIN
           </Button>
-         
           <Account>DO NOT YOU REMEMBER THE PASSWORD?</Account>
           <Link to="/register">
           <Account>CREATE A NEW ACCOUNT</Account>

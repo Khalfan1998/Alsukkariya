@@ -103,19 +103,13 @@ const Navbar = () => {
                 <Link to="/products/Products" style={{textDecoration:"none"}}>
                 <MenuItem>Products</MenuItem>
                 </Link>
-               
                 <MenuItem onClick={scrollToBottom}>About Us</MenuItem>
-                
-                
-                <MenuItem onClick={scrollToBottom}>Contact</MenuItem>
-                
+                <MenuItem onClick={scrollToBottom}>Contact</MenuItem> 
             </Left>
             <Link to="/" style={{textDecoration:"none"}}>
-            
             <Center>
                 <Image src ="https://i.postimg.cc/bwCJFWGx/Logo-S2.png"/>
-                {/* <Logo>Al-Sukkariya</Logo> */}
-                
+                {/* <Logo>Al-Sukkariya</Logo> */}  
             </Center>
             </Link>
             <Right>

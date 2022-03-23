@@ -203,7 +203,6 @@ const Product = () => {
     <Container>
       <NavbarContainer>
           <Navbar/>
-          
           </NavbarContainer>
           <Navbarmobile/>
       <Announcement />
@@ -232,7 +231,6 @@ const Product = () => {
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-       
       <FooterContainer>
       <Footer/>
       </FooterContainer>

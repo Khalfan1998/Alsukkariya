@@ -267,12 +267,9 @@ useEffect(()=>{
         <Container>
             <NavbarContainer>
           <Navbar/>
-          
           </NavbarContainer>
           <Navbarmobile/>
-           
             <Wrapper>
-                
                     <Summary>
                         <SummaryTitle>
                             ORDER SUMMARY
@@ -314,10 +311,7 @@ useEffect(()=>{
                               Thank you for shopping with us!
                               You will receive an email soon to confirm your order.
                           </Confirmation>
-                  
-                        
                     </Summary>
-               
             </Wrapper>
             <FooterContainer>
       <Footer/>

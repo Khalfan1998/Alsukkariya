@@ -91,7 +91,6 @@ const Register = () => {
         <Container>
               <NavbarContainer>
           <Navbar/>
-          
           </NavbarContainer>
           <Navbarmobile/>
             <Wrapper>
@@ -112,9 +111,7 @@ const Register = () => {
                     <Agreement>
                         By creating an account, I consent to processing of my personal data in accordance with the <b>PRIVACY POLICY</b>
                     </Agreement>
-                    
-                     <Button onClick={handleClick}>CREATE</Button>
-                        
+                     <Button onClick={handleClick}>CREATE</Button>        
                 </Form>
             </Wrapper>
             <FooterContainer>

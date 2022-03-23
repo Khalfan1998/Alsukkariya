@@ -110,7 +110,6 @@ const ProductList = () => {
         <Container>
              <NavbarContainer>
           <Navbar/>
-          
           </NavbarContainer>
           <Navbarmobile/>
             <Announcement/>
@@ -131,9 +130,7 @@ const ProductList = () => {
                         <Option>
                             Galaxy
                         </Option>
-                        
                     </Select>
-                
                 </Filter>
                 <Filter>
                     <FilterText>Sort Products:</FilterText>
