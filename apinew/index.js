@@ -10,6 +10,7 @@ const orderRoute = require("./routes/order");
 const stripeRoute = require("./routes/stripe");
 const cors = require("cors");
 const path = require("path");
+
 // const sgMail = require("@sendgrid/mail");
 
 // //sendgrid api key
@@ -26,11 +27,11 @@ mongoose
 
 app.use(cors());
 app.use(express.json());
-app.use("/api/products", productRoute);
-app.use("/api/orders", orderRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
+app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
+app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
 
 app.use(express.static(path.join(__dirname, "/clientnew/build")));

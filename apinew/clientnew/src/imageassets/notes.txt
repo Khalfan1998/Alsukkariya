@@ -96,22 +96,6 @@ Login, or register an account
 
 
 
-const KEY = "pk_test_51K9luKDHgD7vvY49C8bHgEUCNYjaGuaA0NF9clG1WMRNctR3dINn6HFElfUsoPlgRFGpjnYAiZTAhrKkeIscPKOR00wBTuQuns"
-FIX STRIPE SECRET KEY IN ENV, REMOVE IT FROM STRIPE.JS
-
-mongoDB:
-username: user
-password: 1234
-
-admin
-123456
-
-
-
-
-Video 3 Timestamp:
-2:01:32
-
 
 
 HomePage:
