@@ -122,7 +122,8 @@ const ProductNameX = styled.span`
 `
 const ProductName = styled.span`
 
- 
+ ${mobile({ fontSize: "14px" })}
+ ${mobile({ marginTop: "2px" })}
 
 `
 const ProductId = styled.span`
@@ -150,6 +151,9 @@ display: flex;
 align-items: center;
 margin-bottom: 20px;
 cursor: pointer;
+${mobile({ fontSize: "14px" })}
+${mobile({ marginTop: "-16px" })}
+${mobile({ marginLeft: "20px" })}
 `
 const ProductAmount = styled.div`
 width: 30px;
@@ -162,15 +166,18 @@ justify-content: center;
 margin: 0px 5px;
 font-size: 24px;
 
-
-${mobile({ margin: "5px 15px" })}
+${mobile({ width: "25px" })}
+${mobile({ height: "25px" })}
+${mobile({ fontSize: "14px" })}
+${mobile({ marginLeft: "5px" })}
 `
 const ProductPrice = styled.div`
 margin-left: 15px;
 margin-bottom: 18px;
 font-size: 20px;
 font-weight: 550;
-${mobile({ marginBottom: "20px" })}
+${mobile({ fontSize: "14px" })}
+${mobile({ marginTop: "-16px" })}
 `
 
 const Hr = styled.hr`
@@ -382,11 +389,11 @@ useEffect(()=>{
                                     </div>
                                 <ProductAmountContainer>
                                 Quantity:
-                                  <Remove onClick={() => decrementCount(index)}/>
+                                  {/* <Remove onClick={() => decrementCount(index)}/> */}
                                     <ProductAmount>
                                         {product.quantity}
                                     </ProductAmount>
-                                    <Add onClick={() => incrementCount(index)}/>
+                                    {/* <Add onClick={() => incrementCount(index)}/> */}
                                     {/* <Button onClick={() => handleUpdate(index)}>ADD TO CART</Button> */}
                                 </ProductAmountContainer>
                                 <ProductPrice>
