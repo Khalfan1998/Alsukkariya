@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import emailjs from "emailjs-com";
 import { mobile } from "../responsive";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
+import { userRequest } from "../requestMethods";
 
 const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;1,400&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
@@ -128,24 +131,47 @@ const Button = styled.button`
   ${mobile({ marginLeft: "10%" })}
 `;
 
-function sendEmail(e) {
-  e.preventDefault();
+// function sendEmail(e) {
+//   e.preventDefault();
 
-  emailjs
-    .sendForm("gmail", "emailtemplate", e.target, "user_55A95fDRXwEhih3fhx36R")
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-  e.target.reset();
-}
+//   emailjs
+//     .sendForm("gmail", "emailtemplate", e.target, "user_55A95fDRXwEhih3fhx36R")
+//     .then(
+//       (result) => {
+//         console.log(result.text);
+//       },
+//       (error) => {
+//         console.log(error.text);
+//       }
+//     );
+//   e.target.reset();
+// }
 
 export const Modal = ({ showModal, setShowModal }) => {
   const cart = useSelector((state) => state.cart);
+  const location = useLocation();
+  const data = location.state.stripeData;
+
+  const currentUser = useSelector((state) => state.user.currentUser);
+  const [orderId, setOrderId] = useState(null);
+
+  useEffect(() => {
+    const createOrder = async () => {
+      try {
+        const res = await userRequest.post("/orders", {
+          userId: currentUser._id,
+          products: cart.products.map((item) => ({
+            productId: item._id,
+            quantity: item._quantity,
+          })),
+          amount: cart.total,
+          address: data.billing_details.address,
+        });
+        setOrderId(res.data._id);
+      } catch {}
+    };
+    data && createOrder();
+  }, [cart, data, currentUser]);
 
   return (
     <>
@@ -161,7 +187,7 @@ export const Modal = ({ showModal, setShowModal }) => {
                 </span>{" "}
                 Via Cash On Delivery
               </Title>
-              <Form onSubmit={sendEmail}>
+              <Form>
                 <Input placeholder="Subject" required name="subject" />
                 <Input placeholder="Name" required />
                 <Input placeholder="E-mail" required />

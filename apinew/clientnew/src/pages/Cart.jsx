@@ -263,6 +263,7 @@ const [showModalBenefit, setShowModalBenefit] = useState(false);
 const [products, setQuantity] = useState(1);
 const [product,setProduct] = useState({});
 
+
 const productsTotal = [
     { price: 7.5, Quantity: 2 },
     { price: 6.5, Quantity: 2 },

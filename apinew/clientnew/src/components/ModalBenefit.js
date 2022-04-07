@@ -125,21 +125,21 @@ const Button = styled.button`
   ${mobile({ marginLeft: "-8%" })}
 `;
 
-function sendEmail(e) {
-  e.preventDefault();
+// function sendEmail(e) {
+//   e.preventDefault();
 
-  emailjs
-    .sendForm("gmail", "emailtemplate", e.target, "user_55A95fDRXwEhih3fhx36R")
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-  e.target.reset();
-}
+//   emailjs
+//     .sendForm("gmail", "emailtemplate", e.target, "user_55A95fDRXwEhih3fhx36R")
+//     .then(
+//       (result) => {
+//         console.log(result.text);
+//       },
+//       (error) => {
+//         console.log(error.text);
+//       }
+//     );
+//   e.target.reset();
+// }
 
 export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
   const cart = useSelector((state) => state.cart);
@@ -159,7 +159,7 @@ export const ModalBenefit = ({ showModalBenefit, setShowModalBenefit }) => {
                 <Hr />
                 <span style={{ fontWeight: "bold" }}>IBAN:9312379123</span>
               </Title>
-              <Form onSubmit={sendEmail}>
+              <Form>
                 <Input placeholder="Subject" required name="subject" />
                 <Input placeholder="Name" />
                 <Input placeholder="E-mail" />
