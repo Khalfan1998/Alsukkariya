@@ -147,41 +147,41 @@ const Button = styled.button`
 //   e.target.reset();
 // }
 
-var axios = require("axios");
-var data = JSON.stringify({
-  userId: "61d57723f4f49329723b8a5c",
-  products: [
-    {
-      productId: "33ee3",
-      quantity: 1,
-    },
-    {
-      productId: "33e33dde3",
-      quantity: 2,
-    },
-  ],
-  amount: 100,
-  address: "BHR",
-});
+// var axios = require("axios");
+// var data = JSON.stringify({
+//   userId: "61d57723f4f49329723b8a5c",
+//   products: [
+//     {
+//       productId: "33ee3",
+//       quantity: 1,
+//     },
+//     {
+//       productId: "33e33dde3",
+//       quantity: 2,
+//     },
+//   ],
+//   amount: 100,
+//   address: "BHR",
+// });
 
-var config = {
-  method: "post",
-  url: "https://alsukkariya.herokuapp.com/api/orders",
-  headers: {
-    token:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDU2NzVmMmE1MTNiZWFhYTZmMDcwZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MTM3NTY3NywiZXhwIjoxNjQxNjM0ODc3fQ.ZAypGfIRGPcBIqA0KB9ncevjS9lZKBhEy8VPScfFLPM",
-    "Content-Type": "application/json",
-  },
-  data: data,
-};
+// var config = {
+//   method: "post",
+//   url: "https://alsukkariya.herokuapp.com/api/orders",
+//   headers: {
+//     token:
+//       "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDU2NzVmMmE1MTNiZWFhYTZmMDcwZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MTM3NTY3NywiZXhwIjoxNjQxNjM0ODc3fQ.ZAypGfIRGPcBIqA0KB9ncevjS9lZKBhEy8VPScfFLPM",
+//     "Content-Type": "application/json",
+//   },
+//   data: data,
+// };
 
-axios(config)
-  .then(function (response) {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+// axios(config)
+//   .then(function (response) {
+//     console.log(JSON.stringify(response.data));
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
 
 export const Modal = ({ showModal, setShowModal }) => {
   const cart = useSelector((state) => state.cart);
@@ -230,9 +230,8 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <Input placeholder="Address" required />
                 <Input placeholder="Phone number" required />
                 {/* <Link to="/successpage"> */}
-                <Button onClick={config} type="submit">
-                  Order
-                </Button>
+                {/* onClick={config} */}
+                <Button type="submit">Order</Button>
                 {/* </Link> */}
               </Form>
             </ModalContent>
